@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>果苗严选</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/seedling.css">
+    <link rel="stylesheet" href="./css/header.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="com-bg">
+            <!-- 导航栏 -->
+            <nav class="navbar-default navbar-fixed-top  h-t-bg" style="background: #fff;" role="navigation">
+                <div class="h-t-c container">
+                    <ul class="layui-nav l-h-t-c"
+                        style="background-color: #fff; height:32px;padding:0;list-style:none;">
+                        <li class="layui-nav-item">
+                            <div class="head_item">欢迎来到助农网！</div>
+                        </li>
+                        <li class="layui-nav-item num1">
+                            <a href="./login.html" class="head_item" style="color: #87d078 !important;">请登录</a>
+                        </li>
+                        <li class="layui-nav-item num2">
+                            <a href="./login.html" class="head_item">免费注册</a>
+                        </li>
+                    </ul>
+                    <div class="r-h-t-c">
+                        <div class="cascade-bar f-c">
+                            买家中心
+                        </div>
+                        <div class="cascade-bar f-c">
+                            卖家中心
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- 顶部 -->
+            <div class="h-c-bg">
+                <div class="h-c-c">
+                    <a href="#" class="l-h-c-c"><img src="./img/logo.png" alt="助农网" class="hn-logo"></a>
+                    <div class="ssearch-bg">
+                        <div class="s-bg">
+                            <div class="search-bg">
+                                <div class="s-l">供应</div>
+                                <div class="s-t">
+                                    <input type="text" placeholder="请输入您要的货品" value="" class="search-ctn">
+                                </div>
+                                <button class="s-r">搜索</button>
+                            </div>
+                        </div>
+                        <div class="hot-cate-list f-c">
+                            <a href="/supply/search/?k=苹果" target="_blank" rel="nofollow" class="cate-items">苹果</a>
+                            <a href="/supply/search/?k=牛副产品" target="_blank" rel="nofollow" class="cate-items">牛副产品</a>
+                            <a href="/supply/search/?k=柑桔" target="_blank" rel="nofollow" class="cate-items">柑桔</a>
+                            <a href="/supply/search/?k=猪副产品" target="_blank" rel="nofollow" class="cate-items">猪副产品</a>
+                            <a href="/supply/search/?k=红薯" target="_blank" rel="nofollow" class="cate-items">红薯</a>
+                            <a href="/supply/search/?k=鸡蛋" target="_blank" rel="nofollow" class="cate-items">鸡蛋</a>
+                            <a href="/supply/search/?k=鸡" target="_blank" rel="nofollow" class="cate-items">鸡</a>
+                            <a href="/supply/search/?k=牛肉" target="_blank" rel="nofollow" class="cate-items">牛肉</a>
+                        </div>
+                        <ul class="search_menu">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航条 -->
+            <nav class="navbar h-b-bg" style="margin-bottom: 0;" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#example-navbar-collapse" style="background-color:#dcecbd">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav l-h-b-c">
+                            <li><a href="./homePage.html" target="" rel="" id="tab_items" class="tab-items">首页</a></li>
+                            <li><a href="./ask_to_buy.html" target="" rel="" id="tab_items" class="tab-items">供应大厅</a>
+                            </li>
+                            <li><a href="./whomePage.html" target="" rel="" id="tab_items" class="tab-items">采购大厅</a>
+                            </li>
+                            <li><a href="./seeding1.html" target="" rel="" id="tab_items" class="tab-items">果苗严选</a>
+                            </li>
+                            <li><a href="./growth_center.html" target="" rel="" id="tab_items"
+                                    class="tab-items">成长中心</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col-md-2">
+            <div class="nav abc">
+                <ul>
+                    <li>
+                        <i class="bi bi-list" style="padding: 0;"></i>
+                        <span style="color: white;">果苗严选</span>
+                    </li>
+                    <li>
+                        <a href="#" style="text-decoration: none; color: black;">推荐
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li><a href="#" style="text-decoration: none;color: black;">柑桔苗
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li><a href="#" style="text-decoration: none;color: black;">李子树 <i
+                                class="bi bi-chevron-right"></i></a></li>
+                    <li><a href="#" style="text-decoration: none;color: black;">桃树苗 <i
+                                class="bi bi-chevron-right"></i></a></li>
+                    <li><a href="#" style="text-decoration: none;color: black;">芒果苗 <i
+                                class="bi bi-chevron-right"></i></a></li>
+                    <li><a href="#" style="text-decoration: none;color: black;">葡萄苗 <i
+                                class="bi bi-chevron-right"></i></a></li>
+                    <li><a href="#" style="text-decoration: none;color: black;">荔枝苗 <i
+                                class="bi bi-chevron-right"></i></a></li>
+                    <li><a href="#" style="text-decoration: none;color: black;">柚树苗 <i
+                                class="bi bi-chevron-right"></i></a></li>
+                    <li><a href="#" style="text-decoration: none;color: black;">樱桃苗 <i
+                                class="bi bi-chevron-right"></i></a></li>
+                    <li><a href="#" style="text-decoration: none;color: black;">桑树苗<i
+                                class="bi bi-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <article class="col-md-9">
+            <div class="second-banner">
+                <div class="tab-list">
+                    <div class="tab-list-1">
+                        <div class="tab-list-icon">
+                            <img src="https://files.cnhnb.com/master-ssr/guomiao/img/d357800.png" alt=""
+                                class="tab-icon">
+                            <div class="tab-list-text">
+                                <div class="tab-name">基地严选</div>
+                                <div class="tab-desc">官方实地认证基地一手货源</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-list-1">
+                        <div class="tab-list-icon">
+                            <img src="https://files.cnhnb.com/master-ssr/guomiao/img/f17e76f.png" alt=""
+                                class="tab-icon">
+                            <div class="tab-list-text">
+                                <div class="tab-name">品质严选</div>
+                                <div class="tab-desc">到手保活保真严惩货不对板</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-list-1">
+                        <div class="tab-list-icon">
+                            <img src="https://files.cnhnb.com/master-ssr/guomiao/img/6233704.png" alt=""
+                                class="tab-icon">
+                            <div class="tab-list-text">
+                                <div class="tab-name">服务严选</div>
+                                <div class="tab-desc">全程流程监管确保交易安全</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>为你推荐</li>
+                    <li>最新上架</li>
+                    <li>认证好店</li>
+                </ul>
+            </div>
+            <div id="listCon">
+                <div class="third" id="show1">
+                    <ul>
+                        <a href="http://" target="_blank" id="num0">
+                            <li class="goods0" id="goodID1">
+                                <img src="./images/item-display-2.jpg" alt="" id="123">
+                                <div class="shop-text">
+                                    <div class="shop-price-bg">
+                                        <div class="shop-price">
+                                            <span class="sp1">2.00</span>
+                                            元/斤
+                                        </div>
+                                        <div class="turnover">
+                                            成交1455元
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-field">
+                                    <div class="title one-line">
+                                        耙耙柑桔苗 品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                    </div>
+                                    <div class="cw-tags">
+                                        <div class="cw-tag" style="color:#FF862C !important;border:1px solid #FF862C;"
+                                            data-v-2fb084cc="">
+                                            部分包邮
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shop-btm">
+                                    <div class="shop-btm-l">
+                                    </div>
+                                    <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                          
+                        </li>
+                        </a>
+                        <a href=" http://" target="_blank" id="num1">
+                            <li class="goods1">
+                                <img src="./images/item-display-2.jpg" alt="" id="123">
+                                <div class="shop-text">
+                                    <div class="shop-price-bg">
+                                        <div class="shop-price">
+                                            <span class="sp1">5.00</span>
+                                            元/斤
+                                        </div>
+                                        <div class="turnover">
+                                            成交1455元
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-field">
+                                    <div class="title one-line">
+                                        无花果苗格莱斯水蜜桃味无花果盆栽地栽皆宜
+                                    </div>
+                                    <div class="cw-tags">
+                                        <div class="cw-tag" style="color:#FF862C !important;border:1px solid #FF862C;"
+                                            data-v-2fb084cc="">
+                                            部分包邮
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="shop-btm">
+                                    <div class="shop-btm-l">
+
+                                    </div>
+                                    <div class="shops-btm-r"">
+                                   浙江省海宁市
+                                </div>
+                            </div>
+                        </li>
+                        </a>
+                        <a href=" http://" target="_blank" id="num2">
+                            <li class="goods2">
+                                <img src="./images/item-display-2.jpg" alt="" id="123">
+                                <div class="shop-text">
+                                    <div class="shop-price-bg">
+                                        <div class="shop-price">
+                                            <span class="sp1">2.00</span>
+                                            元/斤
+                                        </div>
+                                        <div class="turnover">
+                                            成交1455元
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-field">
+                                    <div class="title one-line">
+                                        耙耙柑桔苗 品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                    </div>
+                                    <div class="cw-tags">
+                                        <div class="cw-tag" style="color:#FF862C !important;border:1px solid #FF862C;"
+                                            data-v-2fb084cc="">
+                                            部分包邮
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shop-btm">
+                                    <div class="shop-btm-l">
+                                    </div>
+                                    <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                        </li>
+                        </a>
+                        <a href=" http://" target="_blank" id="num3">
+                            <li class="goods3">
+                                <img src="./images/item-display-2.jpg" alt="" id="123">
+                                <div class="shop-text">
+                                    <div class="shop-price-bg">
+                                        <div class="shop-price">
+                                            <span class="sp1">2.00</span>
+                                            元/斤
+                                        </div>
+                                        <div class="turnover">
+                                            成交1455元
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-field">
+                                    <div class="title one-line">
+                                        耙耙柑桔苗 品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                    </div>
+                                    <div class="cw-tags">
+                                        <div class="cw-tag" style="color:#FF862C !important;border:1px solid #FF862C;"
+                                            data-v-2fb084cc="">
+                                            部分包邮
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="shop-btm">
+                                    <div class="shop-btm-l">
+
+                                    </div>
+                                    <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                           
+                        </li>
+                        </a>
+                        <a href=" http://" target="_blank" id="num4">
+                            <li class="goods4">
+                                <img src="./images/item-display-2.jpg" alt="" id="123">
+
+                                <div class="shop-text">
+                                    <div class="shop-price-bg">
+                                        <div class="shop-price">
+                                            <span class="sp1">2.00</span>
+                                            元/斤
+                                        </div>
+                                        <div class="turnover">
+                                            成交1455元
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-field">
+                                    <div class="title one-line">
+                                        耙耙柑桔苗 品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                    </div>
+                                    <div class="cw-tags">
+                                        <div class="cw-tag" style="color:#FF862C !important;border:1px solid #FF862C;"
+                                            data-v-2fb084cc="">
+                                            部分包邮
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="shop-btm">
+                                    <div class="shop-btm-l">
+
+                                    </div>
+                                    <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                           
+                        </li>
+                        </a>
+                        <a href=" http://" target="_blank" id="num5">
+                            <li class="goods5">
+                                <img src="./images/item-display-2.jpg" alt="" id="123">
+                                <div class="shop-text">
+                                    <div class="shop-price-bg">
+                                        <div class="shop-price">
+                                            <span class="sp1">2.00</span>
+                                            元/斤
+                                        </div>
+                                        <div class="turnover">
+                                            成交1455元
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-field">
+                                    <div class="title one-line">
+                                        耙耙柑桔苗 品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                    </div>
+                                    <div class="cw-tags">
+                                        <div class="cw-tag" style="color:#FF862C !important;border:1px solid #FF862C;"
+                                            data-v-2fb084cc="">
+                                            部分包邮
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="shop-btm">
+                                    <div class="shop-btm-l">
+
+                                    </div>
+                                    <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                           
+                        </li>
+                        </a>
+                        <a href=" http://" target="_blank" id="num6">
+                            <li class="goods6">
+                                <img src="./images/item-display-2.jpg" alt="" id="123">
+
+                                <div class="shop-text">
+                                    <div class="shop-price-bg">
+                                        <div class="shop-price">
+                                            <span class="sp1">2.00</span>
+                                            元/斤
+                                        </div>
+                                        <div class="turnover">
+                                            成交1455元
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-field">
+                                    <div class="title one-line">
+                                        耙耙柑桔苗 品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                    </div>
+                                    <div class="cw-tags">
+                                        <div class="cw-tag" style="color:#FF862C !important;border:1px solid #FF862C;"
+                                            data-v-2fb084cc="">
+                                            部分包邮
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="shop-btm">
+                                    <div class="shop-btm-l">
+
+                                    </div>
+                                    <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                           
+                        </li>
+                        </a>
+                        <a href=" http://" target="_blank" id="num7">
+                            <li class="goods7">
+                                <img src="./images/item-display-2.jpg" alt="" id="123">
+                                <div class="shop-text">
+                                    <div class="shop-price-bg">
+                                        <div class="shop-price">
+                                            <span class="sp1">2.00</span>
+                                            元/斤
+                                        </div>
+                                        <div class="turnover">
+                                            成交1455元
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-field">
+                                    <div class="title one-line">
+                                        耙耙柑桔苗 品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                    </div>
+                                    <div class="cw-tags">
+                                        <div class="cw-tag" style="color:#FF862C !important;border:1px solid #FF862C;"
+                                            data-v-2fb084cc="">
+                                            部分包邮
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="shop-btm">
+                                    <div class="shop-btm-l">
+
+                                    </div>
+                                    <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                           
+                       
+                        </li>
+                        </a>
+                        <a href=" http://" target="_blank" id="num8">
+                            <li class="goods8">
+                                <img src="./images/item-display-2.jpg" alt="" id="123">
+                                <div class="shop-text">
+                                    <div class="shop-price-bg">
+                                        <div class="shop-price">
+                                            <span class="sp1">2.00</span>
+                                            元/斤
+                                        </div>
+                                        <div class="turnover">
+                                            成交1455元
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-field">
+                                    <div class="title one-line">
+                                        耙耙柑桔苗 品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                    </div>
+                                    <div class="cw-tags">
+                                        <div class="cw-tag" style="color:#FF862C !important;border:1px solid #FF862C;"
+                                            data-v-2fb084cc="">
+                                            部分包邮
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="shop-btm">
+                                    <div class="shop-btm-l">
+
+                                    </div>
+                                    <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                            
+                            
+                        </li>
+                        </a>
+                        <a href=" http://" target="_blank" id="num9">
+                            <li class="goods9">
+                                <img src="./images/item-display-2.jpg" alt="" id="123">
+                                <div class="shop-text">
+                                    <div class="shop-price-bg">
+                                        <div class="shop-price">
+                                            <span class="sp1">2.00</span>
+                                            元/斤
+                                        </div>
+                                        <div class="turnover">
+                                            成交1455元
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-field">
+                                    <div class="title one-line">
+                                        耙耙柑桔苗 品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                    </div>
+                                    <div class="cw-tags">
+                                        <div class="cw-tag" style="color:#FF862C !important;border:1px solid #FF862C;"
+                                            data-v-2fb084cc="">
+                                            部分包邮
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="shop-btm">
+                                    <div class="shop-btm-l">
+
+                                    </div>
+                                    <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                        </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class=" third" id="show2">
+                                        <ul>
+                                            <li>
+                                                <img src="./images/item-display-11.jpg" alt="">
+                                                <div class="shop-text">
+                                                    <div class="shop-price-bg">
+                                                        <div class="shop-price">
+                                                            <span class="sp1">2.00</span>
+                                                            元/斤
+                                                        </div>
+                                                        <div class="turnover">
+                                                            成交1455元
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="title-field">
+                                                    <div class="title one-line">
+                                                        耙耙柑桔苗 品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                                    </div>
+                                                    <div class="cw-tags">
+                                                        <div class="cw-tag"
+                                                            style="color:#FF862C !important;border:1px solid #FF862C;"
+                                                            data-v-2fb084cc="">
+                                                            部分包邮
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="shop-btm">
+                                                    <div class="shop-btm-l">
+
+                                                    </div>
+                                                    <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                           
+                        </li>
+                        <li> <img src=" ./images/item-display-12.jpeg" alt="">
+                                                        <div class="shop-text">
+                                                            <div class="shop-price-bg">
+                                                                <div class="shop-price">
+                                                                    <span class="sp1">5.00</span>
+                                                                    元/斤
+                                                                </div>
+                                                                <div class="turnover">
+                                                                    成交1455元
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="title-field">
+                                                            <div class="title one-line">
+                                                                无花果苗格莱斯水蜜桃味无花果盆栽地栽皆宜
+                                                            </div>
+                                                            <div class="cw-tags">
+                                                                <div class="cw-tag"
+                                                                    style="color:#FF862C !important;border:1px solid #FF862C;"
+                                                                    data-v-2fb084cc="">
+                                                                    部分包邮
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="shop-btm">
+                                                            <div class="shop-btm-l">
+
+                                                            </div>
+                                                            <div class="shops-btm-r"">
+                                   浙江省海宁市
+                                </div>
+                            </div>
+                           
+                        </li>
+                        <li> <img src=" ./images/item-display-13.jpg" alt="">
+                                                                <div class="shop-text">
+                                                                    <div class="shop-price-bg">
+                                                                        <div class="shop-price">
+                                                                            <span class="sp1">2.00</span>
+                                                                            元/斤
+                                                                        </div>
+                                                                        <div class="turnover">
+                                                                            成交1455元
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="title-field">
+                                                                    <div class="title one-line">
+                                                                        耙耙柑桔苗 品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                                                    </div>
+                                                                    <div class="cw-tags">
+                                                                        <div class="cw-tag"
+                                                                            style="color:#FF862C !important;border:1px solid #FF862C;"
+                                                                            data-v-2fb084cc="">
+                                                                            部分包邮
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="shop-btm">
+                                                                    <div class="shop-btm-l">
+
+                                                                    </div>
+                                                                    <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                           
+                        </li>
+                        <li> <img src=" ./images/item-display-14.jpg" alt="">
+                                                                        <div class="shop-text">
+                                                                            <div class="shop-price-bg">
+                                                                                <div class="shop-price">
+                                                                                    <span class="sp1">2.00</span>
+                                                                                    元/斤
+                                                                                </div>
+                                                                                <div class="turnover">
+                                                                                    成交1455元
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="title-field">
+                                                                            <div class="title one-line">
+                                                                                耙耙柑桔苗 品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                                                            </div>
+                                                                            <div class="cw-tags">
+                                                                                <div class="cw-tag"
+                                                                                    style="color:#FF862C !important;border:1px solid #FF862C;"
+                                                                                    data-v-2fb084cc="">
+                                                                                    部分包邮
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="shop-btm">
+                                                                            <div class="shop-btm-l">
+
+                                                                            </div>
+                                                                            <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                           
+                        </li>
+                        <li> <img src=" ./images/item-display-15.jpg" alt="">
+                                                                                <div class="shop-text">
+                                                                                    <div class="shop-price-bg">
+                                                                                        <div class="shop-price">
+                                                                                            <span
+                                                                                                class="sp1">2.00</span>
+                                                                                            元/斤
+                                                                                        </div>
+                                                                                        <div class="turnover">
+                                                                                            成交1455元
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="title-field">
+                                                                                    <div class="title one-line">
+                                                                                        耙耙柑桔苗 品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                                                                    </div>
+                                                                                    <div class="cw-tags">
+                                                                                        <div class="cw-tag"
+                                                                                            style="color:#FF862C !important;border:1px solid #FF862C;"
+                                                                                            data-v-2fb084cc="">
+                                                                                            部分包邮
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="shop-btm">
+                                                                                    <div class="shop-btm-l">
+
+                                                                                    </div>
+                                                                                    <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                           
+                        </li>
+                        <li> <img src=" ./images/item-display-16.jpeg" alt="">
+                                                                                        <div class="shop-text">
+                                                                                            <div class="shop-price-bg">
+                                                                                                <div class="shop-price">
+                                                                                                    <span
+                                                                                                        class="sp1">2.00</span>
+                                                                                                    元/斤
+                                                                                                </div>
+                                                                                                <div class="turnover">
+                                                                                                    成交1455元
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="title-field">
+                                                                                            <div class="title one-line">
+                                                                                                耙耙柑桔苗
+                                                                                                品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                                                                            </div>
+                                                                                            <div class="cw-tags">
+                                                                                                <div class="cw-tag"
+                                                                                                    style="color:#FF862C !important;border:1px solid #FF862C;"
+                                                                                                    data-v-2fb084cc="">
+                                                                                                    部分包邮
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="shop-btm">
+                                                                                            <div class="shop-btm-l">
+
+                                                                                            </div>
+                                                                                            <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                           
+                        </li>
+                        <li> <img src=" ./images/item-display-16.jpeg" alt="">
+                                                                                                <div class="shop-text">
+                                                                                                    <div
+                                                                                                        class="shop-price-bg">
+                                                                                                        <div
+                                                                                                            class="shop-price">
+                                                                                                            <span
+                                                                                                                class="sp1">2.00</span>
+                                                                                                            元/斤
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="turnover">
+                                                                                                            成交1455元
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div
+                                                                                                    class="title-field">
+                                                                                                    <div
+                                                                                                        class="title one-line">
+                                                                                                        耙耙柑桔苗
+                                                                                                        品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="cw-tags">
+                                                                                                        <div class="cw-tag"
+                                                                                                            style="color:#FF862C !important;border:1px solid #FF862C;"
+                                                                                                            data-v-2fb084cc="">
+                                                                                                            部分包邮
+                                                                                                        </div>
+
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="shop-btm">
+                                                                                                    <div
+                                                                                                        class="shop-btm-l">
+
+                                                                                                    </div>
+                                                                                                    <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                           
+                        </li>
+                        <li> <img src=" ./images/item-display-18.jpeg" alt="">
+                                                                                                        <div
+                                                                                                            class="shop-text">
+                                                                                                            <div
+                                                                                                                class="shop-price-bg">
+                                                                                                                <div
+                                                                                                                    class="shop-price">
+                                                                                                                    <span
+                                                                                                                        class="sp1">2.00</span>
+                                                                                                                    元/斤
+                                                                                                                </div>
+                                                                                                                <div
+                                                                                                                    class="turnover">
+                                                                                                                    成交1455元
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="title-field">
+                                                                                                            <div
+                                                                                                                class="title one-line">
+                                                                                                                耙耙柑桔苗
+                                                                                                                品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="cw-tags">
+                                                                                                                <div class="cw-tag"
+                                                                                                                    style="color:#FF862C !important;border:1px solid #FF862C;"
+                                                                                                                    data-v-2fb084cc="">
+                                                                                                                    部分包邮
+                                                                                                                </div>
+
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div
+                                                                                                            class="shop-btm">
+                                                                                                            <div
+                                                                                                                class="shop-btm-l">
+
+                                                                                                            </div>
+                                                                                                            <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                           
+                        </li>
+                        <li> <img src=" ./images/item-display-19.jpg" alt="">
+                                                                                                                <div
+                                                                                                                    class="shop-text">
+                                                                                                                    <div
+                                                                                                                        class="shop-price-bg">
+                                                                                                                        <div
+                                                                                                                            class="shop-price">
+                                                                                                                            <span
+                                                                                                                                class="sp1">2.00</span>
+                                                                                                                            元/斤
+                                                                                                                        </div>
+                                                                                                                        <div
+                                                                                                                            class="turnover">
+                                                                                                                            成交1455元
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div
+                                                                                                                    class="title-field">
+                                                                                                                    <div
+                                                                                                                        class="title one-line">
+                                                                                                                        耙耙柑桔苗
+                                                                                                                        品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                                                                                                    </div>
+                                                                                                                    <div
+                                                                                                                        class="cw-tags">
+                                                                                                                        <div class="cw-tag"
+                                                                                                                            style="color:#FF862C !important;border:1px solid #FF862C;"
+                                                                                                                            data-v-2fb084cc="">
+                                                                                                                            部分包邮
+                                                                                                                        </div>
+
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div
+                                                                                                                    class="shop-btm">
+                                                                                                                    <div
+                                                                                                                        class="shop-btm-l">
+
+                                                                                                                    </div>
+                                                                                                                    <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                            
+                            
+                        </li>
+                        <li> <img src=" ./images/item-display-19.jpg" alt="">
+                                                                                                                        <div
+                                                                                                                            class="shop-text">
+                                                                                                                            <div
+                                                                                                                                class="shop-price-bg">
+                                                                                                                                <div
+                                                                                                                                    class="shop-price">
+                                                                                                                                    <span
+                                                                                                                                        class="sp1">2.00</span>
+                                                                                                                                    元/斤
+                                                                                                                                </div>
+                                                                                                                                <div
+                                                                                                                                    class="turnover">
+                                                                                                                                    成交1455元
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                        <div
+                                                                                                                            class="title-field">
+                                                                                                                            <div
+                                                                                                                                class="title one-line">
+                                                                                                                                耙耙柑桔苗
+                                                                                                                                品种纯正根系发达保成活率，快递包邮，带果保湿发货
+                                                                                                                            </div>
+                                                                                                                            <div
+                                                                                                                                class="cw-tags">
+                                                                                                                                <div class="cw-tag"
+                                                                                                                                    style="color:#FF862C !important;border:1px solid #FF862C;"
+                                                                                                                                    data-v-2fb084cc="">
+                                                                                                                                    部分包邮
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                        <div
+                                                                                                                            class="shop-btm">
+                                                                                                                            <div
+                                                                                                                                class="shop-btm-l">
+
+                                                                                                                            </div>
+                                                                                                                            <div class="shops-btm-r"">
+                                    四川苍溪县
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" good-store" id="show3">
+                                                                                                                                <div
+                                                                                                                                    class="good-store-1">
+                                                                                                                                    <div
+                                                                                                                                        class="good-store-1-1">
+                                                                                                                                        <div
+                                                                                                                                            class="good-store-1-img">
+                                                                                                                                            <img src="./images/good-store-1.png"
+                                                                                                                                                alt="">
+                                                                                                                                        </div>
+                                                                                                                                        <div
+                                                                                                                                            class="des">
+                                                                                                                                            <a
+                                                                                                                                                class="qiyang">祁阳县湘艳家庭农场</a>
+                                                                                                                                            <div
+                                                                                                                                                class="logo-info">
+                                                                                                                                                <div
+                                                                                                                                                    class="logo-1">
+                                                                                                                                                    <img src="./images/buy_protect.png"
+                                                                                                                                                        alt="">
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                    class="logo-1">
+
+                                                                                                                                                </div>
+                                                                                                                                            </div>
+                                                                                                                                            <div
+                                                                                                                                                class="store-adjust">
+                                                                                                                                                店铺评分
+                                                                                                                                                <span
+                                                                                                                                                    style="margin-right:10px ;">4.9</span>
+                                                                                                                                                累计成交62.4万元
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                        <button
+                                                                                                                                            class="enter-s">进店看看</button>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <div
+                                                                                                                                    class="good-store-info">
+                                                                                                                                    <div
+                                                                                                                                        class="good-store-info-1">
+
+                                                                                                                                        店家从事果树栽培行业32年，从果树的种子到树体长大及果树的生老病死都有过详细的了解，果树行业我愿与所有客户一路同行。自从入驻网5年来，我社生产的苗木及技术，销售和传播到了全国二十多个省市；苗木销售：本社一直坚守保纯度，卖真货，促成活，送技术，力争扶上马再送一
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <div
+                                                                                                                                    class="info-img">
+                                                                                                                                    <ul>
+                                                                                                                                        <li
+                                                                                                                                            class="img-1">
+                                                                                                                                            <img src="./images/item-display-1.jpg"
+                                                                                                                                                alt="">
+                                                                                                                                            <h6>爱媛38号柑桔苗
+                                                                                                                                            </h6>
+                                                                                                                                            <i class="bi bi-currency-yen"
+                                                                                                                                                style="color: red;">5.08</i>
+                                                                                                                                        </li>
+                                                                                                                                        <li
+                                                                                                                                            class="img-1">
+                                                                                                                                            <img src="./images/item-display-2.jpg"
+                                                                                                                                                alt="">
+                                                                                                                                            <h6>爱媛38号柑桔苗
+                                                                                                                                            </h6>
+                                                                                                                                            <i class="bi bi-currency-yen"
+                                                                                                                                                style="color: red;">5.08</i>
+                                                                                                                                        </li>
+                                                                                                                                        <li
+                                                                                                                                            class="img-1">
+                                                                                                                                            <img src="./images/item-display-3.jpg"
+                                                                                                                                                alt="">
+                                                                                                                                            <div
+                                                                                                                                                class="p">
+                                                                                                                                                爱媛38号柑桔苗
+                                                                                                                                            </div>
+                                                                                                                                            <i class="bi bi-currency-yen"
+                                                                                                                                                style="color: red;">5.08</i>
+                                                                                                                                        </li>
+                                                                                                                                    </ul>
+                                                                                                                                </div>
+                                                                                                                                <div
+                                                                                                                                    class="good-store-1">
+                                                                                                                                    <div
+                                                                                                                                        class="good-store-1-1">
+                                                                                                                                        <div
+                                                                                                                                            class="good-store-1-img">
+                                                                                                                                            <img src="./images/good-store-2.png"
+                                                                                                                                                alt="">
+                                                                                                                                        </div>
+                                                                                                                                        <div
+                                                                                                                                            class="des">
+                                                                                                                                            <a
+                                                                                                                                                class="qiyang">灵山县武利镇优盛果苗种植场</a>
+                                                                                                                                            <div
+                                                                                                                                                class="logo-info">
+                                                                                                                                                <div
+                                                                                                                                                    class="logo-1">
+                                                                                                                                                    <img src="./images/buy_protect.png"
+                                                                                                                                                        alt="">
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                    class="logo-1">
+
+                                                                                                                                                </div>
+                                                                                                                                            </div>
+                                                                                                                                            <div
+                                                                                                                                                class="store-adjust">
+                                                                                                                                                店铺评分
+                                                                                                                                                <span
+                                                                                                                                                    style="margin-right:10px ;">4.9</span>
+                                                                                                                                                累计成交75万元
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                        <button
+                                                                                                                                            class="enter-s">进店看看</button>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <div
+                                                                                                                                    class="good-store-info">
+                                                                                                                                    <div
+                                                                                                                                        class="good-store-info-1">
+                                                                                                                                        长期供应各种，荔枝苗，龙眼苗
+                                                                                                                                        芒果苗，黄皮苗
+                                                                                                                                        紫香
+                                                                                                                                        台农一号百香果，黄金百香果沙糖桔，红心橙茂谷柑皇帝柑沃柑苗
+                                                                                                                                        木瓜苗，菠萝蜜，等等，品种多多，量大从优，欢迎购买
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <div
+                                                                                                                                    class="info-img">
+                                                                                                                                    <ul>
+                                                                                                                                        <li
+                                                                                                                                            class="img-1">
+                                                                                                                                            <img src="./images/item-dispaly-21.jpeg"
+                                                                                                                                                alt="">
+                                                                                                                                            <h6>广东香水柠檬苗
+                                                                                                                                            </h6>
+                                                                                                                                            <i class="bi bi-currency-yen"
+                                                                                                                                                style="color: red;">4.8</i>
+                                                                                                                                        </li>
+                                                                                                                                        <li
+                                                                                                                                            class="img-1">
+                                                                                                                                            <img src="./images/item-dispaly-22.jpeg"
+                                                                                                                                                alt="">
+                                                                                                                                            <h6>桃金娘苗
+                                                                                                                                            </h6>
+                                                                                                                                            <i class="bi bi-currency-yen"
+                                                                                                                                                style="color: red;">2</i>
+                                                                                                                                        </li>
+                                                                                                                                        <li
+                                                                                                                                            class="img-1">
+                                                                                                                                            <img src="./images/item-dispaly-23.jpeg"
+                                                                                                                                                alt="">
+                                                                                                                                            <div
+                                                                                                                                                class="p">
+                                                                                                                                                黄金百香果苗
+                                                                                                                                            </div>
+                                                                                                                                            <i class="bi bi-currency-yen"
+                                                                                                                                                style="color: red;">5.8</i>
+                                                                                                                                        </li>
+                                                                                                                                    </ul>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>
+
+        </article>
+    </div>
+
+    <footer>
+        <div>
+            <div class="com-bg">
+                <div class="btm-t">
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-xinshouzhinan" data-v-14a6ca34=""></i>
+                            新手指南
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnb.com/login/" target="_blank" rel="nofollow" title="注册账户"
+                                class="h-i">注册账户</a>
+                            <a href="https://www.cnhnkj.com/app.html#h2-1" target="_blank" rel="nofollow" title="平台功能"
+                                class="h-i">平台功能</a>
+                            <a href="https://m.cnhnb.com/zhuanti/zxjyzt_hn/" target="_blank" rel="nofollow" title="在线交易"
+                                class="h-i">在线交易</a>
+                            <a href="http://wx.mobile.cnhnb.com/mango/pro/specialpage/page/propaganda3/index.html"
+                                target="_blank" rel="nofollow" title="买家保障" class="h-i">买家保障</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-kehufuwu"></i>
+                            产品服务
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnb.com/supply/" target="_blank" rel="" title="找供应"
+                                class="h-i">找供应</a>
+                            <a href="https://www.cnhnb.com/purchase/" target="_blank" rel="" title="找采购"
+                                class="h-i">找采购</a>
+                            <a href="https://www.cnhnb.com/hangqing/" target="_blank" rel="" title="看行情"
+                                class="h-i">看行情</a>
+                            <a href="https://www.cnhnb.com/app/download/" target="_blank" rel="nofollow" title="发布供应"
+                                class="h-i">发布供应</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/friends/yjdf_special" target="_blank"
+                                rel="nofollow" title="一件代发" class="h-i">一件代发</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-pingtaishengming"></i>
+                            合作联系
+                        </div>
+                        <div class="help-list">
+                            <a target="_blank" rel="" title="客户服务 400-008-8688" class="h-i">客户服务</a>
+                            <a target="_blank" rel="" title="商务洽谈 0731-88189999" class="h-i">商务洽谈</a>
+                            <a target="_blank" rel="" title="媒体合作 0731-88189999" class="h-i">媒体合作</a>
+                            <a href="https://www.cnhnb.com/knowledge/" target="_blank" rel="" title="知识产权综合服务平台"
+                                class="h-i">知识产权综合服务平台</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-guanyuhuinong"></i>
+                            关于助农
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnkj.com/about.html" target="_blank" rel="" title="关于我们"
+                                class="h-i">关于我们</a>
+                            <a href="https://www.cnhnkj.com/about.html#h2-3" target="_blank" rel="nofollow"
+                                title="助农大事件" class="h-i">助农大事件</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/privacy/?id=1" target="_blank" rel="nofollow"
+                                title="服务协议" class="h-i">服务协议</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/privacy/?id=3" target="_blank" rel="nofollow"
+                                title="隐私协议" class="h-i">隐私协议</a>
+                            <a href="https://m.cnhnb.com/mango/pro/help-center/help-list" target="_blank" rel="nofollow"
+                                title="规则说明" class="h-i">规则说明</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./layui/layui.all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="./js/jQuery.min.js"></script>
+    <script src="./js/baseAPI.js"></script>
+    <!-- <script src="./js/test1.js"></script> -->
+    <script src="./js/new.js"></script>
+    <script src="./js/header.js"></script>
+
+
+</body>
+
+</html>

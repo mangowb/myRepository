@@ -1,0 +1,48 @@
+.pagination{
+  position: absolute;
+}
+.pagination ul{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #fff; 
+    padding: 8px;
+    margin-top: 20px;
+}
+.pagination ul li{
+  list-style: none;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.pagination ul li.numb{
+    height: 45px;
+     width: 45px;
+     margin: 0 3px;
+}
+.pagination ul li.btn{
+  padding: 0 20px;
+}
+.pagination ul li.prev{
+  border-radius: 25px 5px 5px 25px;
+}
+.pagination ul li.next{
+  border-radius: 5px 25px 25px 5px;
+}
+.pagination ul li.active,.pagination ul li.numb:hover,.pagination ul li.btn:hover{
+  background-color: #36bf3e;
+  color: #fff;
+}
+#show1{
+  display: block;
+}
+#show2{
+  display: none;
+}
+#show3{
+  display: none;
+}

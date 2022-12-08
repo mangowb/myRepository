@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goodsdetail</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/goodsdetail.css">
+    <style>
+        .shadow_css {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 10;
+            /* 为mozilla firefox 设置透明度  */
+            -moz-opacity: 0.6;
+            /* 设置透明度 */
+            opacity: .60;
+            /* 为IE 设置透明度  */
+            filter: alpha(opacity=66);
+        }
+
+        .window_css {
+            display: none;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+            width: 50%;
+            height: 60%;
+            border: 3px solid honeydew;
+            background-color: aliceblue;
+            z-index: 11;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="com-bg">
+            <!-- 导航栏 -->
+            <nav class="navbar-default navbar-fixed-top  h-t-bg" style="background: #fff;" role="navigation">
+                <div class="h-t-c container">
+                    <ul class="layui-nav l-h-t-c" style="background-color: #fff; height:32px;padding:0;">
+                        <li class="layui-nav-item">
+                            <div class="head_item">欢迎来到助农网！</div>
+                        </li>
+                        <li class="layui-nav-item num1">
+                            <a href="./login.html" class="head_item" style="color: #87d078 !important;">请登录</a>
+                        </li>
+                        <li class="layui-nav-item num2">
+                            <a href="./login.html" class="head_item">免费注册</a>
+                        </li>
+                    </ul>
+                    <div class="r-h-t-c">
+                        <div class="cascade-bar f-c">
+                            买家中心
+                        </div>
+                        <div class="cascade-bar f-c">
+                            卖家中心
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <span class="col-lg-2 name ">可鲜果业
+                <i class="bi bi-envelope"></i>
+                <i class="bi bi-telephone"></i>
+            </span>
+            <div class="about-store col-lg-3 ">
+                <span>店铺评分 粉丝数 &nbsp;累计成交量</span>
+                <div>&nbsp;&nbsp;&nbsp;5&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1970
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;120.7万元 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="main-title">
+                可鲜果业
+            </div>
+            <div class="main-nortitle">
+                主营：芒果
+            </div>
+        </div>
+        <div class="row store-nav">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active index" aria-current="page" href="#">首页</a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link product-provide" href="#">产品供应</a>
+                </li>
+                <li class="nav-item store-file ">
+                    <a class="nav-link" href="#">店铺档案</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link store-condition">店铺动态</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link store-picture">店铺相册</a>
+                </li>
+            </ul>
+        </div>
+        <div class="row main">
+            <div class="goodsdetail-img col-lg-4" id="goodsdetailimg">
+                <img src="./images/goodsdetail-img.jpeg" alt="" id="img-1">
+            </div>
+            <div class="product-information col-lg-8 ">
+                <h2>大青芒批发【量大从优】不包邮 一件带框60斤 可一件代发</h2>
+                <span style="color:  rgba(128,128,128, 0.951);">可接电商一件代发</span>
+                <span style="float:right ; color:  rgba(128,128,128, 0.951);" class="new-time">更新时间：2002年11月19日</span>
+                <hr style="color: #36bf3e;">
+                <div class="price">价格<span>1.90-2.90元</span></div>
+                <div class="qipiliang">起批量<span>60斤起批</span></div>
+                <div class="address">发货地址<span>广西壮族自治区崇左市</span></div>
+                <div class="caigouredu">采购热度
+                    <img src="./images/fire.png" alt="" class="img-1">
+                    <img src="./images/fire.png" alt="">
+                    <img src="./images/fire.png" alt="">
+                    <img src="./images/fire.png" alt="">
+                    <img src="./images/fire.png" alt="">
+                </div>
+                <div class="choice">
+                    <div class="choice-left">规格选择</div>
+                    <div class="chioce-right">
+                        <div class="chioce-right1 flex-c">
+                            <div class="name-1">3级果(不售后)</div>
+                            <div class="price-1">1.9元/斤</div>
+                            <div class="weight-1">60斤起批</div>
+                        </div>
+                        <div class="chioce-right1 flex-c">
+                            <div class="name-1">2级果（一斤起表皮带小瑕疵）</div>
+                            <div class="price-1">1.9元/斤</div>
+                            <div class="weight-1">60斤起批</div>
+                        </div>
+                        <div class="chioce-right1 flex-c">
+                            <div class="name-1">1级果</div>
+                            <div class="price-1">2.9元/斤</div>
+                            <div class="weight-1">60斤起批</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="buy-imi" onclick="collect()" type="button" id="collectbutton">商品收藏</button>
+
+                <button class="contact-seller" type="submit">联系卖家</button>
+                <div class="promising">
+                    <span class="promising-1">服务承诺</span>
+                    <span>整车</span>
+                    <span>物流/专线</span>
+                    <span>送货上门</span>
+                    <span>其他运输</span>
+                    <span>坏损包赔</span>
+                    <span>产地代办</span>
+                </div>
+                <div class="promising">
+                    <span class="promising-1">支付方式</span>
+                    <span>支付宝</span>
+                    <span> 微信</span>
+                    <span>网上银行</span>
+                    <span>银行转账</span>
+                    <span>（柜台转账/网银转账）</span>
+                </div>
+                <div class="promising">
+                    <span class="promising-1">交易方式</span>
+                    <span>担保交易</span>
+                </div>
+            </div>
+        </div>
+        <div class="row seller-information">
+            <div class="sell-information-1 col-lg-4">
+                <div class="sell-information-img">
+                    <img src="./images/seller.png" alt="">
+                </div>
+                <h3>可鲜果业</h3>
+                <div class="store-h">
+                    店铺热度：
+                    <img src="./images/fire.png" alt="">
+                    <img src="./images/fire.png" alt="">
+                    <img src="./images/fire.png" alt="">
+                    <img src="./images/fire.png" alt="">
+                    <img src="./images/fire.png" alt="">
+                </div>
+                <div class="level">
+                    店铺等级：<img src="./images/level.png" alt="">
+                </div>
+                <div class="store-address">
+                    所在地区：广西壮族自治区崇左市凭祥市中国东盟自由贸易区
+                </div>
+                <button type="submit" class="by-phone">电话咨询</button>
+                <button type="submit" class="enter-store">进入店铺</button>
+            </div>
+            <div class="sell-information-2 col-lg-8" id="tab">
+                <div class="list">
+                    <ul>
+                        <li class="act123">商品详情</li>
+                        <li>在线成交（1754）</li>
+                        <li>评价（1663）</li>
+                    </ul>
+                </div>
+                <div id="listCon">
+                    <div class="act" id="show1">
+                        <div class="act-1">
+                            <div class="t1">重量</div>
+                            <div class="t2">
+                                一件带框60斤，净重54
+                            </div>
+                        </div>
+                        <div class="act-1">
+                            <div class="t1">
+                                产地
+                            </div>
+                            <div class="t2 spe">
+                                广西壮族自治区崇左市凭祥市
+                            </div>
+                        </div>
+                        <div class="act-1">
+                            <div class="t1">颜色
+                            </div>
+                            <div class="t2">
+                                青色
+                            </div>
+                        </div>
+                        <div class="act-1">
+                            <div class="t1">包装
+                            </div>
+                            <div class="t2">
+                                框装
+                            </div>
+                        </div>
+                        <div class="act-1">
+                            <div class="t1">品种名
+
+                            </div>
+                            <div class="t2">
+                                大青芒
+                            </div>
+                        </div>
+                        <div class="act-1">
+                            <div class="t1">货品等级
+
+                            </div>
+                            <div class="t2">
+                                一级果
+                            </div>
+                        </div>
+                        <div class="fuwu">
+                            提供服务：<span style="color: #000;">整车、物流/专线、送货上门、其他运输、坏损包赔、产地代办</span>
+                        </div>
+                    </div>
+                    <div class="act" id="show2">
+                        <div class="com-bg">
+                            <div class="com-bg-ctn">
+                                <div class="com-ctn-l">
+                                    <div class="t1-1">
+                                        采购重复率
+                                    </div>
+                                    <div class="t2-1">
+                                        39.53%
+                                    </div>
+                                    <div class="t3-1">
+                                    </div>
+                                </div>
+                                <div class="com-ctn-r">
+                                    <div class="purchase-num">
+                                        <div class="t1-1">采购人数</div>
+                                        <div class="t2-1">678</div>
+                                    </div>
+                                    <div class="num-list">
+                                        <div class="num-item">
+                                            <div class="identifyName">其他身份</div>
+                                            <div class="line" style="width: 103px;"></div>
+                                            <div class="num-val">43.05%</div>
+                                        </div>
+
+                                        <div class="num-item">
+                                            <div class="identifyName">批发商</div>
+                                            <div class="line" style="width: 37px;"></div>
+                                            <div class="num-val">15.56%</div>
+                                        </div>
+                                        <div class="num-item">
+                                            <div class="identifyName">餐饮行业</div>
+                                            <div class="line" style="width: 32px;"></div>
+                                            <div class="num-val">13.65%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="act" id="show3">
+                        <div class="rate-all">
+                            <span class="s1">货品评分</span>
+                            <div class="star-img">
+                                <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                <div class="img-s"><img src="./images/star.png" alt=""></div>
+                            </div>
+                            <div class="rate-num">5</div>
+                            <div class="rate-per">好评率99%</div>
+                        </div>
+                        <div class="rate-type">
+                            <ul>
+                                <li class="rate-type-all">全部</li>
+                                <li class="rate-type-all">四星五星</li>
+                                <li class="rate-type-all">三星</li>
+                                <li class="rate-type-all">一星二星</li>
+                            </ul>
+                        </div>
+                        <div class="evaluate-item" id="re1">
+                            <div class="evaluate-item-l">
+                                <img class="user-head" src="./images/avatar-default.png" alt="">
+                                h*******2
+                            </div>
+                            <div class="evaluate-item-r">
+                                <div class="star-img">
+                                    <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                    <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                    <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                    <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                    <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="review">系统默认好评</div>
+                            <div class="review-1">数量：60斤 规格：2级果</div>
+                        </div>
+                        <div class="evaluate-item" id="re2">
+                            <div class="evaluate-item-l">
+                                <img class="user-head" src="./images/avatar-default.png" alt="">
+                                l*******8
+                            </div>
+                            <div class="evaluate-item-r">
+                                <div class="star-img">
+                                    <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                    <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                    <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                    <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="review">特别好吃</div>
+                            <div class="review-1">数量：60斤 规格：1级果</div>
+                        </div>
+                        <div class="evaluate-item" id="re3">
+                            <div class="evaluate-item-l">
+                                <img class="user-head" src="./images/avatar-default.png" alt="">
+                                m*******5
+                            </div>
+                            <div class="evaluate-item-r">
+                                <div class="star-img">
+                                    <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                    <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                    <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="review">不是很好</div>
+                            <div class="review-1">数量：60斤 规格：3级果</div>
+                        </div>
+                        <div class="evaluate-item" id="re4">
+                            <div class="evaluate-item-l">
+                                <img class="user-head" src="./images/avatar-default.png" alt="">
+                                l*******8
+                            </div>
+                            <div class="evaluate-item-r">
+                                <div class="star-img">
+                                    <div class="img-s"><img src="./images/star.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="review"></div>
+                            <div class="review-1">数量：60斤 规格：3级果</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--用来引出悬浮窗口的div-->
+    <div>
+        <a href="javascript:void(0)" onclick="displayWindow()">购买</a>
+
+    </div>
+    <!--悬浮窗口-->
+    <div id="window" class="window_css">
+        <div>
+            <a href="javascript:void(0)" onclick="hideWindow()">关闭</a>
+        </div>
+        <div class="zongmianban">
+            <div class="price_num_allprive">
+                <input class="one_price" id="oneprice" style="width: 50px;">
+                <label>元/斤</label>
+                <div>
+                    <button onclick="jian()">-</button>
+                    <input class="goods_num" type="text" value="1" id="txt">
+                    <label>斤</label>
+                    <button onclick="jia()">+</button>
+                </div>
+            </div>
+            <div class="allprice">
+                <label>总价</label>
+                <input id="allprice" type="text" disabled="disabled">
+                <label>元</label>
+            </div>
+            <label>需付款</label>
+            <input id="realprice" type="text" disabled="disabled">
+            <label>元</label>
+            <div class="choice_todo">
+                <button class="creat_deal" onclick="creat_deal()">创建订单，不支付</button>
+                <button class="buygood" onclick="buygood()">购买</button>
+            </div>
+        </div>
+    </div>
+
+    <!--出现悬浮窗口后,背景变暗-->
+    <div id="shadow" class="shadow_css"></div>
+
+    <script src="./js/jQuery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="./layui/layui.js"></script>
+    <script src="./js/baseAPI.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/new.js"></script>
+    <!-- <script src="../js/new.js"></script> -->
+
+    <!-- <script src="./js/test1.js"></script> -->
+
+    <!-- <script type="text/javascript">
+		// /*当点击调用此方法后,将悬浮窗口显示出来,背景变暗*/
+		// function displayWindow() {
+		// 	/*悬浮窗口的显示,需要将display变成block*/
+		// 	document.getElementById("window").style.display = "block";
+		// 	/*将背景变暗*/
+		// 	document.getElementById("shadow").style.display = "block";
+		// }
+
+		// /*当点击调用此方法,将悬浮窗口和背景全部隐藏*/
+		// function hideWindow() {
+		// 	document.getElementById("window").style.display = "none";
+		// 	document.getElementById("shadow").style.display = "none";
+		// }
+        // function jia() {
+        //     console.log("jia")
+        //     let txt=document.getElementById("txt");
+        //     let a=txt.value;
+        //     a++;
+        //     txt.value=a;
+        //     sumprice();
+        // }
+        // function jian() {
+        //     console.log("jian")
+        //     let txt=document.getElementById("txt");
+        //     let b=txt.value;
+        //     b--
+        //     if(b>1){txt.value=b--}
+        //     else {txt.value=1}
+        //     sumprice();
+        // }  
+        // function sumprice(){
+        //     let oneprice=document.getElementById("oneprice")
+        //     let numbers=document.getElementById("txt")
+        //     let allprice=document.getElementById("allprice")
+        //     let realprice=document.getElementById("realprice")
+        //     let allprices=oneprice.value*numbers.value
+        //     allprices.toFixed(2)
+        //     allprice.value=allprices
+        //     realprice.value=allprices
+        // }
+        // function creat_deal(){
+        //     let oneprice=document.getElementById("oneprice")
+        //     let numbers=document.getElementById("txt")
+        //     let allprices=oneprice.value*numbers.value
+        // }
+        // function buygood(){
+        //     let allprices=document.getElementById("allprice").value
+        //     console.log(allprices)
+        //     let realprice=document.getElementById("realprice").value
+        //     console.log(realprice)
+        // }
+
+	</script> -->
+</body>
+
+</html>

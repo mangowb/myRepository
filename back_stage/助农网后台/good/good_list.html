@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../assets/lib/css/layui.css">
+	<link rel="stylesheet" href="../assets/css/good_list.css">
+</head>
+<body>
+	<div class="layui-card">
+		<div class="layui-card-header">
+			<span>商品列表</span>
+		</div>
+		<div class="layui-card-body">
+			<!-- 筛选区 -->
+			<!-- 筛选区域 -->
+			<form class="layui-form" id="form-search">
+				<div class="layui-form-item layui-inline">
+					<select name="goodstype"></select>
+				</div>
+				<div class="layui-form-item layui-inline">
+					<button class="layui-btn" lay-submit lay-filter="formDemo">筛选</button>
+				</div>
+			</form>
+			<!-- 列表区 -->
+			<table class="layui-table">
+			  <colgroup>
+			    <col width="20">
+			    <col width="100">
+			    <col width="5">
+				<col width="200">
+				<col width="400">
+				<!-- <col /> -->
+				<col width="20">
+				<col width="100">
+			  </colgroup>
+			  <thead>
+			    <tr>
+			      <th>商品名称</th>
+			      <th>加入时间</th>
+			      <th>价格</th>
+				  <th>发货地址</th>
+				  <th>商品详情</th>
+				  <!-- <th>商品照片</th> -->
+				  <th>商品类型</th>
+				  <th>操作</th>
+			    </tr> 
+			  </thead>
+			  <tbody></tbody>
+			  
+			</table>
+			<!-- 分页区域 -->
+			<div id="pageBox" ></div>
+		</div>
+	</div>
+	
+	
+	<!-- 表格数据的模板 -->
+	<script type="text/html" id="tpl-table">
+		{{each data}}
+		<tr>
+			<td>{{$value.goodsname}}</td>
+			<td>{{$value.updateTime}}</td>
+			<td>{{$value.goodsprice}}</td>
+			<td>{{$value.deliveryAddress}}</td>
+			<td>{{$value.goodsIntroduction}}</td>
+			<!-- <td>{{$value.goodspictures}}</td> -->
+			<td >{{$value.typename}}</td>   
+		  <td>
+			 <button type="button" class="layui-btn layui-btn-xs btn-edit" data-id="{{$value.goodsID}}">编辑</button>
+			  <button type="button" class="layui-btn layui-btn-danger layui-btn-xs btn-delete" data-id="{{$value.goodsID}}">删除</button>
+		  </td>
+		</tr>
+		{{/each}}
+	</script>
+	
+	<!-- 分类可选项的模板结构 -->
+	<script type="text/html" id="tpl-goodtype">
+		<option value="">所有分类</option>
+		{{each data}}
+		<option value="{{$value.typeID}}">{{$value.typename}}</option>
+		{{/each}}
+	</script>
+	
+	
+	<!-- 导入layui的js文件 -->
+	<script src="../assets/lib/layui.js"></script>
+	<script src="../assets/lib/layui.all.js"></script>
+	<!-- 导入JQuery -->
+	<script src="../assets/lib/jquery.min.js"></script>
+	<!-- 导入自己的baseAPI -->
+	<script src="../assets/js/baseAPI.js"></script>
+	<!-- 导入模板引擎 -->
+	<script src="../assets/lib/template-web.js"></script>
+	<!-- 导入自己的js文件 -->
+	<script src="../assets/js/goods/good_list.js"></script>
+</body>
+</html>

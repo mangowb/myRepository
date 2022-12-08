@@ -1,0 +1,2457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>助农网</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/homePage.css">
+</head>
+
+<body>
+    <!-- 1.顶部 -->
+    <header>
+        <div class="com-bg">
+            <!-- 导航栏 -->
+            <nav class="navbar-default navbar-fixed-top  h-t-bg" style="background: #fff;" role="navigation">
+                <div class="h-t-c container">
+                    <ul class="layui-nav l-h-t-c" style="background-color: #fff; height:32px;padding:0;">
+                        <li class="layui-nav-item">
+                            <div class="head_item">欢迎来到助农网！</div>
+                        </li>
+                        <li class="layui-nav-item num1">
+                            <a href="./login.html" class="head_item" style="color: #87d078 !important;">请登录</a>
+                        </li>
+                        <li class="layui-nav-item num2">
+                            <a href="./login.html" class="head_item">免费注册</a>
+                        </li>
+                    </ul>
+                    <div class="r-h-t-c">
+                        <div class="cascade-bar f-c">
+                            买家中心
+                        </div>
+                        <div class="cascade-bar f-c">
+                            卖家中心
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- 顶部 -->
+            <div class="h-c-bg">
+                <div class="h-c-c">
+                    <a href="#" class="l-h-c-c"><img src="./img/logo.png" alt="助农网" class="hn-logo"></a>
+                    <div class="ssearch-bg">
+                        <div class="s-bg">
+                            <div class="search-bg">
+                                <div class="s-l">供应</div>
+                                <div class="s-t">
+                                    <input type="text" placeholder="请输入您要的货品" value="" class="search-ctn">
+                                </div>
+                                <button class="s-r">搜索</button>
+                            </div>
+                        </div>
+                        <div class="hot-cate-list f-c">
+                            <a href="/supply/search/?k=苹果" target="_blank" rel="nofollow" class="cate-items">苹果</a>
+                            <a href="/supply/search/?k=牛副产品" target="_blank" rel="nofollow" class="cate-items">牛副产品</a>
+                            <a href="/supply/search/?k=柑桔" target="_blank" rel="nofollow" class="cate-items">柑桔</a>
+                            <a href="/supply/search/?k=猪副产品" target="_blank" rel="nofollow" class="cate-items">猪副产品</a>
+                            <a href="/supply/search/?k=红薯" target="_blank" rel="nofollow" class="cate-items">红薯</a>
+                            <a href="/supply/search/?k=鸡蛋" target="_blank" rel="nofollow" class="cate-items">鸡蛋</a>
+                            <a href="/supply/search/?k=鸡" target="_blank" rel="nofollow" class="cate-items">鸡</a>
+                            <a href="/supply/search/?k=牛肉" target="_blank" rel="nofollow" class="cate-items">牛肉</a>
+                        </div>
+                        <ul class="search_menu">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航条 -->
+            <nav class="navbar h-b-bg" style="margin-bottom: 0;" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#example-navbar-collapse" style="background-color:#dcecbd">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav l-h-b-c">
+                            <li><a href="./homePage.html" target="" rel="" class="tab-items">首页</a></li>
+                            <li><a href="./ask_to_buy.html " target="" rel="" class="tab-items" id="./ask_to_buy.html">供应大厅</a></li>
+                            <li><a href="./whomePage.html " target="" rel="" class="tab-items" id="./whomePage.html">采购大厅</a></li>
+                            <li><a href="./seeding1.html " target="" rel="" class="tab-items" id="./seeding1.html">果苗严选</a></li>
+                            <li><a href="./growth_center.html " id="./growth_center.html" target="" rel="" class="tab-items">成长中心</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. -->
+    <main>
+        <!-- 栏目1 -->
+        <div class="ctn-bg">
+            <div class="ctn-bg-c">
+                <div class="ctn-bg-c-l">
+                    <div class="category-bg">
+                    </div>
+                </div>
+                <div class="ctn-bg-c-c">
+                    <div class="com-bg" style="padding-bottom: 0;">
+                        <div class="home-banner">
+                            <div class="container" id="myCarousel">
+                                <div id="carousel-example-generic" class="carousel slide">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img
+                                                src="https://image.cnhnb.com/image/jpg/miniapp/2021/11/29/0fdc1ba6d938495697208a57c519528b.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <img
+                                                src="https://image.cnhnb.com/image/jpg/miniapp/2022/03/22/3a75996bd40c4cf2b5eff9e95a764285.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <img
+                                                src="https://image.cnhnb.com/image/jpg/miniapp/2021/12/18/84859d25d826409286996a3e57cb35c2.jpg">
+                                        </div>
+                                        <a class="left carousel-control" href="#carousel-example-generic"
+                                            data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic"
+                                            data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btm-banner-com">
+                            <a href="https://www.cnhnb.com/guomiao/" target="_blank" class="banner-item">
+                                <img src="https://image.cnhnb.com/image/jpg/miniapp/2022/03/22/5b7435bb933b4601a49724c215a6d4d1.jpg"
+                                    alt=""></a>
+                            <a href="https://zst.cnhnb.com/m" target="_blank" class="banner-item">
+                                <img src="https://image.cnhnb.com/image/jpg/miniapp/2022/05/13/919754377c98415c8d91a12b570fc473.jpg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ctn-bg-c-r">
+                    <div class="com-bg" style="padding-bottom: 0;">
+                        <div class="card-t">
+                            <div class="t1">欢迎来到助农网！</div>
+                            <div class="t1-btm">
+                                <div class="l-btn"><a href="./login.html">请登录</a></div>
+                                <div class="r-btn"><a href="./login.html">免费注册</a></div>
+                            </div>
+                        </div>
+                        <div class="card-btm">
+                            <div class="c-bar-t">
+                                <div class="bar-item bar-item-a">买家服务</div>
+                            </div>
+                            <div class="bar-items-bg">
+                                <div class="bars-item">
+                                    <div class="icon-bg">
+                                        <i class="bi bi-bag"></i>
+                                    </div>
+                                    <div class="items-n">采购管理</div>
+                                </div>
+                                <div class="bars-item">
+                                    <div class="icon-bg">
+                                        <i class="bi bi-clipboard-minus"></i>
+                                    </div>
+                                    <div class="items-n">订单管理</div>
+                                </div>
+                            </div>
+                            <div class="user-center">
+                                进入买家中心
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="m-t-bg">
+                            <div class="l-t">行情动态</div>
+                            <a href="/hangqing/" target="_blank" class="r-b">更多 <i
+                                    class="layui-icon layui-icon-right"></i> </a>
+                        </div>
+                        <div class="cate-name m-l-r">海鲜菇</div>
+                        <div class="market-sate m-l-r">
+                            <div class="l-m">16.6<span class="s1">元/斤</span></div>
+                        </div>
+                        <div class="chart-container">
+                            <img src="./img/下载.png" alt="" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 栏目2 -->
+        <div id="recommend-com" class="recommend-supply">
+            <div class="com-t flex">
+                <div class="l-t">热门供应</div>
+                <div class="flex"></div>
+            </div>
+            <div class="modular-bg" id="items0">
+                <div class="l-c"
+                    style="background-image:url(https://image.cnhnb.com/image/png/miniapp/2021/01/18/e3f7008104ae4f3d8edbbdf70e6bdefe.png);">
+                    <div class="l-c-t" style="border-color:#3DA82C;color:#3DA82C;">蔬菜</div>
+                    <div class="l-c-text" style="color:#3DA82C;">品种丰富 以质论价</div>
+                </div>
+                <div class="c-c">
+                    <div class="cate-block">
+                        <a href="/p/cjsl/" target="_blank" class="cate-name">葱姜蒜类</a>
+                        <div class="cate-list">
+                            <a href="/p/jiuhuang/" target="_blank" class="cates-items">韭黄</a>
+                            <a href="/p/suanmiao/" target="_blank" class="cates-items">蒜苗</a>
+                            <a href="/p/dasuan/" target="_blank" class="cates-items">大蒜</a>
+                            <a href="/p/shengjiang/" target="_blank" class="cates-items">生姜</a>
+                            <a href="/p/dacong/" target="_blank" class="cates-items">大葱</a>
+                            <a href="/p/xiaocong/" target="_blank" class="cates-items">小葱</a>
+                            <a href="/p/suantai/" target="_blank" class="cates-items">蒜苔</a>
+                            <a href="/p/yangcong/" target="_blank" class="cates-items">洋葱</a>
+                            <a href="/p/jiaotou/" target="_blank" class="cates-items">藠头</a>
+                            <a href="/p/yangjiang/" target="_blank" class="cates-items">洋姜</a>
+                        </div>
+                    </div>
+                    <div class="cate-block">
+                        <a href="/p/gjcl/" target="_blank" class="cate-name">根茎菜类</a>
+                        <div class="cate-list">
+                            <a href="/p/xbh/" target="_blank" class="cates-items">鲜百合</a>
+                            <a href="/p/lusun/" target="_blank" class="cates-items">芦笋</a>
+                            <a href="/p/luobo/" target="_blank" class="cates-items">萝卜</a>
+                            <a href="/p/hlb/" target="_blank" class="cates-items">胡萝卜</a>
+                            <a href="/p/dongsun/" target="_blank" class="cates-items">竹笋</a>
+                            <a href="/p/gegen/" target="_blank" class="cates-items">葛根</a>
+                            <a href="/p/moy/" target="_blank" class="cates-items">魔芋</a>
+                            <a href="/p/mushu/" target="_blank" class="cates-items">木薯</a>
+                            <a href="/p/liangshu/" target="_blank" class="cates-items">凉薯</a>
+                            <a href="/p/shanyao/" target="_blank" class="cates-items">山药</a>
+                        </div>
+                    </div>
+                    <div class="cate-block">
+                        <a href="/p/ycl/" target="_blank" class="cate-name">叶菜类</a>
+                        <div class="cate-list">
+                            <a href="/p/bc/" target="_blank" class="cates-items">白菜</a>
+                            <a href="/p/xbc/" target="_blank" class="cates-items">小白菜</a>
+                            <a href="/p/shengcai/" target="_blank" class="cates-items">生菜</a>
+                            <a href="/p/xianc/" target="_blank" class="cates-items">苋菜</a>
+                            <a href="/p/wawacai/" target="_blank" class="cates-items">娃娃菜</a>
+                            <a href="/p/mec/" target="_blank" class="cates-items">木耳菜</a>
+                            <a href="/p/xiangcai/" target="_blank" class="cates-items">香菜</a>
+                            <a href="/p/ymc/" target="_blank" class="cates-items">油麦菜</a>
+                            <a href="/p/kxco/" target="_blank" class="cates-items">空心菜</a>
+                            <a href="/p/bocai/" target="_blank" class="cates-items">菠菜</a>
+                        </div>
+                    </div>
+                    <div class="cate-block">
+                        <a href="/p/dcl/" target="_blank" class="cate-name">豆菜类</a>
+                        <div class="cate-list">
+                            <a href="/p/maodou/" target="_blank" class="cates-items">毛豆</a>
+                            <a href="/p/daodou/" target="_blank" class="cates-items">刀豆</a>
+                            <a href="/p/sijidou/" target="_blank" class="cates-items">四季豆</a>
+                            <a href="/p/doujiao/" target="_blank" class="cates-items">豆角</a>
+                            <a href="/p/biandou/" target="_blank" class="cates-items">扁豆</a>
+                            <a href="/p/wandouo/" target="_blank" class="cates-items">豌豆</a>
+                            <a href="/p/hld/" target="_blank" class="cates-items">荷兰豆</a>
+                            <a href="/p/sld/" target="_blank" class="cates-items">四棱豆</a>
+                            <a href="/p/baiyudou/" target="_blank" class="cates-items">白玉豆</a>
+                            <a href="/p/gouzd/" target="_blank" class="cates-items">狗爪豆</a>
+                        </div>
+                    </div>
+                    <div class="cate-block">
+                        <a href="/p/qgcl/" target="_blank" class="cate-name">茄果菜类</a>
+                        <div class="cate-list">
+                            <a href="/p/lajiao/" target="_blank" class="cates-items">辣椒</a>
+                            <a href="/p/xhs/" target="_blank" class="cates-items">西红柿</a>
+                            <a href="/p/qiezi/" target="_blank" class="cates-items">茄子</a>
+                            <a href="/p/qiukui/" target="_blank" class="cates-items">秋葵</a>
+                            <a href="/p/xyumi/" target="_blank" class="cates-items">鲜玉米</a>
+                            <a href="/p/yumsun/" target="_blank" class="cates-items">玉米笋</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/syjl/" target="_blank" class="cate-name">食用菌</a>
+                        <div class="cate-list">
+                            <a href="/p/songsj/" target="_blank" class="cates-items">松树菌</a>
+                            <a href="/p/yuanm/" target="_blank" class="cates-items">元蘑</a>
+                            <a href="/p/shanhj/" target="_blank" class="cates-items">珊瑚菌</a>
+                            <a href="/p/lurg/" target="_blank" class="cates-items">鹿茸菇</a>
+                            <a href="/p/sum/" target="_blank" class="cates-items">栗蘑</a>
+                            <a href="/p/longzg/" target="_blank" class="cates-items">龙爪菇</a>
+                            <a href="/p/helg/" target="_blank" class="cates-items">荷灵菇</a>
+                            <a href="/p/haixg/" target="_blank" class="cates-items">海鲜菇</a>
+                            <a href="/p/maojg/" target="_blank" class="cates-items">毛尖蘑</a>
+                            <a href="/p/jig/" target="_blank" class="cates-items">姬菇</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="r-c">
+                    <div class="l-r-c">
+                        <div class="l-r-c-t" style="border-color:#95E088;">好货推荐</div>
+                        <div class="supply-list">
+                            <div class="supply-items"><a href="/gongying/7251249/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/jpg/head/2022/07/21/039e86e52a4045e5940e8e321547f8ff.jpg?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="定边县土豆" title="定边县土豆" class="shops-img-bg" data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">1.30</span>
+                                                元/斤
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title one-line" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980="">土豆</span>
+                                        </div>
+                                        <div class="cw-tags" data-v-e24a6980="">
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                保证金1000元
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                48小时发货
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y1.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/buy_protect.png"
+                                                alt="" class="icon-imgs" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/gjgr.png" alt=""
+                                                class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="supply-items"><a href="/gongying/6877463/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/jpeg/head/2021/12/27/0dfc9871136f42f8b34ce1c856185ac6.jpeg?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="夏邑县精品青杂三号白菜" title="夏邑县精品青杂三号白菜" class="shops-img-bg" data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">0.30</span>
+                                                元/斤
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980="">精品青杂三号白菜</span>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y1.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/gjgt.png" alt=""
+                                                class="icon-imgs" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/gjgr.png" alt=""
+                                                class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="r-r-c">
+                        <div class="r-r-c-t" style="border-color:#95E088;">推荐供应商</div>
+                        <div class="r-shop-list"><a href="https://vip256307.cnhnb.com/" target="_blank"
+                                class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">肥城市天成蔬菜种植专业合作社</div>
+                            </a><a href="https://vip716513.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">王军建</div>
+                            </a><a href="https://vip5808614.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">霍江</div>
+                            </a><a href="https://vip3461701.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">费县秀海果蔬种植专业合作社</div>
+                            </a><a href="https://vip861678.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">山费县老郭瓜果蔬菜大葱购销中心</div>
+                            </a><a href="https://vip161597.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">沂水县诚信果蔬购销中心</div>
+                            </a><a href="https://vip5960428.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">小马蔬菜购销中心</div>
+                            </a><a href="https://vip5976858.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">鲜加安基地菜</div>
+                            </a><a href="https://vip685536343.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">孙哥甜瓜西红柿代收</div>
+                            </a><a href="https://vip4407343.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">王海彬</div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modular-bg" id="items1">
+                <div class="l-c"
+                    style="background-image:url(https://image.cnhnb.com/image/png/miniapp/2021/01/18/fe60c0fc6cea4a6eadc996221e41ea57.png);">
+                    <div class="l-c-t" style="border-color:#5959C8;color:#5959C8;">农资农机</div>
+                    <div class="l-c-text" style="color:#5959C8;">产地直发 海量供应</div>
+                </div>
+                <div class="c-c">
+                    <div class="cate-block">
+                        <a href="/p/nyjxsb/" target="_blank" class="cate-name">农用机械设备</a>
+                        <div class="cate-list">
+                            <a href="/p/nytlj/" target="_blank" class="cates-items">农用拖拉机</a>
+                            <a href="/p/njpj/" target="_blank" class="cates-items">农机配件</a>
+                            <a href="/p/gengzhengjx/" target="_blank" class="cates-items">耕整机</a>
+                            <a href="/p/spjgjx/" target="_blank" class="cates-items">食品加工机械</a>
+                            <a href="/p/guoshujx/" target="_blank" class="cates-items">果蔬机械</a>
+                            <a href="/p/zhibaojx/" target="_blank" class="cates-items">植保机</a>
+                            <a href="/p/siliaojx/" target="_blank" class="cates-items">饲料机</a>
+                            <a href="/p/feiliaojx/" target="_blank" class="cates-items">肥料机械</a>
+                            <a href="/p/fdsb/" target="_blank" class="cates-items">发电设备</a>
+                            <a href="/p/tuzaijrljgsb/" target="_blank" class="cates-items">屠宰及肉类加工设备</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/feiliao/" target="_blank" class="cate-name">肥料</a>
+                        <div class="cate-list">
+                            <a href="/p/fuhf/" target="_blank" class="cates-items">复合肥</a>
+                            <a href="/p/huansf/" target="_blank" class="cates-items">缓释肥</a>
+                            <a href="/p/aohefl/" target="_blank" class="cates-items">螯合肥料</a>
+                            <a href="/p/danzf/" target="_blank" class="cates-items">单质肥</a>
+                            <a href="/p/shengwf/" target="_blank" class="cates-items">生物肥</a>
+                            <a href="/p/shuirf/" target="_blank" class="cates-items">水溶肥</a>
+                            <a href="/p/yemf/" target="_blank" class="cates-items">叶面肥</a>
+                            <a href="/p/youjf/" target="_blank" class="cates-items">有机肥</a>
+                            <a href="/p/jjfl/" target="_blank" class="cates-items">间接肥料</a>
+                            <a href="/p/zhuoseji/" target="_blank" class="cates-items">果实着色剂</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/nongyao/" target="_blank" class="cate-name">农药</a>
+                        <div class="cate-list">
+                            <a href="/p/scj/" target="_blank" class="cates-items">杀虫剂</a>
+                            <a href="/p/sjj/" target="_blank" class="cates-items">杀菌剂</a>
+                            <a href="/p/shamanji/" target="_blank" class="cates-items">杀螨剂</a>
+                            <a href="/p/chucj/" target="_blank" class="cates-items">除草剂</a>
+                            <a href="/p/wswjj/" target="_blank" class="cates-items">生物农药</a>
+                            <a href="/p/msj/" target="_blank" class="cates-items">老鼠药</a>
+                            <a href="/p/zwsztjj/" target="_blank" class="cates-items">植物生长调节剂</a>
+                            <a href="/p/nongyaozhuji/" target="_blank" class="cates-items">助剂</a>
+                            <a href="/p/nytaocan/" target="_blank" class="cates-items">农药套餐</a>
+                            <a href="/p/bzj/" target="_blank" class="cates-items">拌种剂</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/siliao/" target="_blank" class="cate-name">饲料</a>
+                        <div class="cate-list">
+                            <a href="/p/qlsl/" target="_blank" class="cates-items">青绿饲料</a>
+                            <a href="/p/yuhunl/" target="_blank" class="cates-items">预混料</a>
+                            <a href="/p/chongwusiliao/" target="_blank" class="cates-items">宠物饲料</a>
+                            <a href="/p/bplsl/" target="_blank" class="cates-items">饼粕饲料</a>
+                            <a href="/p/dbzbcl/" target="_blank" class="cates-items">蛋白质补充饲料</a>
+                            <a href="/p/gclsl/" target="_blank" class="cates-items">干草类饲料</a>
+                            <a href="/p/gwlsl/" target="_blank" class="cates-items">谷物饲料</a>
+                            <a href="/p/jgsl/" target="_blank" class="cates-items">秸秆饲料</a>
+                            <a href="/p/kflsl/" target="_blank" class="cates-items">糠麸类饲料</a>
+                            <a href="/p/kwzsl/" target="_blank" class="cates-items">矿物质饲料</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/nybh/" target="_blank" class="cate-name">农用百货</a>
+                        <div class="cate-list">
+                            <a href="/p/gongju/" target="_blank" class="cates-items">农用工具</a>
+                            <a href="/p/lbyp/" target="_blank" class="cates-items">劳保用品</a>
+                            <a href="/p/lhf/" target="_blank" class="cates-items">硫磺粉</a>
+                            <a href="/p/baoshuiji/" target="_blank" class="cates-items">保水剂</a>
+                            <a href="/p/buxiugangguan/" target="_blank" class="cates-items">不锈钢管</a>
+                            <a href="/p/rerongjiao/" target="_blank" class="cates-items">热熔胶</a>
+                            <a href="/p/slm/" target="_blank" class="cates-items">塑料膜</a>
+                            <a href="/p/hulanwangww/" target="_blank" class="cates-items">护栏</a>
+                            <a href="/p/zpjz/" target="_blank" class="cates-items">栽培基质</a>
+                            <a href="/p/hxhf/" target="_blank" class="cates-items">活性花粉</a>
+
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/pgsb/" target="_blank" class="cate-name">排灌设备</a>
+                        <div class="cate-list">
+                            <a href="/p/hanguan/" target="_blank" class="cates-items">涵管</a>
+                            <a href="/p/guancaigj/" target="_blank" class="cates-items">管材管件</a>
+                            <a href="/p/diguanpg/" target="_blank" class="cates-items">滴灌喷灌</a>
+                            <a href="/p/guolvshebei/" target="_blank" class="cates-items">过滤设备</a>
+                            <a href="/p/ggsb/" target="_blank" class="cates-items">灌溉设备</a>
+                            <a href="/p/shuib/" target="_blank" class="cates-items">泵</a>
+                            <a href="/p/gezha/" target="_blank" class="cates-items">格栅</a>
+                            <a href="/p/paishuiban/" target="_blank" class="cates-items">排水板</a>
+                            <a href="/p/xushuiban/" target="_blank" class="cates-items">蓄水板</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="r-c">
+                    <div class="l-r-c">
+                        <div class="l-r-c-t" style="border-color:#ADADEE;">好货推荐</div>
+                        <div class="supply-list">
+                            <div class="supply-items"><a href="/gongying/6985417/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/jpg/head/2022/03/10/572e479893564ca2b478fd21077e6540.jpg?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="长沙恶唑菌酮杜邦抑快净噁唑菌酮霜脲氰黄瓜霜霉病番茄疫病农药杀菌剂" title="长沙恶唑菌酮杜邦抑快净噁唑菌酮霜脲氰黄瓜霜霉病番茄疫病农药杀菌剂"
+                                        class="shops-img-bg" data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">6.00</span>
+                                                元/袋
+                                            </div>
+                                            <div class="turnover" data-v-e24a6980="">
+                                                成交414元
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title one-line" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980="">恶唑菌酮杜邦抑快净噁唑菌酮霜脲氰黄瓜霜霉病番茄疫病农药杀菌剂</span>
+                                        </div>
+                                        <div class="cw-tags" data-v-e24a6980="">
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                保证金2000元
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                72小时发货
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                部分包邮
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y1.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/buy_protect.png"
+                                                alt="" class="icon-imgs" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/gjqy.png" alt=""
+                                                class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="supply-items"><a href="/gongying/5848389/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/jpeg/head/2020/10/07/a8ea98b528614f57ade622486831fe39.jpeg?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="长葛市518蜜蜂巢门饲喂器自动杯喂水器全中蜂蜂箱外喂糖蜂花粉养蜂工"
+                                        title="长葛市518蜜蜂巢门饲喂器自动杯喂水器全中蜂蜂箱外喂糖蜂花粉养蜂工" class="shops-img-bg"
+                                        data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">15.00</span>
+                                                元/个
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title one-line" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980="">518蜜蜂巢门饲喂器自动杯喂水器全中蜂蜂箱外喂糖蜂花粉养蜂工</span>
+                                        </div>
+                                        <div class="cw-tags" data-v-e24a6980="">
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                保证金2000元
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                24小时发货
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                部分包邮
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y1.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/buy_protect.png"
+                                                alt="" class="icon-imgs" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/gjgt.png" alt=""
+                                                class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="r-r-c">
+                        <div class="r-r-c-t" style="border-color:#ADADEE;">推荐供应商</div>
+                        <div class="r-shop-list"><a href="https://vip887694461.cnhnb.com/" target="_blank"
+                                class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">王晶晶</div>
+                            </a><a href="https://vip2370027.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">绿康园生鲜农机具采购中心</div>
+                            </a><a href="https://vip267581055.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">广西桂北生态发酵饲料经营部</div>
+                            </a><a href="https://vip279159268.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">河北大牛节水设备</div>
+                            </a><a href="https://vip4281181.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">鄄城县八九农业技术服务有限公司</div>
+                            </a><a href="https://vip3871901.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">种田人农资店</div>
+                            </a><a href="https://vip642699469.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">许俊杰</div>
+                            </a><a href="https://vip155200649.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">冷库合作联盟</div>
+                            </a><a href="https://vip2859470.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">沃福沃有机肥菌肥生产厂家</div>
+                            </a><a href="https://vip4126887.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">冯守聪</div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modular-bg" id="items2">
+                <div class="l-c"
+                    style="background-image:url(https://image.cnhnb.com/image/png/miniapp/2021/01/18/f005688eea0945038e3cff0d2c1ec5e4.png);">
+                    <div class="l-c-t" style="border-color:#CA8000;color:#CA8000;">粮油米面</div>
+                    <div class="l-c-text" style="color:#CA8000;">产地直发 海量供应</div>
+                </div>
+                <div class="c-c">
+                    <div class="cate-block"><a href="/p/syy/" target="_blank" class="cate-name">食用油</a>
+                        <div class="cate-list">
+                            <a href="/p/niuyouguoyou/" target="_blank" class="cates-items">牛油果油</a>
+                            <a href="/p/scy/" target="_blank" class="cates-items">山茶油</a>
+                            <a href="/p/huashengyou/" target="_blank" class="cates-items">花生油</a>
+                            <a href="/p/gly/" target="_blank" class="cates-items">橄榄油</a>
+                            <a href="/p/ymy/" target="_blank" class="cates-items">玉米油</a>
+                            <a href="/p/czyo/" target="_blank" class="cates-items">菜籽油</a>
+                            <a href="/p/khzy/" target="_blank" class="cates-items">葵花籽油</a>
+                            <a href="/p/sly/" target="_blank" class="cates-items">色拉油</a>
+                            <a href="/p/hmy/" target="_blank" class="cates-items">火麻油</a>
+                            <a href="/p/ymzy/" target="_blank" class="cates-items">亚麻籽油</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/twp/" target="_blank" class="cate-name">调味品</a>
+                        <div class="cate-list">
+                            <a href="/p/junyou/" target="_blank" class="cates-items">菌油</a>
+                            <a href="/p/weijing/" target="_blank" class="cates-items">味精</a>
+                            <a href="/p/jijing/" target="_blank" class="cates-items">鸡精</a>
+                            <a href="/p/tang/" target="_blank" class="cates-items">糖</a>
+                            <a href="/p/cu/" target="_blank" class="cates-items">醋</a>
+                            <a href="/p/jiangyou/" target="_blank" class="cates-items">酱油</a>
+                            <a href="/p/haoyou/" target="_blank" class="cates-items">蚝油</a>
+                            <a href="/p/jiang/" target="_blank" class="cates-items">调味酱</a>
+                            <a href="/p/duojiao/" target="_blank" class="cates-items">剁椒</a>
+                            <a href="/p/twy/" target="_blank" class="cates-items">调味油</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/xxl/" target="_blank" class="cate-name">香辛料</a>
+                        <div class="cate-list">
+                            <a href="/p/guiz/" target="_blank" class="cates-items">桂子</a>
+                            <a href="/p/shiluozi/" target="_blank" class="cates-items">莳萝子</a>
+                            <a href="/p/hujiaofen/" target="_blank" class="cates-items">胡椒粉</a>
+                            <a href="/p/dusongzi/" target="_blank" class="cates-items">杜松子</a>
+                            <a href="/p/bailixiang/" target="_blank" class="cates-items">百里香</a>
+                            <a href="/p/glj/" target="_blank" class="cates-items">干辣椒</a>
+                            <a href="/p/ljf/" target="_blank" class="cates-items">辣椒粉</a>
+                            <a href="/p/hjf/" target="_blank" class="cates-items">胡椒</a>
+                            <a href="/p/zrf/" target="_blank" class="cates-items">孜然</a>
+                            <a href="/p/huajiao/" target="_blank" class="cates-items">花椒</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/gwdf/" target="_blank" class="cate-name">谷物粉淀粉</a>
+                        <div class="cate-list">
+                            <a href="/p/dianfen/" target="_blank" class="cates-items">淀粉</a>
+                            <a href="/p/mianfen/" target="_blank" class="cates-items">面粉</a>
+                            <a href="/p/mianmf/" target="_blank" class="cates-items">粘米粉</a>
+                            <a href="/p/huangdm/" target="_blank" class="cates-items">黄豆面</a>
+                            <a href="/p/yanmf/" target="_blank" class="cates-items">燕麦粉</a>
+                            <a href="/p/matf/" target="_blank" class="cates-items">马蹄粉</a>
+                            <a href="/p/gaolmf/" target="_blank" class="cates-items">高粱面粉</a>
+                            <a href="/p/yumm/" target="_blank" class="cates-items">玉米面</a>
+                            <a href="/p/doum/" target="_blank" class="cates-items">豆面</a>
+                            <a href="/p/hongdf/" target="_blank" class="cates-items">红豆粉</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/dzp/" target="_blank" class="cate-name">豆制品</a>
+                        <div class="cate-list">
+                            <a href="/p/meidouzha/" target="_blank" class="cates-items">霉豆渣</a>
+                            <a href="/p/doushi/" target="_blank" class="cates-items">豆豉</a>
+                            <a href="/p/douf/" target="_blank" class="cates-items">豆腐</a>
+                            <a href="/p/xiangg/" target="_blank" class="cates-items">香干</a>
+                            <a href="/p/fur/" target="_blank" class="cates-items">腐乳</a>
+                            <a href="/p/qianz/" target="_blank" class="cates-items">千张</a>
+                            <a href="/p/lanhg/" target="_blank" class="cates-items">兰花干</a>
+                            <a href="/p/suj/" target="_blank" class="cates-items">素鸡</a>
+                            <a href="/p/fuz/" target="_blank" class="cates-items">腐竹</a>
+                            <a href="/p/doufp/" target="_blank" class="cates-items">豆腐皮</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/msms/" target="_blank" class="cate-name">面食米食</a>
+                        <div class="cate-list"><a href="/p/bobo/" target="_blank" class="cates-items">饽饽</a>
+                            <a href="/p/lianggao/" target="_blank" class="cates-items">凉糕</a>
+                            <a href="/p/changfen/" target="_blank" class="cates-items">肠粉</a>
+                            <a href="/p/guotie/" target="_blank" class="cates-items">锅贴</a>
+                            <a href="/p/ximi/" target="_blank" class="cates-items">西米</a>
+                            <a href="/p/mantou/" target="_blank" class="cates-items">馒头</a>
+                            <a href="/p/menzi/" target="_blank" class="cates-items">焖子</a>
+                            <a href="/p/miantiao/" target="_blank" class="cates-items">面条</a>
+                            <a href="/p/jiaozi/" target="_blank" class="cates-items">饺子</a>
+                            <a href="/p/tangyuan/" target="_blank" class="cates-items">汤圆</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="r-c">
+                    <div class="l-r-c">
+                        <div class="l-r-c-t" style="border-color:#FFBA64;">好货推荐</div>
+                        <div class="supply-list">
+                            <div class="supply-items"><a href="/gongying/5382171/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/jpeg/head/2020/05/07/7e354c272efb41edaee5b842c9fd31f3.jpeg?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="中牟县 糯高粱" title="中牟县 糯高粱" class="shops-img-bg" data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">2.30</span>
+                                                元/斤
+                                            </div>
+                                            <div class="turnover" data-v-e24a6980="">
+                                                成交6240元
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title one-line" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980=""> 糯高粱</span>
+                                        </div>
+                                        <div class="cw-tags" data-v-e24a6980="">
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                保证金2000元
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                48小时发货
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y3.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/buy_protect.png"
+                                                alt="" class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="supply-items"><a href="/gongying/4668534/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/jpg/head/2021/09/11/007ee17ba34a4600a55f52e292e02b8f.jpg?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="迁安市大米  白西米舌尖上的美味白西米5斤装包邮" title="迁安市大米  白西米舌尖上的美味白西米5斤装包邮"
+                                        class="shops-img-bg" data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">4.20</span>
+                                                元/斤
+                                            </div>
+                                            <div class="turnover" data-v-e24a6980="">
+                                                成交628元
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title one-line" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980="">大米 白西米舌尖上的美味白西米5斤装包邮</span>
+                                        </div>
+                                        <div class="cw-tags" data-v-e24a6980="">
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                保证金2000元
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                72小时发货
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                部分包邮
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y3.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/buy_protect.png"
+                                                alt="" class="icon-imgs" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/gjgr.png" alt=""
+                                                class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="r-r-c">
+                        <div class="r-r-c-t" style="border-color:#FFBA64;">推荐供应商</div>
+                        <div class="r-shop-list"><a href="https://vip1138960.cnhnb.com/" target="_blank"
+                                class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">胡新祥</div>
+                            </a><a href="https://vip1999700.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">陕西省澄城县后林土农副产品加工</div>
+                            </a><a href="https://vip5725643.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">李永媚</div>
+                            </a><a href="https://vip2870976.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">顾旭吉</div>
+                            </a><a href="https://vip4327265.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">孙娇</div>
+                            </a><a href="https://vip572059615.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">浩雪土鸡养殖兼配送中心</div>
+                            </a><a href="https://vip3115170.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">今麦佳食品</div>
+                            </a><a href="https://vip4757039.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">速万食品</div>
+                            </a><a href="https://vip917071.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">艾波</div>
+                            </a><a href="https://vip1035759.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">海南瓜果来约吧</div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modular-bg" id="items3">
+                <div class="l-c"
+                    style="background-image:url(https://image.cnhnb.com/image/png/miniapp/2021/01/18/e3c51a67bb774631a17a86ec97376805.png);">
+                    <div class="l-c-t" style="border-color:#0AB37F;color:#0AB37F;">种子种苗</div>
+                    <div class="l-c-text" style="color:#0AB37F;">产地直发 海量供应</div>
+                </div>
+                <div class="c-c">
+                    <div class="cate-block"><a href="/p/sgzm/" target="_blank" class="cate-name">水果种苗</a>
+                        <div class="cate-list">
+                            <a href="/p/guniangguomiao/" target="_blank" class="cates-items">姑娘果苗</a>
+                            <a href="/p/biqizmiao/" target="_blank" class="cates-items">荸荠种苗</a>
+                            <a href="/p/houngm/" target="_blank" class="cates-items">猴脑果苗</a>
+                            <a href="/p/pgsm/" target="_blank" class="cates-items">苹果树苗</a>
+                            <a href="/p/lishumiao/" target="_blank" class="cates-items">梨树苗</a>
+                            <a href="/p/xiguamiao/" target="_blank" class="cates-items">西瓜苗</a>
+                            <a href="/p/mhtmiao/" target="_blank" class="cates-items">猕猴桃苗</a>
+                            <a href="/p/taoshumiao/" target="_blank" class="cates-items">桃树苗</a>
+                            <a href="/p/ganjumiao/" target="_blank" class="cates-items">柑桔苗</a>
+                            <a href="/p/youshumiao/" target="_blank" class="cates-items">柚树苗</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/hclzz/" target="_blank" class="cate-name">花草类种子</a>
+                        <div class="cate-list">
+                            <a href="/p/xiecaozz/" target="_blank" class="cates-items">缬草种子</a>
+                            <a href="/p/amiqinzz/" target="_blank" class="cates-items">阿米芹种子</a>
+                            <a href="/p/caiyecaozz/" target="_blank" class="cates-items">彩叶草种子</a>
+                            <a href="/p/lancitouzz/" target="_blank" class="cates-items">蓝刺头种子</a>
+                            <a href="/p/liubeilizz/" target="_blank" class="cates-items">六倍利种子</a>
+                            <a href="/p/fengxianhuazz/" target="_blank" class="cates-items">凤仙花种子</a>
+                            <a href="/p/changpuzz/" target="_blank" class="cates-items">菖蒲种子</a>
+                            <a href="/p/fushouhuazz/" target="_blank" class="cates-items">福寿花种子</a>
+                            <a href="/p/jianmazz/" target="_blank" class="cates-items">剑麻种子</a>
+                            <a href="/p/baizizz/" target="_blank" class="cates-items">稗子种子</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/sclzz/" target="_blank" class="cate-name">蔬菜种子</a>
+                        <div class="cate-list">
+                            <a href="/p/jianpczz/" target="_blank" class="cates-items">碱蓬草种子</a>
+                            <a href="/p/xiaogensuanzz/" target="_blank" class="cates-items">小根蒜种子</a>
+                            <a href="/p/shankuizz/" target="_blank" class="cates-items">山葵种子</a>
+                            <a href="/p/doubancaizz/" target="_blank" class="cates-items">豆瓣菜种子</a>
+                            <a href="/p/djzz/" target="_blank" class="cates-items">豆角种子</a>
+                            <a href="/p/hjzz/" target="_blank" class="cates-items">花椒种子</a>
+                            <a href="/p/xczz/" target="_blank" class="cates-items">香菜种子</a>
+                            <a href="/p/qczz/" target="_blank" class="cates-items">荠菜种子</a>
+                            <a href="/p/jczz/" target="_blank" class="cates-items">韭菜种子</a>
+                            <a href="/p/kujzz/" target="_blank" class="cates-items">苦苣种子</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/sglzz/" target="_blank" class="cate-name">水果类种子</a>
+                        <div class="cate-list">
+                            <a href="/p/jiabaoguozz/" target="_blank" class="cates-items">嘉宝果种子</a>
+                            <a href="/p/cilizz/" target="_blank" class="cates-items">刺梨种子</a>
+                            <a href="/p/renshenguozz/" target="_blank" class="cates-items">人参果种子</a>
+                            <a href="/p/boluomzz/" target="_blank" class="cates-items">菠萝蜜种子</a>
+                            <a href="/p/mangguozz/" target="_blank" class="cates-items">芒果种子</a>
+                            <a href="/p/ningmzz/" target="_blank" class="cates-items">柠檬种子</a>
+                            <a href="/p/lmzz/" target="_blank" class="cates-items">蓝莓种子</a>
+                            <a href="/p/lzzz/" target="_blank" class="cates-items">李子种子</a>
+                            <a href="/p/czzz/" target="_blank" class="cates-items">柿子种子</a>
+                            <a href="/p/mhtzz/" target="_blank" class="cates-items">猕猴桃种子</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/lylzz/" target="_blank" class="cate-name">粮油类种子</a>
+                        <div class="cate-list">
+                            <a href="/p/yimizz/" target="_blank" class="cates-items">薏米种子</a>
+                            <a href="/p/youkuizz/" target="_blank" class="cates-items">油葵种子</a>
+                            <a href="/p/hszz/" target="_blank" class="cates-items">花生种子</a>
+                            <a href="/p/glzz/" target="_blank" class="cates-items">高粱种子</a>
+                            <a href="/p/youcaizizhongzi/" target="_blank" class="cates-items">油菜籽种子</a>
+                            <a href="/p/xiaomzz/" target="_blank" class="cates-items">小麦种子</a>
+                            <a href="/p/limzz/" target="_blank" class="cates-items">藜麦种子</a>
+                            <a href="/p/hdzz/" target="_blank" class="cates-items">黄豆种子</a>
+                            <a href="/p/kmzz/" target="_blank" class="cates-items">蓖麻种子</a>
+                            <a href="/p/damzz/" target="_blank" class="cates-items">大麦种子</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/mmz/" target="_blank" class="cate-name">苗木类种子</a>
+                        <div class="cate-list">
+                            <a href="/p/houpuzhongz/" target="_blank" class="cates-items">厚朴种子</a>
+                            <a href="/p/hetengzz/" target="_blank" class="cates-items">葛藤种子</a>
+                            <a href="/p/anshuzz/" target="_blank" class="cates-items">桉树种子</a>
+                            <a href="/p/masangzz/" target="_blank" class="cates-items">马桑种子</a>
+                            <a href="/p/chesangzizz/" target="_blank" class="cates-items">车桑子种子</a>
+                            <a href="/p/paohuarunnanzz/" target="_blank" class="cates-items">刨花润楠种子</a>
+                            <a href="/p/xiuqiuzz/" target="_blank" class="cates-items">绣球种子</a>
+                            <a href="/p/wuhuanzizz/" target="_blank" class="cates-items">无患子种子</a>
+                            <a href="/p/jiulixzz/" target="_blank" class="cates-items">九里香种子</a>
+                            <a href="/p/huaqiuzz/" target="_blank" class="cates-items">花楸种子</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="r-c">
+                    <div class="l-r-c">
+                        <div class="l-r-c-t" style="border-color:#63E4BC;">好货推荐</div>
+                        <div class="supply-list">
+                            <div class="supply-items"><a href="/gongying/5083677/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/jpg/head/2020/02/28/a9b8ba63d4b3402993c3a61ca2ecf469.jpg?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="青州市假龙头种子  假龙头假龙假龙头基地直销   50万假龙头" title="青州市假龙头种子  假龙头假龙假龙头基地直销   50万假龙头"
+                                        class="shops-img-bg" data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">0.20</span>
+                                                元/颗
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title one-line" data-v-e24a6980="">
+                                            <span data-v-e24a6980="">假龙头种子 假龙头假龙假龙头基地直销 50万假龙头</span>
+                                        </div>
+                                        <div class="cw-tags" data-v-e24a6980="">
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                保证金2000元
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                24小时发货
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y3.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/buy_protect.png"
+                                                alt="" class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="supply-items"><a href="/gongying/6139930/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/jpeg/head/2021/03/11/b3ea044b625941b498af8dc3db27af26.jpeg?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="寿光市丝瓜种子  高产杂交中绿丝瓜种" title="寿光市丝瓜种子  高产杂交中绿丝瓜种" class="shops-img-bg"
+                                        data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">120.00</span>
+                                                元/斤
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title one-line" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980="">丝瓜种子 高产杂交中绿丝瓜种</span>
+                                        </div>
+                                        <div class="cw-tags" data-v-e24a6980="">
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                包邮
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y2.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/gjgr.png" alt=""
+                                                class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="r-r-c">
+                        <div class="r-r-c-t" style="border-color:#63E4BC;">推荐供应商</div>
+                        <div class="r-shop-list"><a href="https://vip3900480.cnhnb.com/" target="_blank"
+                                class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">富源县富村镇高原魔芋农民合作社</div>
+                            </a><a href="https://vip555923956.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">诚浩农业耀森种苗</div>
+                            </a><a href="https://vip4044758.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">修立农资店</div>
+                            </a><a href="https://vip946622.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">恭城县栗木镇杨氏种苗基地</div>
+                            </a><a href="https://vip5648747.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">辽宁昱兴健康产业有限公司</div>
+                            </a><a href="https://vip934380.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">付相磊</div>
+                            </a><a href="https://vip5404870.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">胡亚波</div>
+                            </a><a href="https://vip5832419.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">小农民苗木</div>
+                            </a><a href="https://vip4271625.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">河北赫丰农业科技有限公司</div>
+                            </a><a href="https://vip1229368.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">王维普</div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modular-bg" id="items4">
+                <div class="l-c"
+                    style="background-image:url(https://image.cnhnb.com/image/png/miniapp/2021/01/18/37e45ca73585463f92e56e8cd3087695.png);">
+                    <div class="l-c-t" style="border-color:#79AD0F;color:#79AD0F;">农副加工</div>
+                    <div class="l-c-text" style="color:#79AD0F;">产地直发 海量供应</div>
+                </div>
+                <div class="c-c">
+                    <div class="cate-block"><a href="/p/ganguojiang/" target="_blank" class="cate-name">干果坚果</a>
+                        <div class="cate-list">
+                            <a href="/p/shibingo/" target="_blank" class="cates-items">柿饼</a>
+                            <a href="/p/hongzaoo/" target="_blank" class="cates-items">红枣</a>
+                            <a href="/p/gouqi/" target="_blank" class="cates-items">枸杞</a>
+                            <a href="/p/hetaoo/" target="_blank" class="cates-items">核桃</a>
+                            <a href="/p/guazi/" target="_blank" class="cates-items">瓜子</a>
+                            <a href="/p/banli/" target="_blank" class="cates-items">板栗</a>
+                            <a href="/p/putaog/" target="_blank" class="cates-items">葡萄干</a>
+                            <a href="/p/gyg/" target="_blank" class="cates-items">桂圆干</a>
+                            <a href="/p/gshanzhao/" target="_blank" class="cates-items">山楂干</a>
+                            <a href="/p/baiguo/" target="_blank" class="cates-items">白果</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/chaye/" target="_blank" class="cate-name">茶叶</a>
+                        <div class="cate-list">
+                            <a href="/p/heichao/" target="_blank" class="cates-items">黑茶</a>
+                            <a href="/p/puero/" target="_blank" class="cates-items">普洱</a>
+                            <a href="/p/wlco/" target="_blank" class="cates-items">乌龙茶</a>
+                            <a href="/p/lvchao/" target="_blank" class="cates-items">绿茶</a>
+                            <a href="/p/hongchao/" target="_blank" class="cates-items">红茶</a>
+                            <a href="/p/huachao/" target="_blank" class="cates-items">花草茶</a>
+                            <a href="/p/huangchao/" target="_blank" class="cates-items">黄茶</a>
+                            <a href="/p/baichao/" target="_blank" class="cates-items">白茶</a>
+                            <a href="/p/chafen/" target="_blank" class="cates-items">茶粉</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/rouzhipinjiag/" target="_blank" class="cate-name">肉制品加工</a>
+                        <div class="cate-list">
+                            <a href="/p/luyangr/" target="_blank" class="cates-items">熟羊肉</a>
+                            <a href="/p/huotui/" target="_blank" class="cates-items">火腿</a>
+                            <a href="/p/larou/" target="_blank" class="cates-items">腊肉</a>
+                            <a href="/p/banya/" target="_blank" class="cates-items">板鸭</a>
+                            <a href="/p/roujuan/" target="_blank" class="cates-items">肉卷</a>
+                            <a href="/p/yanya/" target="_blank" class="cates-items">腌/咸鸭</a>
+                            <a href="/p/yanrou/" target="_blank" class="cates-items">腌/咸肉</a>
+                            <a href="/p/yane/" target="_blank" class="cates-items">腌/咸鹅</a>
+                            <a href="/p/yanji/" target="_blank" class="cates-items">腌/咸鸡</a>
+                            <a href="/p/shaoji/" target="_blank" class="cates-items">烧鸡</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/shuicaijiagong/" target="_blank" class="cate-name">水产加工</a>
+                        <div class="cate-list">
+                            <a href="/p/ziwugan/" target="_blank" class="cates-items">籽乌干</a>
+                            <a href="/p/zhangyug/" target="_blank" class="cates-items">章鱼干</a>
+                            <a href="/p/yuling/" target="_blank" class="cates-items">鱼鳞干</a>
+                            <a href="/p/youyugan/" target="_blank" class="cates-items">鱿鱼干</a>
+                            <a href="/p/yanluo/" target="_blank" class="cates-items">腌/咸螺</a>
+                            <a href="/p/xianzig/" target="_blank" class="cates-items">蚬子干</a>
+                            <a href="/p/xianyu/" target="_blank" class="cates-items">腌/咸鱼</a>
+                            <a href="/p/xiaren/" target="_blank" class="cates-items">虾仁</a>
+                            <a href="/p/xiapi/" target="_blank" class="cates-items">虾皮</a>
+                            <a href="/p/xiagan/" target="_blank" class="cates-items">虾干</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/yyzbp/" target="_blank" class="cate-name">营养滋补</a>
+                        <div class="cate-list">
+                            <a href="/p/fengmi/" target="_blank" class="cates-items">蜂蜜</a>
+                            <a href="/p/huafen/" target="_blank" class="cates-items">花粉</a>
+                            <a href="/p/taojiaol/" target="_blank" class="cates-items">桃胶</a>
+                            <a href="/p/xueyan/" target="_blank" class="cates-items">雪燕</a>
+                            <a href="/p/zaojiaomi/" target="_blank" class="cates-items">皂角米</a>
+                            <a href="/p/yujiao/" target="_blank" class="cates-items">鱼鳔</a>
+                            <a href="/p/fengwangj/" target="_blank" class="cates-items">蜂王浆</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/lstc/" target="_blank" class="cate-name">速食品</a>
+                        <div class="cate-list">
+                            <a href="/p/sudongsg/" target="_blank" class="cates-items">速冻蔬果</a>
+                            <a href="/p/bggd/" target="_blank" class="cates-items">饼干糕点</a>
+                            <a href="/p/ggmx/" target="_blank" class="cates-items">蜜饯果脯</a>
+                            <a href="/p/xxsp/" target="_blank" class="cates-items">休闲零食</a>
+                            <a href="/p/guantou/" target="_blank" class="cates-items">罐头</a>
+                            <a href="/p/fangbiansushi/" target="_blank" class="cates-items">方便食品</a>
+                            <a href="/p/tangguo/" target="_blank" class="cates-items">糖果</a>
+                            <a href="/p/wanzi/" target="_blank" class="cates-items">丸滑类</a>
+                            <a href="/p/chongyin/" target="_blank" class="cates-items">冲饮</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="r-c">
+                    <div class="l-r-c">
+                        <div class="l-r-c-t" style="border-color:#ACDA4F;">好货推荐</div>
+                        <div class="supply-list">
+                            <div class="supply-items"><a href="/gongying/4000899/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/png/head/2019/05/27/3cff47a3fbe34794a66843fcc930bd8c.png?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="拜城县无花果干 超大特级新疆自然风干 1000克包邮量大价优新鲜干"
+                                        title="拜城县无花果干 超大特级新疆自然风干 1000克包邮量大价优新鲜干" class="shops-img-bg"
+                                        data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">28.00</span>
+                                                元/斤
+                                            </div>
+                                            <div class="turnover" data-v-e24a6980="">
+                                                成交4580元
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title one-line" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980="">无花果干 超大特级新疆自然风干 1000克包邮量大价优新鲜干</span>
+                                        </div>
+                                        <div class="cw-tags" data-v-e24a6980="">
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                保证金2000元
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                48小时发货
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y3.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/buy_protect.png"
+                                                alt="" class="icon-imgs" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/gjqy.png" alt=""
+                                                class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="supply-items"><a href="/gongying/5576989/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/jpg/head/2022/04/21/c24aa259eba249689b8d08d977d5fce2.jpg?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="乐陵市骏枣电商拼多多袋装新疆和田大枣加工厂按客户要包装日供6万袋" title="乐陵市骏枣电商拼多多袋装新疆和田大枣加工厂按客户要包装日供6万袋"
+                                        class="shops-img-bg" data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">1.60</span>
+                                                元/袋
+                                            </div>
+                                            <div class="turnover" data-v-e24a6980="">
+                                                成交5600元
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title one-line" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980="">骏枣电商拼多多袋装新疆和田大枣加工厂按客户要包装日供6万袋</span>
+                                        </div>
+                                        <div class="cw-tags" data-v-e24a6980="">
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                保证金2000元
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                48小时发货
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y3.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/buy_protect.png"
+                                                alt="" class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="r-r-c">
+                        <div class="r-r-c-t" style="border-color:#ACDA4F;">推荐供应商</div>
+                        <div class="r-shop-list"><a href="https://vip3790485.cnhnb.com/" target="_blank"
+                                class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">钦海水产批发</div>
+                            </a><a href="https://vip813385.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">小裴绿壳土鸡蛋养殖场</div>
+                            </a><a href="https://vip759858.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">麦晨农副产品加工厂</div>
+                            </a><a href="https://vip5207538.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">湖北优优食品</div>
+                            </a><a href="https://vip822105.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">黎耀有</div>
+                            </a><a href="https://vip618345.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">陈志勇</div>
+                            </a><a href="https://vip3869284.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">费红杰</div>
+                            </a><a href="https://vip936978.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">临沂商城驭飞干果商行</div>
+                            </a><a href="https://vip299349966.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">琛琛海产品</div>
+                            </a><a href="https://vip1688847.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">阿拉善盟天瑜商贸有限责任公司</div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modular-bg" id="items5">
+                <div class="l-c"
+                    style="background-image:url(https://image.cnhnb.com/image/png/miniapp/2021/01/18/5ee15b2492c14b43ae42428c7ebb546d.png);">
+                    <div class="l-c-t" style="border-color:#3288CB;color:#3288CB;">水产</div>
+                    <div class="l-c-text" style="color:#3288CB;">产地直发 海量供应</div>
+                </div>
+                <div class="c-c">
+                    <div class="cate-block"><a href="/p/shuichangzhongm/" target="_blank" class="cate-name">水产种苗</a>
+                        <div class="cate-list">
+                            <a href="/p/yumiao/" target="_blank" class="cates-items">鱼苗</a>
+                            <a href="/p/jiayumiao/" target="_blank" class="cates-items">甲鱼苗</a>
+                            <a href="/p/xiamiao/" target="_blank" class="cates-items">虾苗</a>
+                            <a href="/p/xiemiao/" target="_blank" class="cates-items">蟹苗</a>
+                            <a href="/p/gm/" target="_blank" class="cates-items">蛙苗</a>
+                            <a href="/p/haomiao/" target="_blank" class="cates-items">蚝苗</a>
+                            <a href="/p/guimiao/" target="_blank" class="cates-items">龟苗</a>
+                            <a href="/p/luomiao/" target="_blank" class="cates-items">螺苗</a>
+                            <a href="/p/haishenmiao/" target="_blank" class="cates-items">海参苗</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/xialei/" target="_blank" class="cate-name">虾类</a>
+                        <div class="cate-list"><a href="/p/duixiao/" target="_blank" class="cates-items">对虾</a>
+                            <a href="/p/xlx/" target="_blank" class="cates-items">小龙虾</a>
+                            <a href="/p/jwx/" target="_blank" class="cates-items">基围虾</a>
+                            <a href="/p/mixiao/" target="_blank" class="cates-items">米虾</a>
+                            <a href="/p/lx/" target="_blank" class="cates-items">龙虾</a>
+                            <a href="/p/qingxia/" target="_blank" class="cates-items">青虾</a>
+                            <a href="/p/pipixia/" target="_blank" class="cates-items">皮皮虾</a>
+                            <a href="/p/mudanxia/" target="_blank" class="cates-items">牡丹虾</a>
+                            <a href="/p/loukuxia/" target="_blank" class="cates-items">蝼蛄虾</a>
+                            <a href="/p/lixia/" target="_blank" class="cates-items">蛎虾</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/beilei/" target="_blank" class="cate-name">贝类</a>
+                        <div class="cate-list">
+                            <a href="/p/shenghao/" target="_blank" class="cates-items">生蚝</a>
+                            <a href="/p/zzb/" target="_blank" class="cates-items">珍珠贝</a>
+                            <a href="/p/banyuo/" target="_blank" class="cates-items">鲍鱼</a>
+                            <a href="/p/hebango/" target="_blank" class="cates-items">蚌</a>
+                            <a href="/p/shanbeio/" target="_blank" class="cates-items">扇贝</a>
+                            <a href="/p/dsl/" target="_blank" class="cates-items">淡水螺</a>
+                            <a href="/p/gelio/" target="_blank" class="cates-items">蛤蜊</a>
+                            <a href="/p/chengz/" target="_blank" class="cates-items">蛏子</a>
+                            <a href="/p/qinkou/" target="_blank" class="cates-items">青口</a>
+                            <a href="/p/haixianlihe/" target="_blank" class="cates-items">海鲜礼盒装</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/shiyonyu/" target="_blank" class="cate-name">食用鱼类</a>
+                        <div class="cate-list">
+                            <a href="/p/luyuo/" target="_blank" class="cates-items">鲈鱼</a>
+                            <a href="/p/liyuo/" target="_blank" class="cates-items">鲤鱼</a>
+                            <a href="/p/niqiuo/" target="_blank" class="cates-items">泥鳅</a>
+                            <a href="/p/yinyuo/" target="_blank" class="cates-items">银鱼</a>
+                            <a href="/p/caoyuo/" target="_blank" class="cates-items">草鱼</a>
+                            <a href="/p/huangshano/" target="_blank" class="cates-items">黄鳝</a>
+                            <a href="/p/qingyuo/" target="_blank" class="cates-items">青鱼</a>
+                            <a href="/p/jiyuo/" target="_blank" class="cates-items">鲫鱼</a>
+                            <a href="/p/lianyuo/" target="_blank" class="cates-items">鲢鱼</a>
+                            <a href="/p/nianyuo/" target="_blank" class="cates-items">鲶鱼</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/xielei/" target="_blank" class="cate-name">蟹类</a>
+                        <div class="cate-list">
+                            <a href="/p/dzxo/" target="_blank" class="cates-items">大闸蟹</a>
+                            <a href="/p/suozixie/" target="_blank" class="cates-items">梭子蟹</a>
+                            <a href="/p/qingxie/" target="_blank" class="cates-items">青蟹</a>
+                            <a href="/p/zhaochaoxie/" target="_blank" class="cates-items">招潮蟹</a>
+                            <a href="/p/shixie/" target="_blank" class="cates-items">石蟹</a>
+                            <a href="/p/zhenbaoxie/" target="_blank" class="cates-items">珍宝蟹</a>
+                            <a href="/p/changjiaoxie/" target="_blank" class="cates-items">长脚蟹</a>
+                            <a href="/p/yantouxie/" target="_blank" class="cates-items">岩头蟹</a>
+                            <a href="/p/xuexie/" target="_blank" class="cates-items">雪蟹</a>
+                            <a href="/p/xiangbinxie/" target="_blank" class="cates-items">香槟蟹</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/luanti/" target="_blank" class="cate-name">软体类</a>
+                        <div class="cate-list">
+                            <a href="/p/moyuo/" target="_blank" class="cates-items">墨鱼</a>
+                            <a href="/p/youyuo/" target="_blank" class="cates-items">鱿鱼</a>
+                            <a href="/p/haizhe/" target="_blank" class="cates-items">海蜇</a>
+                            <a href="/p/haisen/" target="_blank" class="cates-items">海参</a>
+                            <a href="/p/niding/" target="_blank" class="cates-items">泥丁</a>
+                            <a href="/p/niluo/" target="_blank" class="cates-items">泥螺</a>
+                            <a href="/p/shachong/" target="_blank" class="cates-items">沙虫</a>
+                            <a href="/p/zhangyu/" target="_blank" class="cates-items">章鱼</a>
+                            <a href="/p/mahuan/" target="_blank" class="cates-items">蚂蟥</a>
+                            <a href="/p/haichang/" target="_blank" class="cates-items">海肠</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="r-c">
+                    <div class="l-r-c">
+                        <div class="l-r-c-t" style="border-color:#73BCF4;">好货推荐</div>
+                        <div class="supply-list">
+                            <div class="supply-items"><a href="/gongying/5720584/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/jpeg/head/2021/04/13/de24b38996c7421f9764202fb98e0cc4.jpeg?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="南宁鲮鱼苗  大量供应，大小规格土凌鱼苗 ，凌鱼苗，水花苗 ，一手货源。"
+                                        title="南宁鲮鱼苗  大量供应，大小规格土凌鱼苗 ，凌鱼苗，水花苗 ，一手货源。" class="shops-img-bg"
+                                        data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">0.10</span>
+                                                元/条
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title one-line" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980="">鲮鱼苗 大量供应，大小规格土凌鱼苗 ，凌鱼苗，水花苗 ，一手货源。</span>
+                                        </div>
+                                        <div class="cw-tags" data-v-e24a6980="">
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                保证金2000元
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y2.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/buy_protect.png"
+                                                alt="" class="icon-imgs" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/gjgr.png" alt=""
+                                                class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="supply-items"><a href="/gongying/6826570/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/png/head/2021/12/04/e710c447ceed46e4801c751bc68b421c.png?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="湛江 台山湛江刺身新鲜生蚝 海鲜水产牡蛎 中大蚝鲜活带壳生蚝 产地"
+                                        title="湛江 台山湛江刺身新鲜生蚝 海鲜水产牡蛎 中大蚝鲜活带壳生蚝 产地" class="shops-img-bg"
+                                        data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">7.60</span>
+                                                元/斤
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title one-line" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980=""> 台山湛江刺身新鲜生蚝 海鲜水产牡蛎 中大蚝鲜活带壳生蚝 产地</span>
+                                        </div>
+                                        <div class="cw-tags" data-v-e24a6980="">
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                保证金2000元
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                72小时发货
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y2.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/buy_protect.png"
+                                                alt="" class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="r-r-c">
+                        <div class="r-r-c-t" style="border-color:#73BCF4;">推荐供应商</div>
+                        <div class="r-shop-list"><a href="https://vip6305764.cnhnb.com/" target="_blank"
+                                class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">张根</div>
+                            </a><a href="https://vip5818982.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">三合鱼业养殖基地</div>
+                            </a><a href="https://vip911252400.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">盛泰甲鱼种苗孵化培育基地</div>
+                            </a><a href="https://vip5207538.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">湖北优优食品</div>
+                            </a><a href="https://vip990000.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">广州粤禧水产鱼苗</div>
+                            </a><a href="https://vip913212076.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">邱记生鲜蚝业</div>
+                            </a><a href="https://vip2105354.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">澳渔水产养殖场</div>
+                            </a><a href="https://vip582430727.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">广州万胜水产养殖基地</div>
+                            </a><a href="https://vip730102858.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">华珍海带加工厂</div>
+                            </a><a href="https://vip5241490.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">李志军</div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modular-bg" id="items6">
+                <div class="l-c"
+                    style="background-image:url(https://image.cnhnb.com/image/png/miniapp/2021/01/18/011c3d09cb2642d38f970ed1f7248d9c.png);">
+                    <div class="l-c-t" style="border-color:#DC5353;color:#DC5353;">水果</div>
+                    <div class="l-c-text" style="color:#DC5353;">产地直发 海量供应</div>
+                </div>
+                <div class="c-c">
+                    <div class="cate-block"><a href="/p/rdsg/" target="_blank" class="cate-name">热带水果</a>
+                        <div class="cate-list">
+                            <a href="/p/mangguo/" target="_blank" class="cates-items">芒果</a>
+                            <a href="/p/lizhi/" target="_blank" class="cates-items">荔枝</a>
+                            <a href="/p/longyan/" target="_blank" class="cates-items">龙眼</a>
+                            <a href="/p/boluo/" target="_blank" class="cates-items">菠萝</a>
+                            <a href="/p/hng/" target="_blank" class="cates-items">火龙果</a>
+                            <a href="/p/xiangj/" target="_blank" class="cates-items">香蕉</a>
+                            <a href="/p/liulian/" target="_blank" class="cates-items">榴莲</a>
+                            <a href="/p/mugua/" target="_blank" class="cates-items">木瓜</a>
+                            <a href="/p/lianwu/" target="_blank" class="cates-items">莲雾</a>
+                            <a href="/p/shanzhuo/" target="_blank" class="cates-items">山竹</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/gjl/" target="_blank" class="cate-name">柑橘类</a>
+                        <div class="cate-list">
+                            <a href="/p/ningmeng/" target="_blank" class="cates-items">柠檬</a>
+                            <a href="/p/ganju/" target="_blank" class="cates-items">柑桔</a>
+                            <a href="/p/jinju/" target="_blank" class="cates-items">金桔</a>
+                            <a href="/p/chengzi/" target="_blank" class="cates-items">橙子</a>
+                            <a href="/p/youzi/" target="_blank" class="cates-items">柚子</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/jgl/" target="_blank" class="cate-name">浆果类</a>
+                        <div class="cate-list">
+                            <a href="/p/putao/" target="_blank" class="cates-items">葡萄</a>
+                            <a href="/p/caomei/" target="_blank" class="cates-items">草莓</a>
+                            <a href="/p/shumei/" target="_blank" class="cates-items">树莓</a>
+                            <a href="/p/slg/" target="_blank" class="cates-items">圣女果</a>
+                            <a href="/p/sangshen/" target="_blank" class="cates-items">桑葚</a>
+                            <a href="/p/lanmei/" target="_blank" class="cates-items">蓝莓</a>
+                            <a href="/p/heiguohuaqiuguo/" target="_blank" class="cates-items">黑果花楸果</a>
+                            <a href="/p/mihoutao/" target="_blank" class="cates-items">猕猴桃</a>
+                            <a href="/p/shizi/" target="_blank" class="cates-items">柿子</a>
+                            <a href="/p/bxg/" target="_blank" class="cates-items">百香果</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/ggl/" target="_blank" class="cate-name">瓜果类</a>
+                        <div class="cate-list">
+                            <a href="/p/xigua/" target="_blank" class="cates-items">西瓜</a>
+                            <a href="/p/tiangua/" target="_blank" class="cates-items">甜瓜</a>
+                            <a href="/p/hmg/" target="_blank" class="cates-items">哈密瓜</a>
+                            <a href="/p/bayuegua/" target="_blank" class="cates-items">八月瓜</a>
+                            <a href="/p/hsg/" target="_blank" class="cates-items">火参果</a>
+                            <a href="/p/jiuyuegua/" target="_blank" class="cates-items">九月瓜</a>
+                            <a href="/p/dsg/" target="_blank" class="cates-items">地稍瓜</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/hgrgl/" target="_blank" class="cate-name">核果仁果类</a>
+                        <div class="cate-list">
+                            <a href="/p/pingguo/" target="_blank" class="cates-items">苹果</a>
+                            <a href="/p/liz/" target="_blank" class="cates-items">梨</a>
+                            <a href="/p/shanzha/" target="_blank" class="cates-items">山楂</a>
+                            <a href="/p/shaguo/" target="_blank" class="cates-items">沙果</a>
+                            <a href="/p/lizi/" target="_blank" class="cates-items">李子</a>
+                            <a href="/p/xianzao/" target="_blank" class="cates-items">鲜枣</a>
+                            <a href="/p/xin/" target="_blank" class="cates-items">杏</a>
+                            <a href="/p/yangmei/" target="_blank" class="cates-items">杨梅</a>
+                            <a href="/p/qinmei/" target="_blank" class="cates-items">青梅</a>
+                            <a href="/p/mitao/" target="_blank" class="cates-items">蜜桃</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="r-c">
+                    <div class="l-r-c">
+                        <div class="l-r-c-t" style="border-color:#FF9898;">好货推荐</div>
+                        <div class="supply-list">
+                            <div class="supply-items"><a href="/gongying/4902300/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/jpg/head/2021/08/30/e4bd1fb8ae364be08a434dc348471e7d.jpg?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="南宁新鲜青金桔 小青桔 奶茶饮品甜品店酒吧制作青桔茶原料包邮" title="南宁新鲜青金桔 小青桔 奶茶饮品甜品店酒吧制作青桔茶原料包邮"
+                                        class="shops-img-bg" data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">4.50</span>
+                                                元/斤
+                                            </div>
+                                            <div class="turnover" data-v-e24a6980="">
+                                                成交5012.4元
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title one-line" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980="">新鲜青金桔 小青桔 奶茶饮品甜品店酒吧制作青桔茶原料包邮</span>
+                                        </div>
+                                        <div class="cw-tags" data-v-e24a6980="">
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                保证金2000元
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                48小时发货
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                部分包邮
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y3.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/buy_protect.png"
+                                                alt="" class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="supply-items"><a href="/gongying/2395070/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/png/head/2021/10/12/9730fde0993c47dca0bc304c96bfaec4.png?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="虞城县红富士苹果  优质冰糖心红富士，火爆销售，诚信经营！大量供货"
+                                        title="虞城县红富士苹果  优质冰糖心红富士，火爆销售，诚信经营！大量供货" class="shops-img-bg"
+                                        data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">0.40</span>
+                                                元/斤
+                                            </div>
+                                            <div class="turnover" data-v-e24a6980="">
+                                                成交5.6万元
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title one-line" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980="">红富士苹果 优质冰糖心红富士，火爆销售，诚信经营！大量供货</span>
+                                        </div>
+                                        <div class="cw-tags" data-v-e24a6980="">
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                保证金2000元
+                                            </div>
+                                            <div class="cw-tag icon-item-005" data-v-e24a6980="">
+                                                24小时发货
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y3.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/buy_protect.png"
+                                                alt="" class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="r-r-c">
+                        <div class="r-r-c-t" style="border-color:#FF9898;">推荐供应商</div>
+                        <div class="r-shop-list"><a href="https://vip807864.cnhnb.com/" target="_blank"
+                                class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">虞城县刘正水果销售部</div>
+                            </a><a href="https://vip3653533.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">梁定丰海南椰子批发</div>
+                            </a><a href="https://vip4371756.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">李长发</div>
+                            </a><a href="https://vip6054182.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">木林森农场水果</div>
+                            </a><a href="https://vip4452471.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">云南水果供应链</div>
+                            </a><a href="https://vip4606223.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">冠县润果果蔬</div>
+                            </a><a href="https://vip3107702.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">杨世兵</div>
+                            </a><a href="https://vip3064215.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">诚心诚意赣南水果行</div>
+                            </a><a href="https://vip4905756.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">小赵盛鑫康食品中心</div>
+                            </a><a href="https://vip936357391.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">徐旭</div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modular-bg" id="items7">
+                <div class="l-c"
+                    style="background-image:url(https://image.cnhnb.com/image/png/miniapp/2021/01/18/db8e487fc1b440ff88682523ccc826af.png);">
+                    <div class="l-c-t" style="border-color:#D57F1D;color:#D57F1D;">禽畜肉蛋</div>
+                    <div class="l-c-text" style="color:#D57F1D;">产地直发 海量供应</div>
+                </div>
+                <div class="c-c">
+                    <div class="cate-block"><a href="/p/qinchumiao/" target="_blank" class="cate-name">禽畜苗</a>
+                        <div class="cate-list">
+                            <a href="/p/jimiao/" target="_blank" class="cates-items">鸡苗</a>
+                            <a href="/p/yamiao/" target="_blank" class="cates-items">鸭苗</a>
+                            <a href="/p/emiao/" target="_blank" class="cates-items">鹅苗</a>
+                            <a href="/p/zhumiao/" target="_blank" class="cates-items">猪苗</a>
+                            <a href="/p/tnm/" target="_blank" class="cates-items">鸵鸟苗</a>
+                            <a href="/p/tym/" target="_blank" class="cates-items">土元苗</a>
+                            <a href="/p/emm/" target="_blank" class="cates-items">鸸鹋苗</a>
+                            <a href="/p/zhegumiao/" target="_blank" class="cates-items">鹧鸪苗</a>
+                            <a href="/p/douchongmiao/" target="_blank" class="cates-items">豆虫苗</a>
+                            <a href="/p/anchunmiao/" target="_blank" class="cates-items">鹌鹑苗</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/roulei/" target="_blank" class="cate-name">肉类</a>
+                        <div class="cate-list">
+                            <a href="/p/tezhongrl/" target="_blank" class="cates-items">特种肉</a>
+                            <a href="/p/jifuchan/" target="_blank" class="cates-items">鸡副产品</a>
+                            <a href="/p/yafuchan/" target="_blank" class="cates-items">鸭副产品</a>
+                            <a href="/p/efuchan/" target="_blank" class="cates-items">鹅副产品</a>
+                            <a href="/p/zhufuchan/" target="_blank" class="cates-items">猪副产品</a>
+                            <a href="/p/niufuchan/" target="_blank" class="cates-items">牛副产品</a>
+                            <a href="/p/yangfuc/" target="_blank" class="cates-items">羊副产品</a>
+                            <a href="/p/tezfuchan/" target="_blank" class="cates-items">特种副产品</a>
+                            <a href="/p/zhurou/" target="_blank" class="cates-items">猪肉</a>
+                            <a href="/p/niurou/" target="_blank" class="cates-items">牛肉</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/danlei/" target="_blank" class="cate-name">蛋类</a>
+                        <div class="cate-list">
+                            <a href="/p/jidan/" target="_blank" class="cates-items">鸡蛋</a>
+                            <a href="/p/yadan/" target="_blank" class="cates-items">鸭蛋</a>
+                            <a href="/p/acd/" target="_blank" class="cates-items">鹌鹑蛋</a>
+                            <a href="/p/edan/" target="_blank" class="cates-items">鹅蛋</a>
+                            <a href="/p/gzd/" target="_blank" class="cates-items">鸽子蛋</a>
+                            <a href="/p/pidan/" target="_blank" class="cates-items">皮蛋</a>
+                            <a href="/p/xiandan/" target="_blank" class="cates-items">咸蛋</a>
+                            <a href="/p/tzd/" target="_blank" class="cates-items">特种蛋</a>
+                            <a href="/p/jiayudan/" target="_blank" class="cates-items">甲鱼蛋</a>
+                            <a href="/p/zdan/" target="_blank" class="cates-items">种蛋</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/huochu/" target="_blank" class="cate-name">活畜</a>
+                        <div class="cate-list">
+                            <a href="/p/niu/" target="_blank" class="cates-items">牛</a>
+                            <a href="/p/yang/" target="_blank" class="cates-items">羊</a>
+                            <a href="/p/shengzhu/" target="_blank" class="cates-items">生猪</a>
+                            <a href="/p/ma/" target="_blank" class="cates-items">马</a>
+                            <a href="/p/gou/" target="_blank" class="cates-items">狗</a>
+                            <a href="/p/lv/" target="_blank" class="cates-items">驴</a>
+                            <a href="/p/luo/" target="_blank" class="cates-items">骡</a>
+                            <a href="/p/tuzi/" target="_blank" class="cates-items">兔子</a>
+                            <a href="/p/mao/" target="_blank" class="cates-items">猫</a>
+                            <a href="/p/luotuo/" target="_blank" class="cates-items">骆驼</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/huoqin/" target="_blank" class="cate-name">活禽</a>
+                        <div class="cate-list">
+                            <a href="/p/ji/" target="_blank" class="cates-items">鸡</a>
+                            <a href="/p/ya/" target="_blank" class="cates-items">鸭</a>
+                            <a href="/p/e/" target="_blank" class="cates-items">鹅</a>
+                            <a href="/p/gezi/" target="_blank" class="cates-items">鸽子</a>
+                            <a href="/p/zhegu/" target="_blank" class="cates-items">鹧鸪</a>
+                            <a href="/p/anchun/" target="_blank" class="cates-items">鹌鹑</a>
+                        </div>
+                    </div>
+                    <div class="cate-block"><a href="/p/tzyz/" target="_blank" class="cate-name">特种类</a>
+                        <div class="cate-list">
+                            <a href="/p/lu/" target="_blank" class="cates-items">鹿</a>
+                            <a href="/p/rgxflz/" target="_blank" class="cates-items">貉子人工驯繁</a>
+                            <a href="/p/woniu/" target="_blank" class="cates-items">蜗牛</a>
+                            <a href="/p/wawayu/" target="_blank" class="cates-items">娃娃鱼</a>
+                            <a href="/p/eyu/" target="_blank" class="cates-items">鳄鱼</a>
+                            <a href="/p/eyumiao/" target="_blank" class="cates-items">鳄鱼苗</a>
+                            <a href="/p/lankongque/" target="_blank" class="cates-items">孔雀</a>
+                            <a href="/p/heitiane/" target="_blank" class="cates-items">黑天鹅</a>
+                            <a href="/p/zongshixi/" target="_blank" class="cates-items">鬃狮蜥</a>
+                            <a href="/p/baowenshougong/" target="_blank" class="cates-items">豹纹守宫</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="r-c">
+                    <div class="l-r-c">
+                        <div class="l-r-c-t" style="border-color:#F8C68D;">好货推荐</div>
+                        <div class="supply-list">
+                            <div class="supply-items"><a href="/gongying/7187500/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/png/head/2022/06/16/7dcc901c2fc84bfe80ce71e3e4b0a1e2.png?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="河间市4720牛羽骨" title="河间市4720牛羽骨" class="shops-img-bg" data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">12.00</span>
+                                                元/斤
+                                            </div>
+                                            <div class="turnover" data-v-e24a6980="">
+                                                成交960元
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980="">4720牛羽骨</span>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y1.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                            <!----> <img src="https://image.cnhnb.com/supply/icon/gjgr.png" alt=""
+                                                class="icon-imgs" data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="supply-items"><a href="/gongying/5463510/" target="_blank" class="supply-bg"
+                                    data-v-e24a6980=""><img
+                                        src="https://image.cnhnb.com/image/jpeg/head/2022/07/25/7316858a9278464fbf0b130d0e63eb20.jpeg?imageView2/1/w/525/h/525/format/jpg/interlace/1/quality/100/ignore-error/1"
+                                        alt="鹤壁土鸡  青年鸡  大量供应脱温海兰褐批发，散养" title="鹤壁土鸡  青年鸡  大量供应脱温海兰褐批发，散养"
+                                        class="shops-img-bg" data-v-e24a6980="">
+                                    <div class="shops-text" data-v-e24a6980="">
+                                        <div class="shops-price-bg" data-v-e24a6980="">
+                                            <div class="shops-price" data-v-e24a6980=""><span class="sp1"
+                                                    data-v-e24a6980="">14.00</span>
+                                                元/只
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                    <div class="title-field" data-v-e24a6980="">
+                                        <div class="title" data-v-e24a6980="">
+                                            <!----><span data-v-e24a6980="">土鸡 青年鸡 大量供应脱温海兰褐批发，散养</span>
+                                        </div>
+                                        <!---->
+                                    </div>
+                                    <div class="shops-btm" data-v-e24a6980="">
+                                        <div class="shops-btm-l" data-v-e24a6980=""><img
+                                                src="https://image.cnhnb.com/supply/icon/vip_y1.png" alt=""
+                                                class="icon-imgs" style="width:auto;margin-left:0px;"
+                                                data-v-e24a6980="">
+                                        </div>
+                                    </div>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="r-r-c">
+                        <div class="r-r-c-t" style="border-color:#F8C68D;">推荐供应商</div>
+                        <div class="r-shop-list"><a href="https://vip141763952.cnhnb.com/" target="_blank"
+                                class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">陶大优良黄牛</div>
+                            </a><a href="https://vip5014615.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">杨晓丹</div>
+                            </a><a href="https://vip382841875.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">鑫淼肉类有限公司</div>
+                            </a><a href="https://vip6354087.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">王国英</div>
+                            </a><a href="https://vip49783.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">蒋为</div>
+                            </a><a href="https://vip3115170.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">今麦佳食品</div>
+                            </a><a href="https://vip943980564.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">山东鑫明肉类</div>
+                            </a><a href="https://vip972015160.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">舒可滔</div>
+                            </a><a href="https://vip277477.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">辛敏柱</div>
+                            </a><a href="https://vip2433973.cnhnb.com/" target="_blank" class="r-s-item">
+                                <div class="dian"></div>
+                                <div class="s-name">邹子雄</div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fixed-left-bar bar-fixed" id="bar-fixed">
+                <div class="bar-items" id="item0" style="background:rgb(149,224,136);color: rgb(61,168,44);">
+                    <div class="t"><a href="#items0">蔬菜</a></div>
+                </div>
+                <div class="bar-items" id="item1" style="background: none;">
+                    <div class="t"><a href="#items1">农资农机</a></div>
+                </div>
+                <div class="bar-items" id="item2" style="background: none;">
+                    <div class="t"><a href="#items2">粮油米面</a></div>
+                </div>
+                <div class="bar-items" id="item3" style="background: none;">
+                    <div class="t"><a href="#items3">种子种苗</a></div>
+                </div>
+                <div class="bar-items" id="item4" style="background: none;">
+                    <div class="t"><a href="#items4">农副加工</a></div>
+                </div>
+                <div class="bar-items" id="item5" style="background: none;">
+                    <div class="t"><a href="#items5">水产</a></div>
+                </div>
+                <div class="bar-items" id="item6" style="background: none;">
+                    <div class="t"><a href="#items6">水果</a></div>
+                </div>
+                <div class="bar-items" id="item7" style="background: none;">
+                    <div class="t"><a href="#items7">禽畜肉蛋</a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 栏目3 -->
+        <div class="com-bg" data-v-372c132c="">
+            <div class="com-t" data-v-372c132c="">行业资讯</div>
+            <div class="com-ctn" data-v-372c132c="">
+                <div class="news-banner-bg">
+                    <div
+                        class="swiper-container swiper-container-fade swiper-container-initialized swiper-container-horizontal">
+                        <div class="swiper-wrapper" data-v-372c132c="" style="transition-duration: 0ms;">
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4"
+                                style="width: 470px; transition-duration: 0ms; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+                                <a href="https://news.cnhnb.com/zhanhui/detail/445199/" target="_blank">
+                                    <div class="banner-bg" data-v-372c132c="">
+                                        <img src="https://image.cnhnb.com/image/jpg/miniapp/2022/10/29/d8697adc0f3643d0976df5d9b166ffc0.jpg"
+                                            title="农业大数据成果及区域品牌代表性农特产品亮相第23届中国中部农业博览会" alt="img.index"
+                                            data-v-372c132c="">
+                                        <div class="btm-text" data-v-372c132c="">
+                                            <div class="t1" data-v-372c132c="">农业大数据成果及区域品牌代表性农特产品亮相第23届中国中部农业博览会
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" data-v-372c132c="" data-swiper-slide-index="0"
+                                style="width: 470px; transition-duration: 0ms; opacity: 1; transform: translate3d(-470px, 0px, 0px);">
+                                <a href="https://news.cnhnb.com/rdzx/detail/445203/" target="_blank" data-v-372c132c="">
+                                    <div class="banner-bg" data-v-372c132c=""><img
+                                            src="https://image.cnhnb.com/image/jpg/miniapp/2022/10/29/f9c89afa6f02482fab6879e1dec8fb41.jpg"
+                                            title="荷兰豆有哪些好吃又简单的做法？" alt="img.index" data-v-372c132c="">
+                                        <div class="btm-text" data-v-372c132c="">
+                                            <div class="t1" data-v-372c132c="">荷兰豆有哪些好吃又简单的做法？</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-prev" data-v-372c132c="" data-swiper-slide-index="1"
+                                style="width: 470px; transition-duration: 0ms; opacity: 1; transform: translate3d(-940px, 0px, 0px);">
+                                <a href="https://news.cnhnb.com/zixun/detail/445202/" target="_blank"
+                                    data-v-372c132c="">
+                                    <div class="banner-bg" data-v-372c132c=""><img
+                                            src="https://image.cnhnb.com/image/jpg/miniapp/2022/10/29/64522edb927a458397a1c0316c8ed539.jpg"
+                                            title="现在芋头多少钱一斤？如何挑选？" alt="img.index" data-v-372c132c="">
+                                        <div class="btm-text" data-v-372c132c="">
+                                            <div class="t1" data-v-372c132c="">现在芋头多少钱一斤？如何挑选？</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-active" data-v-372c132c="" data-swiper-slide-index="2"
+                                style="width: 470px; transition-duration: 0ms; opacity: 1; transform: translate3d(-1410px, 0px, 0px);">
+                                <a href="https://news.cnhnb.com/zixun/detail/445201/" target="_blank"
+                                    data-v-372c132c="">
+                                    <div class="banner-bg" data-v-372c132c=""><img
+                                            src="https://image.cnhnb.com/image/jpg/miniapp/2022/10/29/dd496e7c96434c3d8da2a4c565e35240.jpg"
+                                            title="现在土豆多少钱一斤？如何挑选？" alt="img.index" data-v-372c132c="">
+                                        <div class="btm-text" data-v-372c132c="">
+                                            <div class="t1" data-v-372c132c="">现在土豆多少钱一斤？如何挑选？</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next" data-v-372c132c="" data-swiper-slide-index="3"
+                                style="width: 470px; transition-duration: 0ms; opacity: 0; transform: translate3d(-1880px, 0px, 0px);">
+                                <a href="https://news.cnhnb.com/rdzx/detail/445200/" target="_blank" data-v-372c132c="">
+                                    <div class="banner-bg" data-v-372c132c=""><img
+                                            src="https://image.cnhnb.com/image/jpg/miniapp/2022/10/29/0ea9612ff77f49d2a4f7777894192a45.jpg"
+                                            title="处暑节气的处是什么意思？" alt="img.index" data-v-372c132c="">
+                                        <div class="btm-text" data-v-372c132c="">
+                                            <div class="t1" data-v-372c132c="">处暑节气的处是什么意思？</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" data-v-372c132c="" data-swiper-slide-index="4"
+                                style="width: 470px; transition-duration: 0ms; opacity: 0; transform: translate3d(-2350px, 0px, 0px);">
+                                <a href="https://news.cnhnb.com/zhanhui/detail/445199/" target="_blank"
+                                    data-v-372c132c="">
+                                    <div class="banner-bg" data-v-372c132c=""><img
+                                            src="https://image.cnhnb.com/image/jpg/miniapp/2022/10/29/d8697adc0f3643d0976df5d9b166ffc0.jpg"
+                                            title="农业大数据成果及区域品牌代表性农特产品亮相第23届中国中部农业博览会" alt="img.index"
+                                            data-v-372c132c="">
+                                        <div class="btm-text" data-v-372c132c="">
+                                            <div class="t1" data-v-372c132c="">农业大数据成果及区域品牌代表性农特产品亮相第23届中国中部农业博览会
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-v-372c132c=""
+                                data-swiper-slide-index="0"
+                                style="width: 470px; transition-duration: 0ms; opacity: 0; transform: translate3d(-2820px, 0px, 0px);">
+                                <a href="https://news.cnhnb.com/rdzx/detail/445203/" target="_blank" data-v-372c132c="">
+                                    <div class="banner-bg" data-v-372c132c=""><img
+                                            src="https://image.cnhnb.com/image/jpg/miniapp/2022/10/29/f9c89afa6f02482fab6879e1dec8fb41.jpg"
+                                            title="荷兰豆有哪些好吃又简单的做法？" alt="img.index" data-v-372c132c="">
+                                        <div class="btm-text" data-v-372c132c="">
+                                            <div class="t1" data-v-372c132c="">荷兰豆有哪些好吃又简单的做法？</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"
+                            data-v-372c132c="">
+                            <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                                aria-label="Go to slide 1"></span>
+                            <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                                aria-label="Go to slide 2"></span>
+                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                                role="button" aria-label="Go to slide 3"></span>
+                            <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                                aria-label="Go to slide 4"></span>
+                            <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                                aria-label="Go to slide 5"></span>
+                        </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+                <div class="hot-news">
+                    <div class="news-t">热门资讯</div>
+                    <a href="https://news.cnhnb.com/rdzx/detail/445190/" target="_blank" class="h-n-item">
+                        <div class="line"></div>
+                        <div class="t">蜜蜂飞来飞去嗡嗡响，蝴蝶却总是悄无声息，这是因为振动频率不同还是发声器官不同？</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/rdzx/detail/445191/" target="_blank" class="h-n-item">
+                        <div class="line"></div>
+                        <div class="t">相传凤梨酥最早起源于中国哪个时期？</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/rdzx/detail/445180/" target="_blank" class="h-n-item">
+                        <div class="line"></div>
+                        <div class="t">“广派”传统糕点的代表美食有哪些？</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/zixun/detail/445201/" target="_blank" class="h-n-item">
+                        <div class="line"></div>
+                        <div class="t">现在土豆多少钱一斤？如何挑选？</div>
+                    </a>
+                    <div class="news-t mat-t">每周精选</div>
+                    <a href="https://news.cnhnb.com/rdzx/detail/445022/" target="_blank" class="h-n-item">
+                        <div class="line"></div>
+                        <div class="t">“烹饪”的“饪”在古代是指熟食还是素食？</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/zixun/detail/445135/" target="_blank" class="h-n-item">
+                        <div class="line"></div>
+                        <div class="t">羊肉价格是多少钱一斤？</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/rdzx/detail/445190/" target="_blank" class="h-n-item">
+                        <div class="line"></div>
+                        <div class="t">蜜蜂飞来飞去嗡嗡响，蝴蝶却总是悄无声息，这是因为振动频率不同还是发声器官不同？</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/rdzx/detail/445095/" target="_blank" class="h-n-item">
+                        <div class="line"></div>
+                        <div class="t">“滇派”传统糕点的代表美食是什么？</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/xmtj/detail/444997/" target="_blank" class="h-n-item">
+                        <div class="line"></div>
+                        <div class="t">2022做什么生意比较赚钱而且稳定？</div>
+                    </a>
+                </div>
+                <div class="new-news">
+                    <div class="new-t">最新资讯</div>
+                    <a href="https://news.cnhnb.com/rdzx/detail/445203/" target="_blank" class="n-n-item">
+                        <div class="l-item f-c">
+                            <div class="line"></div>
+                            <div class="t1 new-news-f">荷兰豆有哪些好吃又简单的做法？</div>
+                        </div>
+                        <div class="n-time">2022-10-29</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/zixun/detail/445202/" target="_blank" class="n-n-item">
+                        <div class="l-item f-c">
+                            <div class="line"></div>
+                            <div class="t1">现在芋头多少钱一斤？如何挑选？</div>
+                        </div>
+                        <div class="n-time">2022-10-29</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/zixun/detail/445201/" target="_blank" class="n-n-item">
+                        <div class="l-item f-c">
+                            <div class="line"></div>
+                            <div class="t1">现在土豆多少钱一斤？如何挑选？</div>
+                        </div>
+                        <div class="n-time">2022-10-29</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/rdzx/detail/445200/" target="_blank" class="n-n-item">
+                        <div class="l-item f-c">
+                            <div class="line"></div>
+                            <div class="t1">处暑节气的处是什么意思？</div>
+                        </div>
+                        <div class="n-time">2022-10-29</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/zhanhui/detail/445199/" target="_blank" class="n-n-item">
+                        <div class="l-item f-c">
+                            <div class="line"></div>
+                            <div class="t1">农业大数据成果及区域品牌代表性农特产品亮相第23届中国中部农业博览会</div>
+                        </div>
+                        <div class="n-time">2022-10-29</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/rdzx/detail/445198/" target="_blank" class="n-n-item">
+                        <div class="l-item f-c">
+                            <div class="line"></div>
+                            <div class="t1">二十四节气中最冷的是哪个节气？</div>
+                        </div>
+                        <div class="n-time">2022-10-29</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/zhanhui/detail/445197/" target="_blank" class="n-n-item">
+                        <div class="l-item f-c">
+                            <div class="line"></div>
+                            <div class="t1">第23届中国中部农业博览会长沙开幕，助力莫旗农产品走进星城</div>
+                        </div>
+                        <div class="n-time">2022-10-29</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/xmtj/detail/445196/" target="_blank" class="n-n-item">
+                        <div class="l-item f-c">
+                            <div class="line"></div>
+                            <div class="t1">农村赚钱商机有哪些？</div>
+                        </div>
+                        <div class="n-time">2022-10-29</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/zhuanti/detail/445195/" target="_blank" class="n-n-item">
+                        <div class="l-item f-c">
+                            <div class="line"></div>
+                            <div class="t1">上海适合种植的梨有哪些品种？</div>
+                        </div>
+                        <div class="n-time">2022-10-29</div>
+                    </a>
+                    <a href="https://news.cnhnb.com/rdzx/detail/445194/" target="_blank" class="n-n-item">
+                        <div class="l-item f-c">
+                            <div class="line"></div>
+                            <div class="t1">螃蟹死了多久不能吃了？</div>
+                        </div>
+                        <div class="n-time">2022-10-29</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 栏目4 -->
+        <div class="com-bg" data-v-15e2dbfc="" data-v-02394d28="" data-v-5f9f429e="">
+            <div class="com-t" data-v-15e2dbfc="">农技学堂</div>
+            <div class="com-ctn" data-v-15e2dbfc="">
+                <div class="l-ctn" data-v-15e2dbfc="">
+                    <div class="item-t" data-v-15e2dbfc="">
+                        <div class="l-t flex-c" data-v-15e2dbfc="">热门专家</div>
+                        <a href="/xt/njzj/" target="_blank" class="r-btn flex-c" data-v-15e2dbfc="">更多
+                            <i class="iconfont icon-lanmujiantou" data-v-15e2dbfc=""></i></a>
+                    </div>
+                    <a href="/xt/njzj-283.html" target="_blank" class="expert-card-bg" data-v-15e2dbfc=""><img
+                            type="avatar" alt="" class="e-head" data-v-15e2dbfc=""
+                            data-src="https://image.cnhnb.com/ebac31d0-6215-4d52-ab04-f2b34c6efd87"
+                            src="https://image.cnhnb.com/ebac31d0-6215-4d52-ab04-f2b34c6efd87" lazy="loaded">
+                        <div class="r-bg" data-v-15e2dbfc="">
+                            <div class="c-top flex-c" data-v-15e2dbfc="">
+                                <div class="e-name" data-v-15e2dbfc="">张秧秧·高级兽医师 </div>
+                                <div class="ask-btn" data-v-15e2dbfc="">限时免费提问</div>
+                            </div>
+                            <div class="e-company" data-v-15e2dbfc="">宁乡市动物疫病预防控制中心</div>
+                            <div class="e-goodAt" data-v-15e2dbfc="">猪，牛，羊，鸡，鸭，鹅等疾病防控技术</div>
+                            <div class="flex-c" data-v-15e2dbfc="">
+                                <div class="e-num-item flex-c" data-v-15e2dbfc="">咨询量<span class="s1"
+                                        data-v-15e2dbfc="">14154</span></div>
+                                <div class="e-num-item flex-c" data-v-15e2dbfc="">回复量<span class="s1"
+                                        data-v-15e2dbfc="">14248</span></div>
+                                <div class="e-num-item flex-c" data-v-15e2dbfc="">回复率<span class="s1"
+                                        data-v-15e2dbfc="">97.66%</span></div>
+                            </div>
+                        </div>
+                    </a><a href="/xt/njzj-178.html" target="_blank" class="expert-card-bg" data-v-15e2dbfc=""><img
+                            type="avatar" alt="" class="e-head" data-v-15e2dbfc=""
+                            data-src="https://image.cnhnb.com/01b32fb8-c8ca-420b-8ce4-f99ea15a62ef"
+                            src="https://image.cnhnb.com/01b32fb8-c8ca-420b-8ce4-f99ea15a62ef" lazy="loaded">
+                        <div class="r-bg" data-v-15e2dbfc="">
+                            <div class="c-top flex-c" data-v-15e2dbfc="">
+                                <div class="e-name" data-v-15e2dbfc="">库俊红·高级兽医师 </div>
+                                <div class="ask-btn" data-v-15e2dbfc="">限时免费提问</div>
+                            </div>
+                            <div class="e-company" data-v-15e2dbfc="">临汾市动物卫生监督所</div>
+                            <div class="e-goodAt" data-v-15e2dbfc="">擅长猪,牛,羊,鸡 等家禽养殖技术及疾病诊断防治</div>
+                            <div class="flex-c" data-v-15e2dbfc="">
+                                <div class="e-num-item flex-c" data-v-15e2dbfc="">咨询量<span class="s1"
+                                        data-v-15e2dbfc="">13762</span></div>
+                                <div class="e-num-item flex-c" data-v-15e2dbfc="">回复量<span class="s1"
+                                        data-v-15e2dbfc="">13627</span></div>
+                                <div class="e-num-item flex-c" data-v-15e2dbfc="">回复率<span class="s1"
+                                        data-v-15e2dbfc="">99.02%</span></div>
+                            </div>
+                        </div>
+                    </a><a href="/xt/njzj-60.html" target="_blank" class="expert-card-bg" data-v-15e2dbfc=""><img
+                            type="avatar" alt="" class="e-head" data-v-15e2dbfc=""
+                            data-src="https://image.cnhnb.com/85c5b6d5-8310-4282-b31b-684255116960"
+                            src="https://image.cnhnb.com/85c5b6d5-8310-4282-b31b-684255116960" lazy="loaded">
+                        <div class="r-bg" data-v-15e2dbfc="">
+                            <div class="c-top flex-c" data-v-15e2dbfc="">
+                                <div class="e-name" data-v-15e2dbfc="">张明军·副教授、执业兽医师 </div>
+                                <div class="ask-btn" data-v-15e2dbfc="">限时免费提问</div>
+                            </div>
+                            <div class="e-company" data-v-15e2dbfc="">湖南农业大学</div>
+                            <div class="e-goodAt" data-v-15e2dbfc="">擅长猪牛及家禽养殖与疾病防治</div>
+                            <div class="flex-c" data-v-15e2dbfc="">
+                                <div class="e-num-item flex-c" data-v-15e2dbfc="">咨询量<span class="s1"
+                                        data-v-15e2dbfc="">12106</span></div>
+                                <div class="e-num-item flex-c" data-v-15e2dbfc="">回复量<span class="s1"
+                                        data-v-15e2dbfc="">13339</span></div>
+                                <div class="e-num-item flex-c" data-v-15e2dbfc="">回复率<span class="s1"
+                                        data-v-15e2dbfc="">95.19%</span></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-ctn" data-v-15e2dbfc="">
+                    <div class="item-t" data-v-15e2dbfc="">
+                        <div class="l-t flex-c" data-v-15e2dbfc="">专家回答</div> <a href="/xt/ask/" target="_blank"
+                            class="r-btn flex-c" data-v-15e2dbfc="">更多 <i class="iconfont icon-lanmujiantou"
+                                data-v-15e2dbfc=""></i></a>
+                    </div> <a href="https://www.cnhnb.com/xt/ask-425281.html" target="_blank" class="ask-bg"
+                        data-v-15e2dbfc="">
+                        <div class="q-a-bg flex-c" data-v-15e2dbfc=""><img
+                                src="//files.cnhnb.com/master-ssr/home/img/515750d.png" alt="" class="ask-icon"
+                                data-v-15e2dbfc="">
+                            <div class="ask-ctn ask-q" data-v-15e2dbfc="">老师你好！感谢你一直都在为我解答凝问。我还想问一下桑黄成熟采摘时候，是硬的吗？</div>
+                        </div>
+                        <div class="q-a-bg flex-c mar-t" data-v-15e2dbfc=""><img
+                                src="//files.cnhnb.com/master-ssr/home/img/ac80113.png" alt="" class="ask-icon"
+                                data-v-15e2dbfc="">
+                            <div class="ask-ctn" data-v-15e2dbfc="">是硬的。</div>
+                        </div>
+                        <div class="q-a-btm flex-c" data-v-15e2dbfc="">
+                            <div class="ask-len" data-v-15e2dbfc="">全部1个回答</div>
+                            <div class="a-time" data-v-15e2dbfc="">2022-10-30</div>
+                        </div>
+                    </a><a href="https://www.cnhnb.com/xt/ask-425256.html" target="_blank" class="ask-bg"
+                        data-v-15e2dbfc="">
+                        <div class="q-a-bg flex-c" data-v-15e2dbfc=""><img
+                                src="//files.cnhnb.com/master-ssr/home/img/515750d.png" alt="" class="ask-icon"
+                                data-v-15e2dbfc="">
+                            <div class="ask-ctn ask-q" data-v-15e2dbfc="">牛不吃草发呆，拉屎硬团是什么病</div>
+                        </div>
+                        <div class="q-a-bg flex-c mar-t" data-v-15e2dbfc=""><img
+                                src="//files.cnhnb.com/master-ssr/home/img/ac80113.png" alt="" class="ask-icon"
+                                data-v-15e2dbfc="">
+                            <div class="ask-ctn" data-v-15e2dbfc="">可能精料投喂量过量，上火了。宜减少精料投喂，喂点大黄苏打片健胃调理三到五天。</div>
+                        </div>
+                        <div class="q-a-btm flex-c" data-v-15e2dbfc="">
+                            <div class="ask-len" data-v-15e2dbfc="">全部1个回答</div>
+                            <div class="a-time" data-v-15e2dbfc="">2022-10-30</div>
+                        </div>
+                    </a><a href="https://www.cnhnb.com/xt/ask-425245.html" target="_blank" class="ask-bg"
+                        data-v-15e2dbfc="">
+                        <div class="q-a-bg flex-c" data-v-15e2dbfc=""><img
+                                src="//files.cnhnb.com/master-ssr/home/img/515750d.png" alt="" class="ask-icon"
+                                data-v-15e2dbfc="">
+                            <div class="ask-ctn ask-q" data-v-15e2dbfc="">你好！给看一下草莓地里出的这是什么</div>
+                        </div>
+                        <div class="q-a-bg flex-c mar-t" data-v-15e2dbfc=""><img
+                                src="//files.cnhnb.com/master-ssr/home/img/ac80113.png" alt="" class="ask-icon"
+                                data-v-15e2dbfc="">
+                            <div class="ask-ctn" data-v-15e2dbfc="">你好！是施用过多的化学肥料或处理剂，随水分蒸发带到土壤表面。</div>
+                        </div>
+                        <div class="q-a-btm flex-c" data-v-15e2dbfc="">
+                            <div class="ask-len" data-v-15e2dbfc="">全部1个回答</div>
+                            <div class="a-time" data-v-15e2dbfc="">2022-10-29</div>
+                        </div>
+                    </a><a href="https://www.cnhnb.com/xt/ask-425242.html" target="_blank" class="ask-bg"
+                        data-v-15e2dbfc="">
+                        <div class="q-a-bg flex-c" data-v-15e2dbfc=""><img
+                                src="//files.cnhnb.com/master-ssr/home/img/515750d.png" alt="" class="ask-icon"
+                                data-v-15e2dbfc="">
+                            <div class="ask-ctn ask-q" data-v-15e2dbfc="">你还给看一下草莓地里有这东西是什么</div>
+                        </div>
+                        <div class="q-a-bg flex-c mar-t" data-v-15e2dbfc=""><img
+                                src="//files.cnhnb.com/master-ssr/home/img/ac80113.png" alt="" class="ask-icon"
+                                data-v-15e2dbfc="">
+                            <div class="ask-ctn" data-v-15e2dbfc="">你好！是施肥过多，出现的盐渍化。</div>
+                        </div>
+                        <div class="q-a-btm flex-c" data-v-15e2dbfc="">
+                            <div class="ask-len" data-v-15e2dbfc="">全部1个回答</div>
+                            <div class="a-time" data-v-15e2dbfc="">2022-10-29</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="r-ctn" data-v-15e2dbfc="">
+                    <div class="item-t" data-v-15e2dbfc="">
+                        <div class="l-t flex-c" data-v-15e2dbfc="">推荐文章</div> <a href="/xt/jx/" target="_blank"
+                            class="r-btn flex-c" data-v-15e2dbfc="">更多 <i class="iconfont icon-lanmujiantou"
+                                data-v-15e2dbfc=""></i></a>
+                    </div>
+                    <a href="/xt/article-51799.html" target="_blank" class="xt-a-bg" data-v-15e2dbfc=""><img
+                            title="中蜂养殖技术：哪些方法可以防止盗蜂？" alt="" class="xt-image" data-v-15e2dbfc=""
+                            data-src="http://img.cnhnb.com/group1/M00/9D/E1/BFF355R8A2ChRkRls0rrGAaVOFAAOzGyY2_9g356.jpg"
+                            src="http://img.cnhnb.com/group1/M00/9D/E1/BFF355R8A2ChRkRls0rrGAaVOFAAOzGyY2_9g356.jpg"
+                            lazy="loaded">
+                        <div class="r-article" data-v-15e2dbfc="">
+                            <div class="a-title" data-v-15e2dbfc="">中蜂养殖技术：哪些方法可以防止盗蜂？</div>
+                            <div class="a-btm flex-c" data-v-15e2dbfc="">
+                                <div class="l-btm" data-v-15e2dbfc="">助农网</div>
+                                <div class="r-btm flex-c" data-v-15e2dbfc=""><i class="iconfont icon-yulan"
+                                        data-v-15e2dbfc=""></i> 4701</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/xt/article-56453.html" target="_blank" class="xt-a-bg" data-v-15e2dbfc=""><img
+                            title="柑橘常见病害发生规律及综合防治措施" alt="" class="xt-image" data-v-15e2dbfc=""
+                            data-src="http://img.cnhnb.com/group1/M00/9F/C5/89C754K7AAChRkRlv_hJ-ASVxxAAS7YcoWGSQ461.jpg"
+                            src="http://img.cnhnb.com/group1/M00/9F/C5/89C754K7AAChRkRlv_hJ-ASVxxAAS7YcoWGSQ461.jpg"
+                            lazy="loaded">
+                        <div class="r-article" data-v-15e2dbfc="">
+                            <div class="a-title" data-v-15e2dbfc="">柑橘常见病害发生规律及综合防治措施</div>
+                            <div class="a-btm flex-c" data-v-15e2dbfc="">
+                                <div class="l-btm" data-v-15e2dbfc="">助农网</div>
+                                <div class="r-btm flex-c" data-v-15e2dbfc=""><i class="iconfont icon-yulan"
+                                        data-v-15e2dbfc=""></i> 2719</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/xt/article-113024.html" target="_blank" class="xt-a-bg" data-v-15e2dbfc=""><img
+                            title="栀子花的修剪技术及注意事项" alt="" class="xt-image" data-v-15e2dbfc=""
+                            data-src="https://image.cnhnb.com/image/jpg/miniapp/2022/03/18/b2946e217d02456aaffc5aa699ab3d7c.jpg"
+                            src="https://image.cnhnb.com/image/jpg/miniapp/2022/03/18/b2946e217d02456aaffc5aa699ab3d7c.jpg"
+                            lazy="loaded">
+                        <div class="r-article" data-v-15e2dbfc="">
+                            <div class="a-title" data-v-15e2dbfc="">栀子花的修剪技术及注意事项</div>
+                            <div class="a-btm flex-c" data-v-15e2dbfc="">
+                                <div class="l-btm" data-v-15e2dbfc="">助农网·农技学堂</div>
+                                <div class="r-btm flex-c" data-v-15e2dbfc=""><i class="iconfont icon-yulan"
+                                        data-v-15e2dbfc=""></i> 7714</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/xt/article-56484.html" target="_blank" class="xt-a-bg" data-v-15e2dbfc=""><img
+                            title="农作物虫害严重怎么办？做好这三方面的管理就可以" alt="" class="xt-image" data-v-15e2dbfc=""
+                            data-src="http://img.cnhnb.com/group1/M00/9F/C9/80FD73R440ChRkRlwAyAqACzR_AAFu0sUhYVQ465.jpg"
+                            src="http://img.cnhnb.com/group1/M00/9F/C9/80FD73R440ChRkRlwAyAqACzR_AAFu0sUhYVQ465.jpg"
+                            lazy="loaded">
+                        <div class="r-article" data-v-15e2dbfc="">
+                            <div class="a-title" data-v-15e2dbfc="">农作物虫害严重怎么办？做好这三方面的管理就可以</div>
+                            <div class="a-btm flex-c" data-v-15e2dbfc="">
+                                <div class="l-btm" data-v-15e2dbfc="">助农网</div>
+                                <div class="r-btm flex-c" data-v-15e2dbfc=""><i class="iconfont icon-yulan"
+                                        data-v-15e2dbfc=""></i> 1729</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/xt/article-51249.html" target="_blank" class="xt-a-bg" data-v-15e2dbfc=""><img
+                            title="多叶羽扇豆的栽培管理技术" alt="" class="xt-image" data-v-15e2dbfc=""
+                            data-src="http://img.cnhnb.com/group1/M00/9D/8D/3265E6LF09ChRkRlsY8WyAXHTWAAJWsBHLAMM972.jpg"
+                            src="http://img.cnhnb.com/group1/M00/9D/8D/3265E6LF09ChRkRlsY8WyAXHTWAAJWsBHLAMM972.jpg"
+                            lazy="loaded">
+                        <div class="r-article" data-v-15e2dbfc="">
+                            <div class="a-title" data-v-15e2dbfc="">多叶羽扇豆的栽培管理技术</div>
+                            <div class="a-btm flex-c" data-v-15e2dbfc="">
+                                <div class="l-btm" data-v-15e2dbfc="">助农网</div>
+                                <div class="r-btm flex-c" data-v-15e2dbfc=""><i class="iconfont icon-yulan"
+                                        data-v-15e2dbfc=""></i> 2051</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 底部 -->
+    <footer>
+        <div>
+            <div class="com-bg">
+                <div class="btm-t">
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-xinshouzhinan" data-v-14a6ca34=""></i>
+                            新手指南
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnb.com/login/" target="_blank" rel="nofollow" title="注册账户"
+                                class="h-i">注册账户</a>
+                            <a href="https://www.cnhnkj.com/app.html#h2-1" target="_blank" rel="nofollow" title="平台功能"
+                                class="h-i">平台功能</a>
+                            <a href="https://m.cnhnb.com/zhuanti/zxjyzt_hn/" target="_blank" rel="nofollow" title="在线交易"
+                                class="h-i">在线交易</a>
+                            <a href="http://wx.mobile.cnhnb.com/mango/pro/specialpage/page/propaganda3/index.html"
+                                target="_blank" rel="nofollow" title="买家保障" class="h-i">买家保障</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-kehufuwu"></i>
+                            产品服务
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnb.com/supply/" target="_blank" rel="" title="找供应"
+                                class="h-i">找供应</a>
+                            <a href="https://www.cnhnb.com/purchase/" target="_blank" rel="" title="找采购"
+                                class="h-i">找采购</a>
+                            <a href="https://www.cnhnb.com/hangqing/" target="_blank" rel="" title="看行情"
+                                class="h-i">看行情</a>
+                            <a href="https://www.cnhnb.com/app/download/" target="_blank" rel="nofollow" title="发布供应"
+                                class="h-i">发布供应</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/friends/yjdf_special" target="_blank"
+                                rel="nofollow" title="一件代发" class="h-i">一件代发</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-pingtaishengming"></i>
+                            合作联系
+                        </div>
+                        <div class="help-list">
+                            <a target="_blank" rel="" title="客户服务 400-008-8688" class="h-i">客户服务</a>
+                            <a target="_blank" rel="" title="商务洽谈 0731-88189999" class="h-i">商务洽谈</a>
+                            <a target="_blank" rel="" title="媒体合作 0731-88189999" class="h-i">媒体合作</a>
+                            <a href="https://www.cnhnb.com/knowledge/" target="_blank" rel="" title="知识产权综合服务平台"
+                                class="h-i">知识产权综合服务平台</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-guanyuhuinong"></i>
+                            关于助农
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnkj.com/about.html" target="_blank" rel="" title="关于我们"
+                                class="h-i">关于我们</a>
+                            <a href="https://www.cnhnkj.com/about.html#h2-3" target="_blank" rel="nofollow"
+                                title="助农大事件" class="h-i">助农大事件</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/privacy/?id=1" target="_blank" rel="nofollow"
+                                title="服务协议" class="h-i">服务协议</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/privacy/?id=3" target="_blank" rel="nofollow"
+                                title="隐私协议" class="h-i">隐私协议</a>
+                            <a href="https://m.cnhnb.com/mango/pro/help-center/help-list" target="_blank" rel="nofollow"
+                                title="规则说明" class="h-i">规则说明</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./layui/layui.all.js"></script>
+    <script src="./js/jQuery.min.js"></script>
+    <script src="./js/baseAPI.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/homePage.js"></script>
+    <script>
+        // function geturl(){    
+        //     var searchUrl = window.location.href;
+        //     var searchData = searchUrl.split("="); //截取 url中的“=”,获得“=”后面的参数
+        //     var searchText1 = decodeURI(searchData[1]); //decodeURI解码
+        //     var searchText2 = decodeURI(searchData[2]); //decodeURI解码
+        //     return searchText1;
+        //     }
+        // function play(obj){
+        //     var id=document.getElementById(obj.id)
+        //     window.open(id.id+"?UserID="+geturl());
+        //     return false
+        // }
+    </script>
+</body>
+
+</html>

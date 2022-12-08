@@ -1,0 +1,1452 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+
+html {
+    /* （移动端上）有事件监听的元素被点击的时候会被高亮显示，想要去掉这一效果只要设置：-webkit-tap-highlight-color： transparent；  */
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 头像 */
+.text-avatar{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: #87d078;
+    border-radius: 50%;
+    line-height: 32px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+/* 导航栏 */
+.com-bg {
+    position: relative;
+    width: 100%;
+}
+
+.com-bg .h-t-bg {
+    height: 32px;
+    width: 100%;
+    background: #fafafa;
+}
+
+.com-bg .h-t-bg .h-t-c {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.com-bg .h-t-bg .h-t-c .l-h-t-c,
+.com-bg .h-t-bg .h-t-c .r-h-t-c {
+    display: flex;
+    /* 垂直方向上居中 */
+    align-items: center;
+}
+
+.com-bg .h-t-bg .h-t-c .l-h-t-c .l-it {
+    margin-left: 20px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+    height: 13px;
+}
+
+.com-bg .h-t-bg .h-t-c .f-c {
+    display: flex;
+    align-items: center;
+}
+
+.com-bg .h-t-bg .h-t-c .l-h-t-c .f-c .l-f,
+.com-bg .h-t-bg .h-t-c .l-h-t-c .f-c .l-l {
+    cursor: pointer;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+
+    letter-spacing: 0;
+    margin-left: 30px;
+}
+
+.com-bg .h-t-bg .h-t-c .l-h-t-c .f-c .l-l a{
+    color: #87d078;
+}
+
+.com-bg .h-t-bg .h-t-c .l-h-t-c .f-c .l-f a{
+    color: #646464;
+}
+
+.com-bg .h-t-bg .h-t-c .r-h-t-c .cascade-bar {
+    position: relative;
+    z-index: 999;
+    height: 32px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+    justify-content: center;
+    width: 80px;
+}
+
+/* 头像部分 */
+
+.head_item{
+    height: 32px;
+    color: #646464 !important;
+    line-height: 32px;
+    font-size: 12px;
+}
+
+/* 顶部 */
+.com-bg .h-c-bg {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    padding-top: 30px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.com-bg .h-c-bg .h-c-c {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    width: 1200px;
+}
+
+/* logo */
+.com-bg .h-c-bg .h-c-c .l-h-c-c {
+    position: relative;
+}
+
+.com-bg .h-c-bg .h-c-c .l-h-c-c .hn-logo {
+    height: 90px;
+}
+
+/* 搜索栏 */
+@media screen and (max-width: 10000px) {
+    .ssearch-bg{
+        margin-left: 520px;
+        position: relative;
+    }
+}
+@media screen and (max-width: 768px) {
+    .ssearch-bg{
+        margin-left: 50px;
+        position: relative;
+    }
+}
+.s-bg .search-bg {
+    background: #fff;
+    border: 2px solid #87d078;
+    display: flex;
+    position: relative;
+}
+
+.s-bg .search-bg .s-l {
+    line-height: 36px;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #444;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 0 25px;
+    border-right: 1px solid #ededed;
+    height: 36px;
+    cursor: pointer;
+}
+
+.s-bg .search-bg .s-t {
+    position: relative;
+}
+
+.s-bg .search-bg .s-t .search-ctn {
+    height: 34px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 310px;
+    line-height: 36px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #444;
+    letter-spacing: 0;
+    border: none !important;
+}
+
+.s-bg .search-bg .s-r {
+    cursor: pointer;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0;
+    line-height: 36px;
+    text-align: center;
+    padding: 0 34px;
+    background: #87d078;
+    height: 36px;
+}
+
+.s-bg .s-btn {
+    padding: 10px 15px;
+    margin-left: 20px;
+}
+
+.search_menu{
+    display: none;
+    flex: auto;
+    width: 388px;
+    background: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    z-index: 1;
+}
+.search_menu li{
+    border-bottom: 1px solid rgb(216, 214, 214);
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.search_menu li a{
+    margin-left: 25px;
+}
+
+.com-bg .h-c-bg .h-c-c .ssearch-bg .hot-cate-list {
+    margin-top: 15px;
+    display: block;
+}
+
+.com-bg .h-c-bg .h-c-c .ssearch-bg .hot-cate-list .cate-items:first-child {
+    margin-left: 0;
+}
+
+.com-bg .h-c-bg .h-c-c .ssearch-bg .hot-cate-list .cate-items {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+    margin-left: 15px;
+}
+
+/* 导航条 */
+.com-bg .h-b-bg {
+    position: relative;
+    background: #fff;
+    width: 100%;
+}
+
+.com-bg .h-b-bg .h-b-c {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.com-bg .h-b-bg .l-h-b-c {
+    float: left;
+    align-items: center;
+}
+
+.com-bg .h-b-bg .l-h-b-c .tab-items:first-child {
+    margin-left: 22px;
+}
+
+.com-bg .h-b-bg .l-h-b-c .tab-items {
+    position: relative;
+    margin-left: 40px;
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 0;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.com-bg .h-b-bg .l-h-b-c .tab-items-a,
+.com-bg .h-b-bg .l-h-b-c .tab-items:hover {
+    color: #87d078;
+}
+
+.navbar-header{
+    background-color: #fff;
+}
+
+/* 2. */
+.ctn-bg {
+    padding-top: 15px;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.ctn-bg .ctn-bg-c {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 左边 */
+.ctn-bg .ctn-bg-c .ctn-bg-c-l {
+    height: 540px;
+    width: 285px;
+    background-color: #fff;
+}
+
+.category-bg {
+    position: relative;
+}
+
+.category-bg .first-item {
+    cursor: pointer;
+    position: relative;
+    height: 67.5px;
+    width: 100%;
+    z-index: 999;
+}
+
+.category-bg .first-item .o-line {
+    margin-left: 15px;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #444;
+    letter-spacing: 0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.category-bg .first-item .o-line .cate-icon {
+    margin-right: 10px;
+    height: 16px;
+    width: 16px;
+}
+
+.category-bg .first-item .t-line {
+    margin-top: 7px;
+    margin-left: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.category-bg .first-item .t-line .second-cate {
+    max-width: 100px;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    word-break: break-all;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+
+/* 中间 */
+/* 轮播图 */
+#myCarousel {
+    padding: 0;
+    width: 100%;
+}
+
+.com-bg .btm-banner-com{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.com-bg .btm-banner-com .banner-item{
+    height: 180px;
+    width: 292px;
+    cursor: pointer;
+}
+
+/* 右边 */
+.ctn-bg .ctn-bg-c .ctn-bg-c-r{
+    
+    width: 285px;
+    background-color: #fff;
+}
+
+.com-bg .card-t,
+.com-bg{
+    border-bottom: 1px solid #f4f4f4;
+}
+
+
+
+.com-bg .card-t{
+    height: 123px;
+    width: 100%;
+}
+
+.com-bg .card-t .t1{
+    padding-top: 24px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #444;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.com-bg .card-t .t1-btm{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.com-bg .card-t .t1-btm .l-btn,
+.com-bg .card-t .t1-btm .r-btn{
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
+.com-bg .card-t .t1-btm .l-btn {
+    background: #39bf3e;
+    padding: 7px 34px;
+    
+    margin-right: 16px;
+}
+.com-bg .card-t .t1-btm .l-btn a {
+    color: #fff;
+}
+.com-bg .card-t .t1-btm .r-btn{
+    padding: 7px 27px;
+    color: #39bf3e;
+    background: #fff;
+    border: 2px solid #39bf3e;
+}
+.com-bg .card-t .t1-btm .r-btn a {
+    color: #39bf3e;
+}
+
+.com-bg .card-t .u-c{
+    display: flex;
+    align-items: center;
+    padding-top: 36px;
+    justify-content: center;
+}
+
+.com-bg .card-t .u-c .user-header{
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+}
+
+.com-bg .card-t .u-c .u-c-r{
+    margin-left: 10px;
+}
+
+.com-bg .card-t .u-c .u-c-r .s1{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #444;
+    letter-spacing: 0;
+}
+
+.com-bg .card-t .u-c .u-c-r .s2{
+    margin-top: 4px;
+    font-family: Helvetica;
+    font-size: 12px;
+    color: #909090;
+    letter-spacing: 0;
+}
+
+.com-bg .card-btm{
+    position: relative;
+    margin: 0 47px;
+    width: calc(100% - 94px);
+}
+
+.com-bg .card-btm .c-bar-t{
+    margin: 19px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.com-bg .card-btm .c-bar-t .bar-item{
+    cursor: pointer;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #444;
+    letter-spacing: 0;
+    text-align: center;
+    font-weight: 600;
+    width: 76px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+.com-bg .bar-item-a{
+    border-bottom: 2px solid #39bf3e !important;
+}
+
+.com-bg .card-btm .bar-items-bg{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.com-bg .card-btm .bar-items-bg .bars-item{
+    width: 48px;
+    cursor: pointer;
+}
+
+.com-bg .card-btm .bar-items-bg .bars-item .icon-bg{
+    height: 48px;
+    width: 48px;
+    border: 1px solid #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.com-bg .card-btm .bar-items-bg .bars-item .items-n{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Helvetica;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+}
+
+.com-bg .card-btm .user-center{
+    margin-top: 24px;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 12px;
+    color: #39bf3e;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
+.m-t-bg{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.m-t-bg .l-t{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #444;
+    letter-spacing: 0;
+}
+
+.m-t-bg .r-b{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+    display: flex;
+}
+
+.cate-name{
+    margin-top: 10px;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #444;
+    letter-spacing: 0;
+}
+
+.m-l-r{
+    width: calc(100% - 40px)!important;
+}
+
+.market-sate{
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.m-l-r, .m-t-bg{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.market-sate .l-m{
+    display: flex;
+    align-items: center;
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    color: #39bf3e;
+    letter-spacing: 0;
+}
+
+.market-sate .l-m .s1{
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #39bf3e;
+    letter-spacing: 0;
+    margin-left: 5px;
+}
+
+.chart-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+/* 栏目2 */
+.recommend-supply {
+    margin-top: 15px;
+    position: relative;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 24px;
+    background: #fff;
+}
+
+.recommend-supply .com-t {
+    justify-content: space-between;
+}
+
+.recommend-supply .flex {
+    display: flex;
+    align-items: center;
+}
+
+.recommend-supply .com-t .l-t {
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #444;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.recommend-supply .modular-bg {
+    height: 322px;
+    width: 100%;
+    border: 1px solid #f4f4f4;
+    margin-top: 20px;
+    display: flex;
+}
+
+.recommend-supply .modular-bg .l-c {
+    height: 320px;
+    width: 145px;
+    background-size: 100%;
+}
+
+.recommend-supply .modular-bg .l-c .l-c-t {
+    margin-top: 21px;
+    padding-left: 14px;
+    border-left: 6px solid #39bf3e;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #3da82c;
+    letter-spacing: 0;
+}
+
+.recommend-supply .modular-bg .l-c .l-c-text {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #3da82c;
+    letter-spacing: 0;
+}
+
+.recommend-supply .modular-bg .c-c {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 320px;
+    width: 475px;
+    background-color: #fff;
+    border-right: 1px solid #f4f4f4;
+    flex-direction: column;
+}
+
+.recommend-supply .modular-bg .c-c .cate-block {
+    margin-top: 15px;
+    width: 210px;
+}
+
+.recommend-supply .modular-bg .c-c .cate-block .cate-name {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #444;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.recommend-supply .modular-bg .c-c .cate-block .cate-list {
+    display: flex;
+    margin-top: 9px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.recommend-supply .modular-bg .c-c .cate-block .cate-list .cates-items {
+    line-height: 20px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+    margin-right: 10px;
+}
+
+/* 右边 */
+.recommend-supply .modular-bg .r-c {
+    height: 320px;
+    width: calc(100% - 620px);
+    display: flex;
+}
+
+.recommend-supply .modular-bg .r-c .l-r-c {
+    margin-left: 14px;
+    width: calc(100% - 209px);
+    position: relative;
+}
+
+.recommend-supply .modular-bg .r-c .l-r-c .l-r-c-t {
+    margin-top: 18px;
+    border-left: 4px solid #ffba64;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 10px;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #444;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.recommend-supply .modular-bg .r-c .l-r-c .supply-list {
+    margin-top: 10px;
+    display: flex;
+}
+
+.recommend-supply .modular-bg .r-c .l-r-c .supply-list .supply-items {
+    width: 149px;
+}
+
+.supply-bg {
+    display: block;
+    position: relative;
+    background: #fff;
+}
+
+.supply-bg .shops-img-bg {
+    position: relative;
+    height: 149px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+.supply-bg .shops-text {
+    margin: 10px 0 0;
+}
+
+.supply-bg .shops-text .shops-price-bg {
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.supply-bg .shops-text .shops-price-bg .shops-price {
+    line-height: 24px;
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 12px;
+    color: #ff442f;
+    letter-spacing: 0;
+    flex: 0 0 auto;
+}
+
+.supply-bg .shops-text .shops-price-bg .shops-price .sp1 {
+    font-size: 18px;
+}
+
+.supply-bg .title-field {
+    height: 39px;
+    margin-top: 6px;
+}
+
+.supply-bg .title-field .title.one-line {
+    -webkit-line-clamp: 1;
+    height: 17px;
+}
+
+.supply-bg .title-field .title {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #444;
+    letter-spacing: 0;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    word-break: break-all;
+    height: 34px;
+}
+
+.supply-bg .title-field .cw-tags {
+    height: 18px;
+    margin-top: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.supply-bg .title-field .cw-tags .cw-tag:first-child {
+    margin-left: 0;
+}
+
+.supply-bg .title-field .cw-tags .cw-tag {
+    margin-left: 6px;
+    height: 18px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 11px;
+    display: flex;
+    flex: none;
+    align-items: center;
+}
+
+.supply-bg .title-field .icon-item-005 {
+    background: #eff4fb;
+    border: 1px solid #8a9fcc;
+    color: #4869af;
+    border-radius: 4px;
+}
+
+.supply-bg .shops-btm {
+    display: flex;
+    align-items: center;
+}
+
+.supply-bg .shops-btm .shops-btm-l .icon-imgs {
+    margin-left: 4px;
+    height: 12px;
+    width: 12px;
+}
+
+.fixed-left-bar {
+    z-index: 1000;
+    width: 60px;
+    background: #fff;
+}
+
+.bar-fixed {
+    position: fixed;
+    left: calc(50% - 680px);
+    top: 60px;
+}
+
+.fixed-left-bar .bar-items {
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222;
+    letter-spacing: 0;
+}
+
+.fixed-left-bar .bar-items .t {
+    padding: 14px 0;
+    margin: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-bottom: 1px solid #f5f5f5;
+
+}
+
+.fixed-left-bar .bar-items .t a{
+    color: #000;
+}
+
+.recommend-supply .modular-bg .r-c .r-r-c {
+    position: relative;
+    margin-left: 20px;
+}
+
+.recommend-supply .modular-bg .r-c .r-r-c .r-r-c-t {
+    margin-top: 18px;
+    border-left: 4px solid #ffba64;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 10px;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #444;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.recommend-supply .modular-bg .r-c .r-r-c .r-shop-list {
+    position: relative;
+}
+
+.recommend-supply .modular-bg .r-c .r-r-c .r-shop-list .r-s-item {
+    display: flex;
+    align-items: center;
+    margin-top: 11px;
+}
+
+.recommend-supply .modular-bg .r-c .r-r-c .r-shop-list .r-s-item .dian {
+    height: 4px;
+    width: 4px;
+    background: #cbcbcb;
+    margin-right: 7px;
+}
+
+.recommend-supply .modular-bg .r-c .r-r-c .r-shop-list .r-s-item .s-name {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+    width: 164px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 栏目3 */
+.com-bg[data-v-372c132c] {
+    position: relative;
+    width: 1200px;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 24px 24px;
+    margin-top: 15px;
+}
+
+.com-bg .com-t[data-v-372c132c] {
+    padding-top: 20px;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #444;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.com-bg .com-ctn[data-v-372c132c] {
+    margin-top: 25px;
+    display: flex;
+}
+
+.com-bg .com-ctn .banner-bg[data-v-372c132c],
+.com-bg .com-ctn .news-banner-bg[data-v-372c132c],
+.com-bg .com-ctn .swiper-wrapper[data-v-372c132c] {
+    flex: none;
+    position: relative;
+    overflow: hidden;
+    height: 320px;
+    width: 470px;
+}
+
+
+
+
+
+
+
+/* 中 */
+.com-bg .com-ctn .hot-news {
+    flex: none;
+    margin-left: 40px;
+}
+
+.com-bg .com-ctn .hot-news {
+    flex: none;
+    margin-left: 40px;
+}
+
+.com-bg .com-ctn .hot-news .news-t {
+    font-weight: 600;
+    margin-top: 3px;
+    padding-left: 8px;
+    height: 16px;
+    line-height: 16px;
+    border-left: 4px solid #39bf3e;
+    display: flex;
+    align-items: center;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #444;
+    letter-spacing: 0;
+}
+
+.com-bg .com-ctn .hot-news .h-n-item:nth-child(2),
+.com-bg .com-ctn .hot-news .h-n-item:nth-child(7) {
+    font-weight: 600;
+    font-family: PingFangSC-Medium;
+    font-size: 14px !important;
+    color: #444 !important;
+}
+
+.com-bg .com-ctn .hot-news .h-n-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    font-family: PingFangSC Regular;
+    font-size: 12px;
+    color: #000;
+}
+
+.com-bg .line {
+    height: 4px;
+    width: 4px;
+    background: #cbcbcb;
+    margin-right: 11px;
+}
+
+.com-bg .com-ctn .hot-news .h-n-item .t {
+    width: 230px;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* 右边 */
+.com-bg .com-ctn .new-news {
+    width: 100%;
+    margin-left: 62px;
+}
+
+.com-bg .com-ctn .new-news .new-t {
+    font-weight: 600;
+    margin-top: 3px;
+    padding-left: 8px;
+    height: 16px;
+    line-height: 16px;
+    border-left: 4px solid #39bf3e;
+    display: flex;
+    align-items: center;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #444;
+    letter-spacing: 0;
+}
+
+.com-bg .com-ctn .new-news .n-n-item {
+    margin-top: 9.4px;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.com-bg .com-ctn .new-news .n-n-item .f-c {
+    display: flex;
+    align-items: center;
+}
+
+.com-bg .line {
+    height: 4px;
+    width: 4px;
+    background: #cbcbcb;
+    margin-right: 11px;
+}
+
+.com-bg .com-ctn .new-news .n-n-item .t1 {
+    width: 240px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #000;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.com-bg .com-ctn .new-news .n-n-item .n-time {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+    text-align: right;
+}
+
+/* 栏目4 */
+.com-bg[data-v-15e2dbfc] {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 515px;
+    background: #fff;
+    margin-top: 15px;
+    padding: 0 24px;
+}
+
+.com-bg .com-t {
+    padding-top: 20px;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #444;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.com-bg .com-ctn .item-t,
+.com-bg .com-ctn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.com-bg .com-ctn {
+    margin-top: 20px;
+}
+
+.com-bg .com-ctn .l-ctn {
+    width: 470px;
+    background-color: #fff;
+    min-height: 300px;
+}
+
+.com-bg .com-ctn .item-t {
+    height: 16px;
+    align-items: center;
+}
+
+.com-bg .com-ctn .item-t .l-t {
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #444;
+    letter-spacing: 0;
+    padding-left: 8px;
+    border-left: 4px solid #39bf3e;
+}
+
+.com-bg .com-ctn .item-t .flex-c {
+    display: flex;
+    align-items: center;
+}
+
+.com-bg .com-ctn .item-t .r-btn {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+}
+
+.com-bg .com-ctn .l-ctn .expert-card-bg:nth-child(2) {
+    margin-top: 20px !important;
+}
+
+.com-bg .com-ctn .l-ctn .expert-card-bg {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 12px;
+    background: #fff;
+    border: 1px solid #f4f4f4;
+}
+
+.com-bg .com-ctn .l-ctn .expert-card-bg .e-head {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+.com-bg .com-ctn .l-ctn .expert-card-bg .r-bg {
+    margin-left: 10px;
+    width: calc(100% - 50px);
+}
+
+.com-bg .com-ctn .l-ctn .expert-card-bg .r-bg .c-top {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.com-bg .com-ctn .l-ctn .expert-card-bg .r-bg .c-top .e-name {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #444;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.com-bg .com-ctn .l-ctn .expert-card-bg .r-bg .c-top .ask-btn {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #39bf3e;
+    letter-spacing: 0;
+    padding: 3px 8px;
+    background: #fff;
+    border: 1px solid #39bf3e;
+}
+
+.com-bg .com-ctn .l-ctn .expert-card-bg .r-bg .e-company,
+.com-bg .com-ctn .l-ctn .expert-card-bg .r-bg .e-goodAt {
+    margin-top: 2px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+}
+
+.com-bg .com-ctn .l-ctn .expert-card-bg .r-bg .e-goodAt {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.com-bg .com-ctn .l-ctn .expert-card-bg .r-bg .flex-c {
+    display: flex;
+    align-items: center;
+}
+
+.com-bg .com-ctn .l-ctn .expert-card-bg .r-bg .e-num-item {
+    margin-top: 11px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #909090;
+    letter-spacing: 0;
+    margin-left: 39px;
+    line-height: 16px;
+    display: block;
+}
+
+.com-bg .com-ctn .l-ctn .expert-card-bg .r-bg .e-num-item:first-child {
+    margin-left: 0;
+}
+
+.com-bg .com-ctn .l-ctn .expert-card-bg .r-bg .e-num-item .s1 {
+    font-family: Helvetica-Bold;
+    font-size: 16px;
+    color: #444;
+    letter-spacing: 0;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.com-bg .com-ctn .c-ctn {
+    width: 252px;
+}
+
+.com-bg .com-ctn .item-t {
+    height: 16px;
+    align-items: center;
+}
+
+.com-bg .com-ctn .flex-c {
+    display: flex;
+    align-items: center;
+}
+
+.com-bg .com-ctn .item-t .l-t {
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #444;
+    letter-spacing: 0;
+    padding-left: 8px;
+    border-left: 4px solid #39bf3e;
+}
+
+.com-bg .com-ctn .item-t .r-btn {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+}
+
+.com-bg .com-ctn .c-ctn .ask-bg:nth-child(2) {
+    margin-top: 20px;
+}
+
+.com-bg .com-ctn .c-ctn .ask-bg {
+    margin-top: 15.5px;
+    display: block;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.com-bg .com-ctn .c-ctn .ask-bg .q-a-bg {
+    justify-content: flex-start;
+}
+
+.com-bg .com-ctn .c-ctn .ask-bg .q-a-bg .ask-icon {
+    height: 16px;
+    width: 16px;
+    flex: none;
+}
+
+.com-bg .com-ctn .c-ctn .ask-bg .q-a-bg .ask-ctn {
+    margin-left: 4px;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #444;
+    letter-spacing: 0;
+    line-height: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.com-bg .com-ctn .c-ctn .ask-bg .mar-t {
+    margin-top: 12px;
+}
+
+.com-bg .com-ctn .c-ctn .ask-bg .q-a-btm {
+    margin-top: 9px;
+    justify-content: space-between;
+}
+
+.com-bg .com-ctn .c-ctn .ask-bg .q-a-btm .a-time,
+.com-bg .com-ctn .c-ctn .ask-bg .q-a-btm .ask-len {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #909090;
+    letter-spacing: 0;
+}
+
+.com-bg .com-ctn .r-ctn {
+    display: block;
+    width: 351px;
+}
+
+.com-bg .com-ctn .r-ctn .xt-a-bg {
+    display: flex;
+    margin-top: 20px;
+    height: 60px;
+    width: 100%;
+}
+
+.com-bg .com-ctn .r-ctn .xt-a-bg .xt-image {
+    height: 60px;
+    width: 84px;
+}
+
+.com-bg .com-ctn .r-ctn .xt-a-bg .r-article {
+    margin-left: 10px;
+    width: calc(100% - 90px);
+}
+
+.com-bg .com-ctn .r-ctn .xt-a-bg .r-article .a-title {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #444;
+    letter-spacing: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    word-break: break-all;
+    height: 32px;
+}
+
+.com-bg .com-ctn .r-ctn .xt-a-bg .r-article .a-btm {
+    margin-top: 9px;
+    justify-content: space-between;
+}
+
+.com-bg .com-ctn .r-ctn .xt-a-bg .r-article .a-btm .l-btm,
+.com-bg .com-ctn .r-ctn .xt-a-bg .r-article .a-btm .r-btm {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #909090;
+    letter-spacing: 0;
+}
+
+
+
+/* 底部 */
+.com-bg .btm-t {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+    display: flex;
+}
+
+.com-bg .btm-t .l-item-bg {
+    margin-right: 180px;
+    width: calc(25% - 110px);
+}
+
+.com-bg .btm-t .l-item-bg .help-t {
+    display: flex;
+    padding-left: 16px;
+    align-items: center;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #444;
+    letter-spacing: 0;
+}
+
+.com-bg .btm-t .l-item-bg .help-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.com-bg .btm-t .l-item-bg .help-list .h-i {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+

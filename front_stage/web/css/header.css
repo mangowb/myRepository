@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+
+html {
+    /* （移动端上）有事件监听的元素被点击的时候会被高亮显示，想要去掉这一效果只要设置：-webkit-tap-highlight-color： transparent；  */
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 头像 */
+.text-avatar{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: #87d078;
+    border-radius: 50%;
+    line-height: 32px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+/* 导航栏 */
+.com-bg {
+    position: relative;
+    width: 100%;
+}
+
+.com-bg .h-t-bg {
+    height: 32px;
+    width: 100%;
+    background: #fafafa;
+}
+
+.com-bg .h-t-bg .h-t-c {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.com-bg .h-t-bg .h-t-c .l-h-t-c,
+.com-bg .h-t-bg .h-t-c .r-h-t-c {
+    display: flex;
+    /* 垂直方向上居中 */
+    align-items: center;
+}
+
+.com-bg .h-t-bg .h-t-c .l-h-t-c .l-it {
+    margin-left: 20px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+    height: 13px;
+}
+
+.com-bg .h-t-bg .h-t-c .f-c {
+    display: flex;
+    align-items: center;
+}
+
+.com-bg .h-t-bg .h-t-c .l-h-t-c .f-c .l-f,
+.com-bg .h-t-bg .h-t-c .l-h-t-c .f-c .l-l {
+    cursor: pointer;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+
+    letter-spacing: 0;
+    margin-left: 30px;
+}
+
+.com-bg .h-t-bg .h-t-c .l-h-t-c .f-c .l-l a{
+    color: #87d078;
+}
+
+.com-bg .h-t-bg .h-t-c .l-h-t-c .f-c .l-f a{
+    color: #646464;
+}
+
+.com-bg .h-t-bg .h-t-c .r-h-t-c .cascade-bar {
+    position: relative;
+    z-index: 999;
+    height: 32px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+    justify-content: center;
+    width: 80px;
+}
+
+/* 头像部分 */
+
+.head_item{
+    height: 32px;
+    color: #646464 !important;
+    line-height: 32px;
+    font-size: 12px;
+}
+
+/* 顶部 */
+.com-bg .h-c-bg {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    padding-top: 30px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.com-bg .h-c-bg .h-c-c {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    width: 1200px;
+}
+
+/* logo */
+.com-bg .h-c-bg .h-c-c .l-h-c-c {
+    position: relative;
+}
+
+.com-bg .h-c-bg .h-c-c .l-h-c-c .hn-logo {
+    height: 90px;
+}
+
+/* 搜索栏 */
+@media screen and (max-width: 10000px) {
+    .ssearch-bg{
+        margin-left: 520px;
+        position: relative;
+    }
+}
+@media screen and (max-width: 768px) {
+    .ssearch-bg{
+        margin-left: 50px;
+        position: relative;
+    }
+}
+.s-bg .search-bg {
+    background: #fff;
+    border: 2px solid #87d078;
+    display: flex;
+    position: relative;
+}
+
+.s-bg .search-bg .s-l {
+    line-height: 36px;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #444;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 0 25px;
+    border-right: 1px solid #ededed;
+    height: 36px;
+    cursor: pointer;
+}
+
+.s-bg .search-bg .s-t {
+    position: relative;
+}
+
+.s-bg .search-bg .s-t .search-ctn {
+    height: 34px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 310px;
+    line-height: 36px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #444;
+    letter-spacing: 0;
+    border: none !important;
+}
+
+.s-bg .search-bg .s-r {
+    cursor: pointer;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0;
+    line-height: 36px;
+    text-align: center;
+    padding: 0 34px;
+    background: #87d078;
+    height: 36px;
+}
+
+.s-bg .s-btn {
+    padding: 10px 15px;
+    margin-left: 20px;
+}
+
+.search_menu{
+    display: none;
+    flex: auto;
+    width: 388px;
+    background: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    z-index: 1;
+}
+.search_menu li{
+    border-bottom: 1px solid rgb(216, 214, 214);
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.search_menu li a{
+    margin-left: 25px;
+}
+
+.com-bg .h-c-bg .h-c-c .ssearch-bg .hot-cate-list {
+    margin-top: 15px;
+    display: block;
+}
+
+.com-bg .h-c-bg .h-c-c .ssearch-bg .hot-cate-list .cate-items:first-child {
+    margin-left: 0;
+}
+
+.com-bg .h-c-bg .h-c-c .ssearch-bg .hot-cate-list .cate-items {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+    margin-left: 15px;
+}
+
+/* 导航条 */
+.com-bg .h-b-bg {
+    position: relative;
+    background: #fff;
+    width: 100%;
+}
+
+.com-bg .h-b-bg .h-b-c {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.com-bg .h-b-bg .l-h-b-c {
+    float: left;
+    align-items: center;
+}
+
+.com-bg .h-b-bg .l-h-b-c .tab-items:first-child {
+    margin-left: 22px;
+}
+
+.com-bg .h-b-bg .l-h-b-c .tab-items {
+    position: relative;
+    margin-left: 40px;
+    font-family: PingFangSC-Semibold;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 0;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.com-bg .h-b-bg .l-h-b-c .tab-items-a,
+.com-bg .h-b-bg .l-h-b-c .tab-items:hover {
+    color: #87d078;
+}
+
+.navbar-header{
+    background-color: #fff;
+}
+
+/* 底部 */
+.com-bg .btm-t {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+    display: flex;
+}
+
+.com-bg .btm-t .l-item-bg {
+    margin-right: 180px;
+    width: calc(25% - 110px);
+}
+
+.com-bg .btm-t .l-item-bg .help-t {
+    display: flex;
+    padding-left: 16px;
+    align-items: center;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #444;
+    letter-spacing: 0;
+}
+
+.com-bg .btm-t .l-item-bg .help-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.com-bg .btm-t .l-item-bg .help-list .h-i {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #646464;
+    letter-spacing: 0;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+

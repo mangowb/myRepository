@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>供应大厅</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/ask_buy.css">
+
+
+</head>
+
+<body>
+    <!-- 1.顶部 -->
+    <header>
+        <div class="com-bg">
+            <!-- 导航栏 -->
+            <nav class="navbar-default navbar-fixed-top  h-t-bg" style="background: #fff;" role="navigation">
+                <div class="h-t-c container">
+                    <ul class="layui-nav l-h-t-c" style="background-color: #fff; height:32px;padding:0;">
+                        <li class="layui-nav-item">
+                            <div class="head_item">欢迎来到助农网！</div>
+                        </li>
+                        <li class="layui-nav-item num1">
+                            <a href="./login.html" class="head_item" style="color: #87d078 !important;">请登录</a>
+                        </li>
+                        <li class="layui-nav-item num2">
+                            <a href="./login.html" class="head_item">免费注册</a>
+                        </li>
+                    </ul>
+                    <div class="r-h-t-c">
+                        <div class="cascade-bar f-c">
+                            买家中心
+                        </div>
+                        <div class="cascade-bar f-c">
+                            卖家中心
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- 顶部 -->
+            <div class="h-c-bg">
+                <div class="h-c-c">
+                    <a href="#" class="l-h-c-c"><img src="./img/logo.png" alt="助农网" class="hn-logo"></a>
+                    <div class="ssearch-bg">
+                        <div class="s-bg">
+                            <div class="search-bg">
+                                <div class="s-l">供应</div>
+                                <div class="s-t">
+                                    <input type="text" placeholder="请输入您要的货品" value="" class="search-ctn">
+                                </div>
+                                <button class="s-r">搜索</button>
+                            </div>
+                        </div>
+                        <div class="hot-cate-list f-c">
+                            <a href="/supply/search/?k=苹果" target="_blank" rel="nofollow" class="cate-items">苹果</a>
+                            <a href="/supply/search/?k=牛副产品" target="_blank" rel="nofollow" class="cate-items">牛副产品</a>
+                            <a href="/supply/search/?k=柑桔" target="_blank" rel="nofollow" class="cate-items">柑桔</a>
+                            <a href="/supply/search/?k=猪副产品" target="_blank" rel="nofollow" class="cate-items">猪副产品</a>
+                            <a href="/supply/search/?k=红薯" target="_blank" rel="nofollow" class="cate-items">红薯</a>
+                            <a href="/supply/search/?k=鸡蛋" target="_blank" rel="nofollow" class="cate-items">鸡蛋</a>
+                            <a href="/supply/search/?k=鸡" target="_blank" rel="nofollow" class="cate-items">鸡</a>
+                            <a href="/supply/search/?k=牛肉" target="_blank" rel="nofollow" class="cate-items">牛肉</a>
+                        </div>
+                        <ul class="search_menu">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航条 -->
+            <nav class="navbar h-b-bg" style="margin-bottom: 0;" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#example-navbar-collapse" style="background-color:#dcecbd">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav l-h-b-c">
+                            <li><a href="./homePage.html" target="" rel="" class="tab-items">首页</a></li>
+                            <li><a href="./ask_to_buy.html " target="" rel="" class="tab-items"
+                                    id="./ask_to_buy.html">供应大厅</a></li>
+                            <li><a href="./whomePage.html " target="" rel="" class="tab-items"
+                                    id="./whomePage.html">采购大厅</a></li>
+                            <li><a href="./seeding1.html " target="" rel="" class="tab-items"
+                                    id="./seeding1.html">果苗严选</a></li>
+                            <li><a href="./growth_center.html " id="./growth_center.html" target="" rel=""
+                                    class="tab-items">成长中心</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- 分类 -->
+    <div class="search-bar">
+        <!--分类-->
+        <div class="search-frist">
+            <div class="search-bar-fristitem" id="all" onclick="all()"><a>全部分类</a></div>
+            <div class="search-bar-fristitem"><a>水果</a></div>
+            <div class="search-bar-fristitem"><a>蔬菜</a></div>
+            <div class="search-bar-fristitem"><a>禽畜肉蛋</a></div>
+            <div class="search-bar-fristitem"><a>水产</a></div>
+            <div class="search-bar-fristitem"><a>农副加工</a></div>
+            <div class="search-bar-fristitem"><a>粮油米面</a></div>
+            <div class="search-bar-fristitem"><a>农资农机</a></div>
+            <div class="search-bar-fristitem"><a>中药材</a></div>
+            <div class="search-bar-fristitem"><a>日用百货</a></div>
+            <div class="search-bar-fristitem"><a>土地流转</a></div>
+            <div class="search-bar-fristitem"><a>包装</a></div>
+            <div class="search-bar-fristitem"><a>农业服务</a></div>
+            <div class="search-bar-fristitem"><a>农工服务</a></div>
+            <div class="search-bar-fristitem"><a>农技服务</a></div>
+            <div class="search-bar-fristitem"><a>经济作物</a></div>
+        </div>
+        <!--热门推荐-->
+        <div class="search-bar-second">--热门推荐--</div>
+        <div class="search-bar-seconditems">
+            <div class="search-bar-seconditem">
+                <div class="search-bar-seconditem-item"><a>柑橘</a></div>
+                <div class="search-bar-seconditem-item"><a>苹果</a></div>
+                <div class="search-bar-seconditem-item"><a>鸡</a></div>
+                <div class="search-bar-seconditem-item"><a>红薯</a></div>
+                <div class="search-bar-seconditem-item"><a>鸡蛋</a></div>
+                <div class="search-bar-seconditem-item"><a>羊</a></div>
+                <div class="search-bar-seconditem-item"><a>鸡苗</a></div>
+                <div class="search-bar-seconditem-item"><a>橙子</a></div>
+                <div class="search-bar-seconditem-item"><a>柑桔苗</a></div>
+                <div class="search-bar-seconditem-item"><a>干玉米</a></div>
+                <div class="search-bar-seconditem-item"><a>辣椒</a></div>
+                <div class="search-bar-seconditem-item"><a>大米</a></div>
+                <div class="search-bar-seconditem-item"><a>玉米种子</a></div>
+                <div class="search-bar-seconditem-item"><a>土豆</a></div>
+            </div>
+            <div class="search-bar-seconditem">
+                <div class="search-bar-seconditem-item"><a>白菜</a></div>
+                <div class="search-bar-seconditem-item"><a>牛</a></div>
+                <div class="search-bar-seconditem-item"><a>甘蔗</a></div>
+                <div class="search-bar-seconditem-item"><a>核桃</a></div>
+                <div class="search-bar-seconditem-item"><a>休闲零食</a></div>
+                <div class="search-bar-seconditem-item"><a>柚子</a></div>
+                <div class="search-bar-seconditem-item"><a>鲜玉米</a></div>
+                <div class="search-bar-seconditem-item"><a>糟渣类饲料</a></div>
+                <div class="search-bar-seconditem-item"><a>鸭</a></div>
+                <div class="search-bar-seconditem-item"><a>有机肥</a></div>
+                <div class="search-bar-seconditem-item"><a>草莓</a></div>
+                <div class="search-bar-seconditem-item"><a>大葱</a></div>
+                <div class="search-bar-seconditem-item"><a>生猪</a></div>
+                <div class="search-bar-seconditem-item"><a>榴莲</a></div>
+            </div>
+            <div class="search-bar-seconditem">
+                <div class="search-bar-seconditem-item"><a>鱼苗</a></div>
+                <div class="search-bar-seconditem-item"><a>花生</a></div>
+                <div class="search-bar-seconditem-item"><a>生姜</a></div>
+                <div class="search-bar-seconditem-item"><a>猪苗</a></div>
+                <div class="search-bar-seconditem-item"><a>红枣</a></div>
+                <div class="search-bar-seconditem-item"><a>生蚝</a></div>
+                <div class="search-bar-seconditem-item"><a>葡萄</a></div>
+                <div class="search-bar-seconditem-item"><a>鹅苗</a></div>
+                <div class="search-bar-seconditem-item"><a>杀菌剂</a></div>
+                <div class="search-bar-seconditem-item"><a>大闸蟹</a></div>
+                <div class="search-bar-seconditem-item"><a>复合肥</a></div>
+                <div class="search-bar-seconditem-item"><a>西红柿</a></div>
+                <div class="search-bar-seconditem-item"><a>杀虫剂</a></div>
+                <div class="search-bar-seconditem-item"><a>山药</a></div>
+            </div>
+        </div>
+        <div class="context-box">
+            <div class="context-left">
+                <div class="purchase-table">
+                    <div class="heard">
+                        <ul class="eye-flex">
+                            <li class="eye-renderer-item">
+                                <div class="eye-renderer-inner">
+                                    <div>采购品种</div>
+                                </div>
+                            </li>
+                            <li class="eye-renderer-item">
+                                <div class="eye-renderer-inner">
+                                    <div>采购数量</div>
+                                </div>
+                            </li>
+                            <li class="eye-renderer-item">
+                                <div class="eye-renderer-inner">
+                                    <div>期望货源地</div>
+                                </div>
+                            </li>
+                            <li class="eye-renderer-item">
+                                <div class="eye-renderer-inner">
+                                    <div>发布人</div>
+                                </div>
+                            </li>
+                            <li class="eye-renderer-item">
+                                <div class="eye-renderer-inner">
+                                    <div>认证情况</div>
+                                </div>
+                            </li>
+                            <li class="eye-renderer-item">
+                                <div class="eye-renderer-inner">
+                                    <div>&nbsp;</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <ul class="content-items">
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">蓝花楹 </div>
+                                            <div class="qty">4颗</div>
+                                            <div class="scopeFullName">四川省,</div>
+                                            <div class="linkName">罗林</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">猪苗 长白仔猪 </div>
+                                            <div class="qty">30头</div>
+                                            <div class="scopeFullName">全国</div>
+                                            <div class="linkName">猪苦胆采购</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">仪花树 </div>
+                                            <div class="qty">2000颗</div>
+                                            <div class="scopeFullName">全国,</div>
+                                            <div class="linkName">邓晋江</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">柠檬 香水柠檬 </div>
+                                            <div class="qty">20000斤</div>
+                                            <div class="scopeFullName">全国,</div>
+                                            <div class="linkName">辉少香水柠檬</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">柑橘 </div>
+                                            <div class="qty">20000斤</div>
+                                            <div class="scopeFullName">全国</div>
+                                            <div class="linkName">hn1358535</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">柠檬 </div>
+                                            <div class="qty">2斤</div>
+                                            <div class="scopeFullName">全国</div>
+                                            <div class="linkName">邱建民</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">橙子 </div>
+                                            <div class="qty">15000斤</div>
+                                            <div class="scopeFullName">全国</div>
+                                            <div class="linkName">华辰市场</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">鸵鸟 </div>
+                                            <div class="qty">10头</div>
+                                            <div class="scopeFullName">全国</div>
+                                            <div class="linkName">王村林</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">柳树 速生柳 </div>
+                                            <div class="qty">200颗</div>
+                                            <div class="scopeFullName">河北省保定市，山东省</div>
+                                            <div class="linkName">张石章</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            = <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">茶枯 </div>
+                                            <div class="qty">1000000斤</div>
+                                            <div class="scopeFullName">全国</div>
+                                            <div class="linkName">张俊华</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">大米 碎米 </div>
+                                            <div class="qty">600000斤</div>
+                                            <div class="scopeFullName">境外缅甸</div>
+                                            <div class="linkName">hn1527682</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">红薯烟薯 </div>
+                                            <div class="qty">15000斤</div>
+                                            <div class="scopeFullName">全国</div>
+                                            <div class="linkName">hn1362015</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">农用拖拉机 轮式拖拉机 </div>
+                                            <div class="qty">1台</div>
+                                            <div class="scopeFullName">全国</div>
+                                            <div class="linkName">杨艳龙</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">淀粉 小麦淀粉 </div>
+                                            <div class="qty">6000000斤</div>
+                                            <div class="scopeFullName">全国</div>
+                                            <div class="linkName">hn1588091</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="content-item">
+                                <div class="content-item-inner">
+                                    <a href="" class="purchase-link">
+                                        <div class="purchase-cell">
+                                            <div class="cateName">章鱼 </div>
+                                            <div class="qty">4000斤</div>
+                                            <div class="scopeFullName">全国</div>
+                                            <div class="linkName">hn1399754</div>
+                                            <div class="cert-center">
+                                                <!---->
+                                                <!---->
+                                            </div>
+                                            <div class="moreCell">查看详情</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pagination eys-pagination">
+                    <button type="button" class="icon-back">
+                        左
+                    </button>
+                    <div class="eye-pager">
+                        <a class="number">1</a>
+                        <a class="number">2</a>
+                        <a class="number">3</a>
+                        <a class="number">4</a>
+                        <a class="number">5</a>
+                        <a class="number">6</a>
+                        <a class="number">7</a>
+                        <a class="number">8</a>
+                    </div>
+                    <button type="button" class="icon-next">
+                        右
+                    </button>
+                </div>
+            </div>
+            <div class="context-right">
+                <div class="chart-container">
+                    <div class="title">近七天采购热门</div>
+                    <div id="chart1" class="chart"
+                        style="height: 260px; -webkit-tap-highlight-color: transparent; user-select: none;"
+                        data-v-4a642f44="" _echarts_instance_="ec_1669126932799">
+                        <div
+                            style="position: relative; overflow: hidden; width: 288px; height: 260px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+                            <canvas data-zr-dom-id="zr_0" width="288" height="260"
+                                style="position: absolute; left: 0px; top: 0px; width: 288px; height: 260px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;">
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="com-bg">
+                    <div class="com-ctn">
+                        <div class="r-ctn">
+                            <div class="item-t">
+                                <div class="l-t">推荐文章</div>
+                            </div>
+                            <a href="/xt/article-117728.html" target="_blank" class="xt-a-bg" data-v-58492f04="">
+                                <img title="什么是配方肥料？配方肥料要怎么施？" alt="" class="xt-image" data-v-58492f04=""
+                                    data-src="https://image.cnhnb.com/image/jpg/miniapp/2022/11/22/94ee355bb9d04d248faca7a255bbca9e.jpg"
+                                    src="https://image.cnhnb.com/image/jpg/miniapp/2022/11/22/94ee355bb9d04d248faca7a255bbca9e.jpg"
+                                    lazy="loaded">
+                                <div class="r-article" data-v-58492f04="">
+                                    <div class="a-title" data-v-58492f04="">什么是配方肥料？配方肥料要怎么施？</div>
+                                    <div class="a-btm" data-v-58492f04="">
+                                        <div class="l-btm" data-v-58492f04="">惠农网·农技学堂</div>
+                                        <div class="r-btm flex-c" data-v-58492f04="">12428</div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer>
+        <div>
+            <div class="com-bg">
+                <div class="btm-t">
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-xinshouzhinan" data-v-14a6ca34=""></i>
+                            新手指南
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnb.com/login/" target="_blank" rel="nofollow" title="注册账户"
+                                class="h-i">注册账户</a>
+                            <a href="https://www.cnhnkj.com/app.html#h2-1" target="_blank" rel="nofollow" title="平台功能"
+                                class="h-i">平台功能</a>
+                            <a href="https://m.cnhnb.com/zhuanti/zxjyzt_hn/" target="_blank" rel="nofollow" title="在线交易"
+                                class="h-i">在线交易</a>
+                            <a href="http://wx.mobile.cnhnb.com/mango/pro/specialpage/page/propaganda3/index.html"
+                                target="_blank" rel="nofollow" title="买家保障" class="h-i">买家保障</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-kehufuwu"></i>
+                            产品服务
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnb.com/supply/" target="_blank" rel="" title="找供应"
+                                class="h-i">找供应</a>
+                            <a href="https://www.cnhnb.com/purchase/" target="_blank" rel="" title="找采购"
+                                class="h-i">找采购</a>
+                            <a href="https://www.cnhnb.com/hangqing/" target="_blank" rel="" title="看行情"
+                                class="h-i">看行情</a>
+                            <a href="https://www.cnhnb.com/app/download/" target="_blank" rel="nofollow" title="发布供应"
+                                class="h-i">发布供应</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/friends/yjdf_special" target="_blank"
+                                rel="nofollow" title="一件代发" class="h-i">一件代发</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-pingtaishengming"></i>
+                            合作联系
+                        </div>
+                        <div class="help-list">
+                            <a target="_blank" rel="" title="客户服务 400-008-8688" class="h-i">客户服务</a>
+                            <a target="_blank" rel="" title="商务洽谈 0731-88189999" class="h-i">商务洽谈</a>
+                            <a target="_blank" rel="" title="媒体合作 0731-88189999" class="h-i">媒体合作</a>
+                            <a href="https://www.cnhnb.com/knowledge/" target="_blank" rel="" title="知识产权综合服务平台"
+                                class="h-i">知识产权综合服务平台</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-guanyuhuinong"></i>
+                            关于惠农
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnkj.com/about.html" target="_blank" rel="" title="关于我们"
+                                class="h-i">关于我们</a>
+                            <a href="https://www.cnhnkj.com/about.html#h2-3" target="_blank" rel="nofollow"
+                                title="惠农大事件" class="h-i">助农大事件</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/privacy/?id=1" target="_blank" rel="nofollow"
+                                title="服务协议" class="h-i">服务协议</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/privacy/?id=3" target="_blank" rel="nofollow"
+                                title="隐私协议" class="h-i">隐私协议</a>
+                            <a href="https://m.cnhnb.com/mango/pro/help-center/help-list" target="_blank" rel="nofollow"
+                                title="规则说明" class="h-i">规则说明</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="sjk">sjk</button>
+        <button onclick="window.location.href='./q.html?typeID='+1+'&userid='+2" type="button" id="add">新增</button>
+        <button onclick="collect()">收藏</button>
+        <div id="sadasd" onclick="Del()">sedae</div>
+
+    </footer>
+
+
+
+    <script src="./layui/layui.all.js"></script>
+    <script src="./js/jQuery.min.js"></script>
+    <script src="./js/baseAPI.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="./js/header.js"></script>
+
+    <script>
+        //获取button元素
+
+        const btn = document.getElementById("sjk");
+        function all() {
+            $.ajax({
+                url: '/api/ask',
+                method: 'GET',
+                dataType: 'json',
+                success: function (res) {
+                    // dataoperation(res.data[0][1].typeID)
+                    console.log(235)
+                    $(".content").empty()
+                    console.log(res[0])
+                    let ul = $('<ul></ul>')
+                    res.map(item => {
+                        let span1 = $('<a href="./Personal_Center.html" class="cateName" pid=' + item.pID + ' onclick="Del()"></a)').append(item.goods)
+                        let span2 = $('<div class="qty"></div) ').append(item.quantity)
+                        let span3 = $('<div class="scopeFullName"></div) ').append(item.deliveryAddress)
+                        let span4 = $('<div class="linkName"></div)').append(item.userID)
+                        let span5 = $('<div class="cert-center"></div)')
+                        let span6 = $('<a class="moreCell"  pid=' + item.pID + ' onclick="Del()"></a').append("查看更多")
+                        $('<div></div>').append(span1).append(span2).append(span3).append(span4).append(span5).append(span6).appendTo(ul).appendTo($('.content'))
+                    })
+
+                    $('body').append(ul)
+
+                }
+            })
+        }
+        function collect() {
+            $.ajax({
+                /* url 地址可以是 /get-json/ 的方式
+                *  也可以是 http://www.qfedu.com/get-json/ 的方式
+                */
+                url: 'http://localhost:8080/collect',
+                type: 'POST',
+                data: { userID: 1, goodSID: 2 },
+
+                success: function (res) {
+                    alert("success")
+                    // 成功处理逻辑
+                },
+                error: function (res) {
+                    // 错误时处理逻辑
+                }
+            });
+        }
+        window.onload = function () {
+            var el = document.getElementById("all");
+            el.onclick = all;
+        }
+        function Del(obj) {
+            var id = event.target.getAttribute("pid");
+            return id;
+
+        }
+    </script>
+</body>
+
+</html>

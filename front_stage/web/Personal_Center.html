@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/Personal_Center.css">
+    <link rel="stylesheet" href="./css/header.css">
+</head>
+
+<body>
+    <!-- 1.顶部 -->
+    <header>
+        <div class="com-bg">
+            <!-- 导航栏 -->
+            <nav class="navbar-default navbar-fixed-top  h-t-bg" style="background: #fff;" role="navigation">
+                <div class="h-t-c container">
+                    <ul class="layui-nav l-h-t-c" style="background-color: #fff; height:32px;padding:0;">
+                        <li class="layui-nav-item">
+                            <div class="head_item">欢迎来到助农网！</div>
+                        </li>
+                        <li class="layui-nav-item num1">
+                            <a href="./login.html" class="head_item" style="color: #87d078 !important;">请登录</a>
+                        </li>
+                        <li class="layui-nav-item num2">
+                            <a href="./login.html" class="head_item">免费注册</a>
+                        </li>
+                    </ul>
+                    <div class="r-h-t-c">
+                        <div class="cascade-bar f-c">
+                            买家中心
+                        </div>
+                        <div class="cascade-bar f-c">
+                            卖家中心
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- 顶部 -->
+            <div class="h-c-bg">
+                <div class="h-c-c">
+                    <a href="#" class="l-h-c-c"><img src="./img/logo.png" alt="助农网" class="hn-logo"></a>
+                    <div class="ssearch-bg">
+                        <div class="s-bg">
+                            <div class="search-bg">
+
+                                <div class="s-t">
+                                    <input type="text" placeholder="请输入您要的货品" value="" class="search-ctn">
+                                </div>
+                                <button class="s-r">搜索</button>
+                            </div>
+                        </div>
+                        <div class="hot-cate-list f-c">
+                            <a href="/supply/search/?k=苹果" target="_blank" rel="nofollow" class="cate-items">苹果</a>
+                            <a href="/supply/search/?k=牛副产品" target="_blank" rel="nofollow" class="cate-items">牛副产品</a>
+                            <a href="/supply/search/?k=柑桔" target="_blank" rel="nofollow" class="cate-items">柑桔</a>
+                            <a href="/supply/search/?k=猪副产品" target="_blank" rel="nofollow" class="cate-items">猪副产品</a>
+                            <a href="/supply/search/?k=红薯" target="_blank" rel="nofollow" class="cate-items">红薯</a>
+                            <a href="/supply/search/?k=鸡蛋" target="_blank" rel="nofollow" class="cate-items">鸡蛋</a>
+                            <a href="/supply/search/?k=鸡" target="_blank" rel="nofollow" class="cate-items">鸡</a>
+                            <a href="/supply/search/?k=牛肉" target="_blank" rel="nofollow" class="cate-items">牛肉</a>
+                        </div>
+                        <ul class="search_menu">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="gray-bg">
+            <div class="g-context flex">
+                <div class="left col-lg-3 col-md-6">
+                    <button type="button" class="link shouye">首页</button>
+                    <button type="button" class="link yimai">已买到的货品</button>
+                    <button type="button" class="link tuihuo">退货退款</button>
+                    <button type="button" class="link shoucang">收藏夹</button>
+                    <button type="button" class="link gaimi">修改密码</button>
+                </div>
+                <div class="right p_shouye col-lg-9 col-md-6">
+                    <div class="shop-content">
+                        <div class="shop-information-bg">
+                            <div class="shop-left-content">
+                                <div class="sell-information">
+                                    <div class="user-img">
+                                        <img src="https://image.cnhnb.com/20b0aaeb-c6cb-48c1-9481-80952abca595"
+                                            alt="用户头像">
+                                    </div>
+                                    <div class="user-name">
+                                        hn1810275
+                                        <div class="sayHello">
+                                            晚上好
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-right-content">
+                                <div class="merchant-certification">
+                                    <div>
+                                        认证情况
+                                    </div>
+                                </div>
+                                <div class="user-volume">
+                                    <ul>
+                                        <li style="cursor: pointer;">
+                                            <p class="count">
+                                                0
+                                            </p>
+                                            <span class="label">
+                                                待付款
+                                            </span>
+                                        </li>
+                                        <li style="cursor: pointer;">
+                                            <p class="count">
+                                                0
+                                            </p>
+                                            <span class="label">
+                                                待发货
+                                            </span>
+                                        </li>
+                                        <li style="cursor: pointer;">
+                                            <p class="count">
+                                                0
+                                            </p>
+                                            <span class="label">
+                                                待收货
+                                            </span>
+                                        </li>
+                                        <li style="cursor: pointer;">
+                                            <p class="count">
+                                                0
+                                            </p>
+                                            <span class="label">
+                                                待退款
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right p_yimai" style="display: none;">
+                    <div class="right-container">
+                        <div class="content">
+                            <div class="search">
+                                <div class="search-item">
+                                    <div class="search-item-t">订单号：</div>
+                                    <div class="el-input" data-v-332d7d43="" data-v-43b97b72="">
+                                        <!---->
+                                        <input type="text" autocomplete="off" placeholder="请输入订单号"
+                                            class="el-input__inner">
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                    </div>
+                                </div>
+                                <div class="search-item">
+                                    <div class="search-item-t">订单状态：</div>
+                                    <div class="el-select" data-v-332d7d43="" data-v-43b97b72="">
+                                        <!---->
+                                        <div class="el-input el-input--suffix">
+                                            <!----><input type="text" readonly="readonly" autocomplete="off"
+                                                placeholder="请选择" class="el-input__inner">
+                                            <!----><span class="el-input__suffix"><span
+                                                    class="el-input__suffix-inner"><i
+                                                        class="el-select__caret el-input__icon el-icon-arrow-up"></i>
+                                                    <!---->
+                                                    <!---->
+                                                    <!---->
+                                                    <!---->
+                                                    <!---->
+                                                </span>
+                                                <!---->
+                                            </span>
+                                            <!---->
+                                            <!---->
+                                        </div>
+                                        <div class="el-select-dropdown el-popper"
+                                            style="display: none; min-width: 209.267px;">
+                                            <div class="el-scrollbar">
+                                                <div class="el-select-dropdown__wrap el-scrollbar__wrap"
+                                                    style="margin-bottom: -17px; margin-right: -17px;">
+                                                    <ul class="el-scrollbar__view el-select-dropdown__list">
+                                                        <!---->
+                                                        <li class="el-select-dropdown__item" data-v-332d7d43="">
+                                                            <span>全部</span>
+                                                        </li>
+                                                        <li class="el-select-dropdown__item" data-v-332d7d43="">
+                                                            <span>待卖家修改</span>
+                                                        </li>
+                                                        <li class="el-select-dropdown__item" data-v-332d7d43="">
+                                                            <span>待付款</span>
+                                                        </li>
+                                                        <li class="el-select-dropdown__item" data-v-332d7d43="">
+                                                            <span>待发货</span>
+                                                        </li>
+                                                        <li class="el-select-dropdown__item" data-v-332d7d43="">
+                                                            <span>待确认收货</span>
+                                                        </li>
+                                                        <li class="el-select-dropdown__item" data-v-332d7d43="">
+                                                            <span>交易成功</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="el-scrollbar__bar is-horizontal">
+                                                    <div class="el-scrollbar__thumb" style="transform: translateX(0%);">
+                                                    </div>
+                                                </div>
+                                                <div class="el-scrollbar__bar is-vertical">
+                                                    <div class="el-scrollbar__thumb" style="transform: translateY(0%);">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-item">
+                                    <div class="search-item-t">商品名称：</div>
+                                    <div class="el-input">
+                                        <input type="text" autocomplete="off" placeholder="请输入商品名称"
+                                            class="el-input__inner">
+                                    </div>
+                                </div>
+                                <div class="search-item">
+                                    <div class="search-item-t">收货人名字：</div>
+                                    <div class="el-input">
+                                        <input type="text" autocomplete="off" placeholder="请输入收货人名字"
+                                            class="el-input__inner">
+                                    </div>
+                                </div>
+                                <div class="search-item">
+                                    <div class="search-item-t">收货人电话：</div>
+                                    <div class="el-input">
+                                        <input type="number" autocomplete="off" placeholder="请输入收货人电话"
+                                            class="el-input__inner">
+                                    </div>
+                                </div>
+                                <div class="search-item">
+                                    <div class="search-item-t">下单时间：</div>
+                                    <div class="el-date-editor">
+                                        <!---->
+                                        <input type="text" autocomplete="off" name="" placeholder="开始日期"
+                                            class="el-input__inner">
+                                        <span class="el-input__prefix">
+                                            <i class="el-input__icon el-icon-date"></i>
+                                            <!---->
+                                        </span>
+                                        <span class="el-input__suffix">
+                                            <span class="el-input__suffix-inner">
+                                                <i class="el-input__icon"></i>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    至
+                                    <div class="el-date-editor">
+                                        <!---->
+                                        <input type="text" autocomplete="off" name="" placeholder="结束日期"
+                                            class="el-input__inner">
+                                        <span class="el-input__prefix">
+                                            <i class="el-input__icon el-icon-date">
+                                            </i>
+                                            <!---->
+                                        </span><span class="el-input__suffix">
+                                            <span class="el-input__suffix-inner">
+                                                <i class="el-input__icon"></i>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-operation">
+                                <div class="search-btn grey-c">查询</div>
+                                <div class="search-btn default-c">重置</div>
+                                <div class="search-btn grey-c">导出</div>
+                            </div>
+                            <div class="tabs">
+                                <ul style="display: flex;">
+                                    <li class="tab-item">全部</li>
+                                    <li class="tab-item active">待卖家修改</li>
+                                    <li class="tab-item">待付款</li>
+                                    <li class="tab-item">待发货</li>
+                                    <li class="tab-item">待确认收货</li>
+                                    <li class="tab-item">交易成功</li>
+                                </ul>
+                            </div>
+                            <div class="title" style="display:block;">
+                                <ul>
+                                    <li class="title-item" style="width:270px;">货品</li>
+                                    <li class="title-item" style="width:80px;">单价</li>
+                                    <li class="title-item" style="width:80px;">数量</li>
+                                    <li class="title-item" style="width:75px;">收件人</li>
+                                    <li class="title-item" style="width:90px;">商品操作</li>
+                                    <li class="title-item" style="width:139px;">实付款</li>
+                                    <li class="title-item" style="width:110px;">交易状态</li>
+                                    <li class="title-item" style="width:110px;">交易操作</li>
+                                </ul>
+                            </div>
+                            <div class="search">
+                                <div class="page">
+                                    <div class="root">
+                                        <div class="page">
+                                            <input disabled="disabled" type="button" value="上一页" class="btn disabled">
+                                            <input disabled="disabled" type="button" value="下一页" class="btn disabled">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order">
+                                <div style="text-align:center;height:40px;" data-v-43b97b72="" data-v-332d7d43="">暂无数据
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right p_tuihuo" style="display: none;">
+                    <div class="right-container">
+                        <div class="content">
+                            <div class="title">
+                                <ul>
+                                    <li class="title-item" style="width:270px;">货品</li>
+                                    <li class="title-item" style="width:120px;">退款金额</li>
+                                    <li class="title-item" style="width:210px;">申请时间</li>
+                                    <li class="title-item" style="width:118px;">类型</li>
+                                    <li class="title-item" style="width:120px;">退款状态</li>
+                                    <li class="title-item" style="width:120px;">订单操作</li>
+                                </ul>
+                            </div>
+                            <div class="search">
+                                <div class="search-label">
+                                    <input type="text" placeholder="输入商品标题" autocomplete="off" value=""
+                                        class="search-input">
+                                    <input type="button" value="搜索" class="search-btn">
+                                </div>
+                            </div>
+                            <div class="page">
+                                <div class="root">
+                                    <div class="page" style="font-size: 0;">
+                                        <input disabled="disabled" type="button" value="上一页" class="btn disabled">
+                                        <input disabled="disabled" type="button" value="下一页" class="btn disabled">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orders">
+                            <div style="text-align:center;height:40px;">
+                                暂无数据
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right p_shoucang" style="display: none;">
+                    <div class="right">
+                        <div class="right-container">
+                            <div class="c-content">
+                                <div class="collection-info">
+                                    <div class="title">全部宝贝</div>
+                                    <div class="list">
+                                        <ul class="eye-flex">
+                                            <div class="collection-item">
+                                                <div class="product-bg">
+                                                    <span class="pro-delete"></span>
+                                                    <div class="pro-img">
+                                                        <!---->
+                                                        <a href="/gongying/7326595/" target="">
+                                                            <img data-v-59e9e5b8="" alt="中联重科RG2104轮式拖拉机"
+                                                                src="https://image.cnhnb.com/image/jpeg/head/2022/09/02/4ab2c3103138469ea7091bbad7840ab4.jpeg?imageView2/1/w/351/h/351/format/jpg/interlace/1/quality/100!/ignore-error/1"
+                                                                class="s-img-default" id="fruit-img"
+                                                                data-src="https://image.cnhnb.com/image/jpeg/head/2022/09/02/4ab2c3103138469ea7091bbad7840ab4.jpeg?imageView2/1/w/351/h/351/format/jpg/interlace/1/quality/100!/ignore-error/1"
+                                                                lazy="loaded">
+                                                        </a>
+                                                    </div>
+                                                    <ul id="fruit-text">
+                                                        <li>
+                                                            <span class="rmb">¥ </span>
+                                                            <span class="fruit-price">158000.00</span>
+                                                            <span class="Jin"> 元/辆</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/gongying/7326595/" target="">
+                                                                <span
+                                                                    class="fruit-explain">中联重科RG2104轮式拖拉机</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <span class="place">发货地：山东郓城县</span>
+                                                        </li>
+                                                        <li id="li-img">
+                                                            <img src="https://image.cnhnb.com/supply/icon/gjqy.png"
+                                                                alt="">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="right p_gaimi" style="display: none;">
+                    <div class="right-container">
+                        <div class="content" id="change_pwd">
+                            <form class="layui-form" action="" id="form_pwd">
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">旧密码</label>
+                                    <div class="layui-input-inline">
+                                        <input type="password" name="password" required lay-verify="required"
+                                            placeholder="password" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">新密码</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="newpassword" required lay-verify="required"
+                                            placeholder="newpassword" autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer>
+        <div>
+            <div class="com-bg">
+                <div class="btm-t">
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-xinshouzhinan" data-v-14a6ca34=""></i>
+                            新手指南
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnb.com/login/" target="_blank" rel="nofollow" title="注册账户"
+                                class="h-i">注册账户</a>
+                            <a href="https://www.cnhnkj.com/app.html#h2-1" target="_blank" rel="nofollow" title="平台功能"
+                                class="h-i">平台功能</a>
+                            <a href="https://m.cnhnb.com/zhuanti/zxjyzt_hn/" target="_blank" rel="nofollow" title="在线交易"
+                                class="h-i">在线交易</a>
+                            <a href="http://wx.mobile.cnhnb.com/mango/pro/specialpage/page/propaganda3/index.html"
+                                target="_blank" rel="nofollow" title="买家保障" class="h-i">买家保障</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-kehufuwu"></i>
+                            产品服务
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnb.com/supply/" target="_blank" rel="" title="找供应"
+                                class="h-i">找供应</a>
+                            <a href="https://www.cnhnb.com/purchase/" target="_blank" rel="" title="找采购"
+                                class="h-i">找采购</a>
+                            <a href="https://www.cnhnb.com/hangqing/" target="_blank" rel="" title="看行情"
+                                class="h-i">看行情</a>
+                            <a href="https://www.cnhnb.com/app/download/" target="_blank" rel="nofollow" title="发布供应"
+                                class="h-i">发布供应</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/friends/yjdf_special" target="_blank"
+                                rel="nofollow" title="一件代发" class="h-i">一件代发</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-pingtaishengming"></i>
+                            合作联系
+                        </div>
+                        <div class="help-list">
+                            <a target="_blank" rel="" title="客户服务 400-008-8688" class="h-i">客户服务</a>
+                            <a target="_blank" rel="" title="商务洽谈 0731-88189999" class="h-i">商务洽谈</a>
+                            <a target="_blank" rel="" title="媒体合作 0731-88189999" class="h-i">媒体合作</a>
+                            <a href="https://www.cnhnb.com/knowledge/" target="_blank" rel="" title="知识产权综合服务平台"
+                                class="h-i">知识产权综合服务平台</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-guanyuhuinong"></i>
+                            关于助农
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnkj.com/about.html" target="_blank" rel="" title="关于我们"
+                                class="h-i">关于我们</a>
+                            <a href="https://www.cnhnkj.com/about.html#h2-3" target="_blank" rel="nofollow"
+                                title="助农大事件" class="h-i">助农大事件</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/privacy/?id=1" target="_blank" rel="nofollow"
+                                title="服务协议" class="h-i">服务协议</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/privacy/?id=3" target="_blank" rel="nofollow"
+                                title="隐私协议" class="h-i">隐私协议</a>
+                            <a href="https://m.cnhnb.com/mango/pro/help-center/help-list" target="_blank" rel="nofollow"
+                                title="规则说明" class="h-i">规则说明</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+<script src="./layui/layui.all.js"></script>
+<script src="./js/jQuery.min.js"></script>
+<script src="./js/baseAPI.js"></script>
+<script src="./js/header.js"></script>
+<script src="./js/Personal_Center.js"></script>
+
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成长中心</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/grown center.css">
+    
+
+</head>
+<body>
+    <header>
+        <div class="com-bg">
+            <!-- 导航栏 -->
+            <nav class="navbar-default navbar-fixed-top  h-t-bg" style="background: #fff;" role="navigation">
+                <div class="h-t-c container">
+                    <ul class="layui-nav l-h-t-c" style="background-color: #fff; height:32px;padding:0;">
+                        <li class="layui-nav-item">
+                            <div class="head_item">欢迎来到助农网！</div>
+                        </li>
+                        <li class="layui-nav-item num1">
+                            <a href="./login.html" class="head_item" style="color: #87d078 !important;">请登录</a>
+                        </li>
+                        <li class="layui-nav-item num2">
+                            <a href="./login.html" class="head_item">免费注册</a>
+                        </li>
+                    </ul>
+                    <div class="r-h-t-c">
+                        <div class="cascade-bar f-c">
+                            买家中心
+                        </div>
+                        <div class="cascade-bar f-c">
+                            卖家中心
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- 顶部 -->
+            <div class="h-c-bg">
+                <div class="h-c-c">
+                    <a href="#" class="l-h-c-c"><img src="./img/logo.png" alt="助农网" class="hn-logo"></a>
+                    <div class="ssearch-bg">
+                        <div class="s-bg">
+                            <div class="search-bg">
+                                <div class="s-l">供应</div>
+                                <div class="s-t">
+                                    <input type="text" placeholder="请输入您要的货品" value="" class="search-ctn">
+                                </div>
+                                <button class="s-r">搜索</button>
+                            </div>
+                        </div>
+                        <div class="hot-cate-list f-c">
+                            <a href="/supply/search/?k=苹果" target="_blank" rel="nofollow" class="cate-items">苹果</a>
+                            <a href="/supply/search/?k=牛副产品" target="_blank" rel="nofollow" class="cate-items">牛副产品</a>
+                            <a href="/supply/search/?k=柑桔" target="_blank" rel="nofollow" class="cate-items">柑桔</a>
+                            <a href="/supply/search/?k=猪副产品" target="_blank" rel="nofollow" class="cate-items">猪副产品</a>
+                            <a href="/supply/search/?k=红薯" target="_blank" rel="nofollow" class="cate-items">红薯</a>
+                            <a href="/supply/search/?k=鸡蛋" target="_blank" rel="nofollow" class="cate-items">鸡蛋</a>
+                            <a href="/supply/search/?k=鸡" target="_blank" rel="nofollow" class="cate-items">鸡</a>
+                            <a href="/supply/search/?k=牛肉" target="_blank" rel="nofollow" class="cate-items">牛肉</a>
+                        </div>
+                        <ul class="search_menu">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航条 -->
+            <nav class="navbar h-b-bg" style="margin-bottom: 0;" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#example-navbar-collapse" style="background-color:#dcecbd">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                            <span class="icon-bar" style="background-color: #9ee88f;"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav l-h-b-c">
+                            <li><a href="./homePage.html" target="" rel="" class="tab-items">首页</a></li>
+                            <li><a href="./ask_to_buy.html " target="" rel="" class="tab-items" id="./ask_to_buy.html">供应大厅</a></li>
+                            <li><a href="./whomePage.html " target="" rel="" class="tab-items" id="./whomePage.html">采购大厅</a></li>
+                            <li><a href="./seeding1.html " target="" rel="" class="tab-items" id="./seeding1.html">果苗严选</a></li>
+                            <li><a href="./growth_center.html " id="./growth_center.html" target="" rel="" class="tab-items">成长中心</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <header class="col-lg-3  col-md-4 col-sm-6">
+                <div class="first-box">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active current" href="#show1" >热门推荐</a>
+                            <div class="first-box-left-f">
+                                <a href="#" class="first-b">营业执照</a>
+                                <a href="#" class="first-b">发布商品</a>
+                                <a href="#" class="first-b">积极报价</a>
+                                <a href="#" class="first-b">积极报价</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#show2" >新手开店</a>
+                            <div class="first-box-left-f">
+                                <a href="#" class="first-b">完善商品信息</a>
+                                <a href="#" class="first-b">如何聊生意</a>
+                                <a href="#" class="first-b">防骗和举报</a>
+                                <a href="#" class="first-b">订单和付款</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#show3">平台规则</a>
+                            <div class="first-box-left-f">
+                                <a href="#" class="first-b">营销业务介绍</a>
+                                <a href="#" class="first-b">促销和爆品</a>
+                                <a href="#" class="first-b">精准推广</a>
+                                <a href="#" class="first-b">一件代发</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#show4">致富故事</a>
+                            <div class="first-box-left-f">
+                                <a href="#" class="first-b">流量相关</a>
+                                <a href="#" class="first-b">获客技巧</a>
+                                <a href="#" class="first-b">提升成单率</a>
+                                <a href="#" class="first-b">更多获客渠道</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <article class="col-lg-6 col-md-4">
+                <div class="layui-carousel" id="test1">
+                    <div carousel-item>
+                        <div><img src="./images/test1-banner-2.jpg" alt=""></div>
+                        <div><img src="./images/test1-banner-3.jpg" alt=""></div>
+                        <div><img src="./images/test1-banner-1.png" alt=""></div>
+                    </div>
+                </div>
+            </article>
+            <aside class="first-box-right col-lg-3 col-md-4 col-sm-6">
+                <div class="third-box">
+                    <div class="info">
+                        <h4>助农快报</h4>
+                    </div>
+                    <div class="info-2">
+                        <div class="left">
+                            <img src="./images/pig.jpg" alt="">
+                        </div>
+                        <div class="right">
+                            <a>养猪喂干料和湿料有哪些区别？</a>
+                        </div>
+                    </div>
+                    <div class="info-2">
+                        <div class="left-1">
+                            <img src="./images/carrot.jpg" alt="">
+                        </div>
+                        <div class="right">
+                            <a>硼元素在胡萝卜种植中起什么作用？胡萝卜要怎么施硼肥？</a>
+                        </div>
+                    </div>
+                    <div class="info-2">
+                        <div class="left-2">
+                            <img src="./images/eb.jpg" alt="">
+                        </div>
+                        <div class="right">
+                            <a>惠农网乡村振兴添新绩，为丰城培训455名新农人</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class=" row">
+            <div class="container-1" id="show1">
+                <div class="second-box-2-title">
+                    <div class="title-1">热门推荐</div>
+                    <a href="#">
+                        <div class="title-r">
+                            查看更多
+                        </div>
+                    </a>
+                </div>
+                <div class="second-box-2-context">
+                    <div class="li">
+                        <a href="#"><img src="./images/grown-1.png" alt="高效管理"></a>
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                    <div class="li">
+                        <img src="./images/grown-2.png" alt="高效管理">
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                    <div class="li">
+                        <img src="./images/grown-3.jpg" alt="高效管理">
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                    <div class="li">
+                        <img src="./images/grown-3.jpg" alt="高效管理">
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" row c-2">
+            <div class="container-1" id="show2">
+                <div class="second-box-2-title">
+                    <div class="title-1">新手开店</div>
+                    <a href="#">
+                        <div class="title-r">
+                            查看更多
+                        </div>
+                    </a>
+                </div>
+                <div class="second-box-2-context">
+                    <div class="li-1">
+                        <a href="#"><img src="./images/new-open-1.jpg" alt="高效管理"></a>
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                    <div class="li-1">
+                        <img src="./images/new-open-2.jpg" alt="高效管理">
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                    <div class="li-1">
+                        <img src="./images/new-open-3.png" alt="高效管理">
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                    <div class="li-1">
+                        <img src="./images/new-open-4.png" alt="高效管理">
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                    <div class="li-1">
+                        <img src="./images/new-open-5.png" alt="高效管理">
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                    <div class="li-1">
+                        <img src="./images/new-open-6.png" alt="高效管理">
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" row c-3">
+            <div class="container-1" id="show3">
+                <div class="second-box-2-title">
+                    <div class="title-1">平台规则</div>
+                    <a href="#">
+                        <div class="title-r">
+                            查看更多
+                        </div>
+                    </a>
+                </div>
+                <div class="second-box-2-context">
+                    <div class="li-2">
+                        <a href="#"><img src="./images/rules-1.png" alt="高效管理"></a>
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                    <div class="li-2">
+                        <img src="./images/rules-2.png" alt="高效管理">
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                    <div class="li-2">
+                        <img src="./images/rules-3.jpeg" alt="高效管理">
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                    <div class="li-2">
+                        <img src="./images/rules-4.jpeg" alt="高效管理">
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                    <div class="li-2">
+                        <img src="./images/rules-5.jpeg" alt="高效管理">
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                    <div class="li-2">
+                        <img src="./images/rules-6.png" alt="高效管理">
+                        <div class="s-b-1-t">店铺高效管理，不在线也能接单</div>
+                        <div class="s-b-1-t1">5338人已学习</div>
+                        <div class="s-b-1-b-b">
+                            <button class="s-b-1-b">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" row c-4">
+            <div class="container-1" id="show4">
+                <div class="second-box-2-title">
+                    <div class="title-1">致富故事</div>
+                    <a href="#">
+                        <div class="title-r">
+                            查看更多
+                        </div>
+                    </a>
+                </div>
+                <div class="second-box-2-context">
+                    <div class="li-3">
+                        <div class="article-item-bg">
+                            <div class="img-ctn"><img src="./images/rich-story-1.png" alt=""></div>
+                            <div class="article-ctn">
+                                <div class="title">
+                                    大学生“新农人”，靠电商在家乡做出一番事业
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="li-3">
+                        <div class="article-item-bg">
+                            <div class="img-ctn">
+                                <img src="./images/rich-story-2.png" alt="">
+                            </div>
+                            <div class="article-ctn">
+                                <div class="title">
+                                    为爱逆向奔跑，“虾兵蟹将”拼出美好新生活
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="li-3">
+                        <div class="article-item-bg">
+                            <div class="img-ctn"><img src="./images/rich-story-3.png" alt=""></div>
+                            <div class="article-ctn">
+                                <div class="title">
+                                    助农网实力商家：一年跻身平台农资销售排行榜TOP3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="li-3">
+                        <div class="article-item-bg">
+                            <div class="img-ctn"><img src="./images/rich-story-4.png" alt=""></div>
+                            <div class="article-ctn">
+                                <div class="title">
+                                    助农网上卖核桃 70后商家刘建伟成“大山里的订单之王”
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div class="com-bg">
+                <div class="btm-t">
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-xinshouzhinan" data-v-14a6ca34=""></i>
+                            新手指南
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnb.com/login/" target="_blank" rel="nofollow" title="注册账户"
+                                class="h-i">注册账户</a>
+                            <a href="https://www.cnhnkj.com/app.html#h2-1" target="_blank" rel="nofollow" title="平台功能"
+                                class="h-i">平台功能</a>
+                            <a href="https://m.cnhnb.com/zhuanti/zxjyzt_hn/" target="_blank" rel="nofollow" title="在线交易"
+                                class="h-i">在线交易</a>
+                            <a href="http://wx.mobile.cnhnb.com/mango/pro/specialpage/page/propaganda3/index.html"
+                                target="_blank" rel="nofollow" title="买家保障" class="h-i">买家保障</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-kehufuwu"></i>
+                            产品服务
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnb.com/supply/" target="_blank" rel="" title="找供应"
+                                class="h-i">找供应</a>
+                            <a href="https://www.cnhnb.com/purchase/" target="_blank" rel="" title="找采购"
+                                class="h-i">找采购</a>
+                            <a href="https://www.cnhnb.com/hangqing/" target="_blank" rel="" title="看行情"
+                                class="h-i">看行情</a>
+                            <a href="https://www.cnhnb.com/app/download/" target="_blank" rel="nofollow" title="发布供应"
+                                class="h-i">发布供应</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/friends/yjdf_special" target="_blank"
+                                rel="nofollow" title="一件代发" class="h-i">一件代发</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-pingtaishengming"></i>
+                            合作联系
+                        </div>
+                        <div class="help-list">
+                            <a target="_blank" rel="" title="客户服务 400-008-8688" class="h-i">客户服务</a>
+                            <a target="_blank" rel="" title="商务洽谈 0731-88189999" class="h-i">商务洽谈</a>
+                            <a target="_blank" rel="" title="媒体合作 0731-88189999" class="h-i">媒体合作</a>
+                            <a href="https://www.cnhnb.com/knowledge/" target="_blank" rel="" title="知识产权综合服务平台"
+                                class="h-i">知识产权综合服务平台</a>
+                        </div>
+                    </div>
+                    <div class="l-item-bg">
+                        <div class="help-t">
+                            <i class="iconfont icon-guanyuhuinong"></i>
+                            关于助农
+                        </div>
+                        <div class="help-list">
+                            <a href="https://www.cnhnkj.com/about.html" target="_blank" rel="" title="关于我们"
+                                class="h-i">关于我们</a>
+                            <a href="https://www.cnhnkj.com/about.html#h2-3" target="_blank" rel="nofollow"
+                                title="助农大事件" class="h-i">助农大事件</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/privacy/?id=1" target="_blank" rel="nofollow"
+                                title="服务协议" class="h-i">服务协议</a>
+                            <a href="https://m.cnhnb.com/html/zhuanti/privacy/?id=3" target="_blank" rel="nofollow"
+                                title="隐私协议" class="h-i">隐私协议</a>
+                            <a href="https://m.cnhnb.com/mango/pro/help-center/help-list" target="_blank" rel="nofollow"
+                                title="规则说明" class="h-i">规则说明</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jQuery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./layui/layui.js"></script>
+    <script src="./js/baseAPI.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/new.js"></script>
+    <script>
+        layui.use('carousel', function () {
+            var carousel = layui.carousel;
+            //建造实例
+            carousel.render({
+                elem: '#test1'
+                , width: '100%' //设置容器宽度
+                , arrow: 'always' //始终显示箭头
+            });
+        });
+    </script>
+</body>
+
+</html>
